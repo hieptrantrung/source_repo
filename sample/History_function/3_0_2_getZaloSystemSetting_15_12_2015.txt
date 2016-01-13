@@ -1,0 +1,238 @@
+﻿https://register.talk.m.zing.vn/api/setting/getSystemSetting?model=samsung&ts=1449633843789&obileApp=VN&question_type=&avatarSize=120&user_language=vi&answer_value=&type=2&network=0&iso_country_code=VN&heap=178&height=1080&distributor=GOO&answer_type=&width=1794&imei=358172051378979&deviceInfo=%7B%22CPU_Processor%22%3A%22ARMv7+Processor+rev+0+%28v7l%29%22%2C%22CPU_Hardware%22%3A%22Qualcomm+MSM8974%22%2C%22CPU_Architecture%22%3A%227%22%2C%22CPU_MAXFreq%22%3A%222150%22%2C%22CPU_MINFreq%22%3A%22300%22%2C%22Battery_Technology%22%3A%22Li-ion%22%2C%22Temperature%22%3A%2234.4%22%2C%22Voltage%22%3A%224003%22%7D&operator=45202&cs=7ad1cddec8101b35cc2fa47c46b8c84f&inc_p=1&local_time=1434956772395&time_zone=%2B07%3A00&device_identifier=2002.1a2ac3656b21827fdb30.1432870354494.17392d37&api_key=0be3747aacc670a51a83230bcfe80173&language=vi_VN&sig=fba33ce4254692725a538da0c6850d75&client_version=52&
+
+
+
+"expiredDuration" : 2345 , // second
+"seasonalSticker" :{
+    "startedTime":    1449227140,
+     "endTime": 14496727140,
+     "title": "Title String", 
+     "desc": "description text",
+     "bannerUrl": "",
+     "stickers":[
+             { "id":91,"catId":1,"type":3 },
+             { "id":92,"catId":1,"type":3 },
+             { "id":93,"catId":1,"type":3}
+      ]
+  },
+"seasonalEffect" :{
+    "startedTime":    1449227140,
+     "endTime": 14496727140,
+     "type": 1, //1: send, 2 Received, 3. all send and received.
+     "map":[
+             { "chuc mung nam moi": 1}, // Keyword: effect ID
+             { "giang sinh vui ve":2},
+             { "giang sinh an lanh":3,}
+      ]
+  }
+  
+  
+
+
+
+{
+"error_code":0,
+"error_message":"Successful.",
+"data":{
+"expiredDuration":2345,
+"seasonalSticker":{
+"startedTime":1449227140,
+"endTime":1449672714,
+"bannerUrl":"",
+"title":"Title String",
+"desc":"description text",
+"stickers":[
+{
+"id":91,
+"catId":1,
+"type":3
+},
+{
+"id":92,
+"catId":1,
+"type":3
+},
+{
+"id":93,
+"catId":1,
+"type":3
+}
+]
+},
+"seasonalEffect":{
+"startedTime":1449227140,
+"endTime":1449227140,
+"type":1,
+"map":{
+"giang sinh vui ve":1,
+"chuc mung nam moi":1,
+"giang sinh an lanh":3
+}
+}
+}
+}  
+
+
+
+
+
+
+
+
+
+"phone_num",
+"password",
+"iso_country_code",
+"inc_p",
+"avatarSize",
+"type",
+"model",
+"imei",
+"client_version",
+"distributor",
+"cs",
+"width",
+"height",
+"heap",
+"operator",
+"network",
+"time_zone",
+"language",
+"local_time",
+"user_language",
+"deviceInfo",
+"question_type",
+"answer_type",
+"answer_value",
+"device_identifier",
+"certificatedKey",
+"checkActiveCode"
+
+
+model=samsung&
+ts=1449633843789&
+obileApp=VN&
+question_type=&
+avatarSize=120&
+user_language=vi&
+answer_value=&
+type=2&
+network=0&
+iso_country_code=VN&
+heap=178&
+height=1080&
+distributor=GOO&
+answer_type=&
+width=1794&
+imei=358172051378979&
+deviceInfo=%7B%22CPU_Processor%22%3A%22ARMv7+Processor+rev+0+%28v7l%29%22%2C%22CPU_Hardware%22%3A%22Qualcomm+MSM8974%22%2C%22CPU_Architecture%22%3A%227%22%2C%22CPU_MAXFreq%22%3A%222150%22%2C%22CPU_MINFreq%22%3A%22300%22%2C%22Battery_Technology%22%3A%22Li-ion%22%2C%22Temperature%22%3A%2234.4%22%2C%22Voltage%22%3A%224003%22%7D&
+operator=45202&
+cs=7ad1cddec8101b35cc2fa47c46b8c84f&
+inc_p=1&
+local_time=1434956772395&
+time_zone=%2B07%3A00&
+device_identifier=2002.1a2ac3656b21827fdb30.1432870354494.17392d37&
+api_key=0be3747aacc670a51a83230bcfe80173&
+language=vi_VN&
+sig=fba33ce4254692725a538da0c6850d75&
+client_version=52&
+
+
+
+
+"iso_country_code",
+"inc_p",
+"avatarSize",
+"type",
+"model",
+"imei",
+"client_version",
+"distributor",
+"cs",
+"width",
+"height",
+"heap",
+"operator",
+"network",
+"time_zone",
+"language",
+"local_time",
+"user_language",
+"deviceInfo",
+"device_identifier",
+"certificatedKey",
+"checkActiveCode"
+
+
+{
+	"data":{
+		"seasonalEffect":{
+			"map":{
+						"chuc mung nam moi":1,
+						"giang sinh vui ve":1,
+						"giang sinh an lanh":3
+				  },
+			"type":1,
+			"endTime":1449227140,
+			"startedTime":1449227140
+		},
+
+		"expiredDuration":2345,
+
+		"seasonalSticker":{
+				"title":"Title String",
+				"desc":"description text",
+				"bannerUrl":"",
+				"endTime":1449672714,
+				"stickers":[
+								{
+									"type":3,
+									"id":91,
+									"catId":1
+								},
+
+								{
+									"type":3,
+									"id":92,
+									"catId":1
+								},
+
+								{
+									"type":3,
+									"id":93,
+									"catId":1
+								}
+							],
+				"startedTime":1449227140
+		}
+	},
+
+	"error_code":0,
+	"error_message":"Successful."
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"certificatedKey",
+"checkActiveCode"
+
+
+
+***
+
+Khi chuẩn bị test cần bỏ //comment code because the data for test too short will cause hit server, trong getZaloSystemSetting()

@@ -1,0 +1,206 @@
+AboutActivity.java
+BackgroundDetailsActivity.java
+BackgroundPreviewActivity.java
+																BaseActivity.java
+																BetterActivity.java
+																BetterActivityWithOutExitApp.java
+																BetterSherlockActivity.java
+																BetterSherlockFragmentActivity.java
+BlackListActivity.java
+BlockPagesListActivity.java
+BroadcastMsgToFriendsActivity.java
+BroadcastSMSInviteToFriendsActivity.java
+																ChangePasswordActivity.java
+																ChatActivity.java
+																ChatAttachmentContainer.java
+ChooseMultiFriendsActivity.java
+CombineSuggestRequestListActivity.java
+ConversationGalleryActivity.java
+CountryListActivity.java
+CropImageActivity.java
+																CustomBackgroundSettingsActivity.java
+DeactivateAccountActivity.java
+																DrawSomething.java
+																DrawViewActivity.java
+																EmoticonImageView.java
+																EmoticonSelectorDialog.java
+																ExternalCallSplashActivity.java
+FindFriendByPhoneNumberActivity.java
+																FindFriendFragmentActivity.java
+FullOutAppListActivity.java
+																GroupActivity.java
+																HelpGameActivity.java
+HiddenListActivity.java
+IgnoreListActivity.java
+																ImageViewFragment.java
+																IntroduceActivity.java
+																IntroduceActivityFragment.java
+InviteGroupListActivity.java
+InviteToCreateGroupActivity.java
+																IOErrorInfoActivity.java
+																JoinSecurityQuestionActivity.java
+LanguageListActivity.java
+																LayoutDetectsSoftKeyboard.java
+LocationPickActivity.java
+LoginDevicesActivity.java
+																LoginUsingPWActivity.java
+																MainTabActivity.java
+ManageAccountActivity.java
+																MessagePopupActivity.java
+																MessagePopupSMSActivity.java
+																MessagesFragmentActivity.java
+																MultiFragmentActivity.java
+MyInfoActivity.java
+																OnKeyDownListener.java
+																OnKeyDownMonitor.java
+OutAppDetailActivity.java
+																PasscodeActivity.java
+PassCodeSettingActivity.java
+PhoneBookActivity.java
+PlaystoreAppSettingActivity.java
+PolicyActivity.java
+PrivateSettingsActivity.java
+ProfilePickerActivity.java
+																QuickPickerActivity.java
+																RetryMsgPopupActivity.java
+RoomCategoryActivity.java
+RoomMembersActivity.java
+																SearchListActivity.java
+																SecurityQuestionActivity.java
+																SettingsActivity.java
+ShareContactToFriendsActivity.java
+																ShareMainActivity.java
+																ShareViaActivity.java
+																SplashActivity.java
+																StartUpActivity.java
+StrangerMessagesActivity.java
+																TempShareViaActivity.java
+UpdateUserInfor.java
+UserDetailsActivity.java
+UserInfoDetailActivity.java
+UserNearbyListActivity.java
+UserNearbySettingsActivity.java
+																VerifyActivationCodeActivity.java
+																VerifyPhoneNumberActivity.java
+VIPAccountListActivity.java
+VIPCategoryActivity.java
+VipMessagesActivity.java
+																VoiceRecognitionActivity.java
+																WebAppActivity.java
+WriteInvitationActivity.java
+																ZaloListFragmentActivity.java
+																
+																
+																
+AboutActivity.java
+BackgroundDetailsActivity.java
+BackgroundPreviewActivity.java
+BlackListActivity.java
+BlockPagesListActivity.java
+BroadcastMsgToFriendsActivity.java
+BroadcastSMSInviteToFriendsActivity.java
+ChooseMultiFriendsActivity.java
+CombineSuggestRequestListActivity.java
+ConversationGalleryActivity.java
+CountryListActivity.java
+CropImageActivity.java
+DeactivateAccountActivity.java
+FindFriendByPhoneNumberActivity.java
+FullOutAppListActivity.java
+HiddenListActivity.java
+IgnoreListActivity.java
+InviteGroupListActivity.java
+InviteToCreateGroupActivity.java
+LanguageListActivity.java
+LocationPickActivity.java
+LoginDevicesActivity.java
+ManageAccountActivity.java
+MyInfoActivity.java
+OutAppDetailActivity.java
+PassCodeSettingActivity.java
+PhoneBookActivity.java
+PlaystoreAppSettingActivity.java
+PolicyActivity.java
+PrivateSettingsActivity.java
+ProfilePickerActivity.java
+RoomCategoryActivity.java
+RoomMembersActivity.java
+ShareContactToFriendsActivity.java
+StrangerMessagesActivity.java
+UpdateUserInfor.java
+UserDetailsActivity.java
+UserInfoDetailActivity.java
+UserNearbyListActivity.java
+UserNearbySettingsActivity.java
+VIPAccountListActivity.java
+VIPCategoryActivity.java
+VipMessagesActivity.java
+WriteInvitationActivity.java
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+09-22 15:40:15.303    3162-8923/com.zing.zalo W/FriendManager﹕ getZaloFriend time exe: 5913
+
+
+
+CombineSuggestRequestListActivity.java
+	Chuyển thành fragment vướng chỗ mở notify pushNotifNewFriendRequest trong notiManager
+	NotiManager.java
+	ParseRPSocketConnection.java
+	CombineSuggestRequestListActivity.java
+	FindFriendFragmentActivity.java
+	MainFragment.java
+	MessagesFragmentActivity.java
+	ZaloListFragmentActivity.java
+	
+	- test lại case đi từ đường Noti, có mở được Activity chứa fragment ko: public void pushNotifyNewSuggestFriend(String uid, String msg, String url) in NotiManager
+	
+	
+	
+BroadcastMsgToFriendsFragment
+	Test lại hàm onSaveInstanceState với trường hợp don't keep xem có chạy chính xác không
+	Tesst lai broadcast receiver xem con chay dung ko														// bo qua vi hien tai khong xu ly broadcast khi friend bi remove hoac duoc them vao
+	Test lại BroadcastSMSInviteToFriendsActivity, ShareContactToFriendsActivity: dùng chung file layout (broadcast_msg_to_friends) xem còn work đúng hay không
+	
+	Bundle bundle = new Bundle();
+	bundle.putString(BroadcastMsgToFriendsFragment.STR_EXTRA_VIP_UID, currentChat.getUID());
+	getFeatureActivity().showFragmentForResult(MultiFragmentActivity.FragmentType.CHOOSE_MULTI_FAVORITE, bundle, this, GlobalData.REQUESTCODE_PICK_CONTACT, R.anim.fadein, R.anim.fadeout);
+	
+	chatfragment
+	
+	CHOOSE_MULTI_FAVORITE(34, BroadcastMsgToFriendsFragment.class)
+	
+	MultiFragmentActivity
+	
+	
+	
+	
+	
+	
+				
+	
+
+																
+																
+																afterProcessSmsMessage
+																
+
+
+
+Phần swipe back nhờ anh off ở những trang sau
+- Search danh bạ
+- Search tin nhắn
+- Full grid khi vuốt lên để chọn photo, video trong chat/post feed
+- Khi đang ở multi select mode của trang gợi ý kết bạn 
+- Các form chọn bạn (tạo nhóm, thêm bạn thân, chọn bạn tag/privacy...)
+- Cửa sổ chat khi đang ở mode ghi âm handfree																

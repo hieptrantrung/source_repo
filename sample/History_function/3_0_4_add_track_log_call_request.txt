@@ -1,0 +1,145 @@
+﻿String jsonPhoneContactsFromFile = IOUtil.ReadFile(GlobalData.pathPhoneContactList);
+
+List<PhoneContact> phoneContactsList = getPhoneContactListFromJson(jsonPhoneContactsFromFile);
+
+getJsonStringSubmitContact
+
+
+30 phút ghi 1 lần, hoặc lớn hơn 10 request ghi 1 lần
+
+
+Ghi xong thì clear Map đi
+
+
+React Native | A framework for building native apps using React
+
+
+
+
+
+
+
+
+
+
+01-06 18:54:51.630 5255-5569/com.zing.zalo I/SocketConnection: cmd: 109
+01-06 18:55:00.541 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:55:00.590 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:55:00.597 5255-5569/com.zing.zalo I/SocketConnection: cmd: 109
+01-06 18:55:05.000 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:55:05.060 5255-5569/com.zing.zalo I/SocketConnection: cmd: 109
+01-06 18:55:05.065 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:55:05.284 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:55:05.361 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:55:11.351 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:55:11.412 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:55:12.112 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:55:12.146 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:55:12.163 5255-5569/com.zing.zalo I/SocketConnection: cmd: 109
+01-06 18:55:14.588 5255-5569/com.zing.zalo I/SocketConnection: cmd: 2
+01-06 18:55:15.950 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:55:15.995 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:55:16.286 5255-5569/com.zing.zalo I/SocketConnection: cmd: 109
+01-06 18:55:16.299 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:55:16.341 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:55:16.355 5255-5569/com.zing.zalo I/SocketConnection: cmd: 109
+01-06 18:55:30.094 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:55:30.147 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:55:33.710 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:55:33.752 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:55:45.405 5255-5569/com.zing.zalo I/SocketConnection: cmd: 151
+01-06 18:55:47.569 5255-5569/com.zing.zalo I/SocketConnection: cmd: 1400
+01-06 18:55:48.220 5255-5569/com.zing.zalo I/SocketConnection: cmd: 1400
+01-06 18:55:49.092 5255-5569/com.zing.zalo I/SocketConnection: cmd: 101
+01-06 18:55:54.669 5255-5569/com.zing.zalo I/SocketConnection: cmd: 101
+01-06 18:56:10.658 5255-5569/com.zing.zalo I/SocketConnection: cmd: 95
+01-06 18:56:28.741 5255-5569/com.zing.zalo I/SocketConnection: cmd: 151
+01-06 18:56:28.847 5255-5569/com.zing.zalo I/SocketConnection: cmd: 821
+01-06 18:56:29.031 5255-5569/com.zing.zalo I/SocketConnection: cmd: 1231
+01-06 18:56:31.083 5255-5569/com.zing.zalo I/SocketConnection: cmd: 1249
+01-06 18:56:33.452 5255-5569/com.zing.zalo I/SocketConnection: cmd: 1248
+01-06 18:56:43.480 5255-5569/com.zing.zalo I/SocketConnection: cmd: 1249
+01-06 18:56:44.620 5255-5569/com.zing.zalo I/SocketConnection: cmd: 1249
+01-06 18:56:55.624 5255-5569/com.zing.zalo I/SocketConnection: cmd: 101
+01-06 18:57:08.313 5255-5569/com.zing.zalo I/SocketConnection: cmd: 142
+01-06 18:57:12.730 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:57:13.438 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:57:16.116 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:57:16.170 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:57:20.476 5255-5569/com.zing.zalo I/SocketConnection: cmd: 389
+01-06 18:57:23.294 5255-5569/com.zing.zalo I/SocketConnection: cmd: 389
+01-06 18:57:26.645 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:57:26.702 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:57:36.273 5255-5569/com.zing.zalo I/SocketConnection: cmd: 109
+01-06 18:57:42.257 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:57:42.330 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:57:43.704 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:57:43.743 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:57:43.749 5255-5569/com.zing.zalo I/SocketConnection: cmd: 109
+01-06 18:57:45.017 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:57:45.051 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:57:47.342 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 18:57:47.406 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 18:57:47.462 5255-5569/com.zing.zalo I/SocketConnection: cmd: 109
+01-06 18:57:58.764 5255-5569/com.zing.zalo I/SocketConnection: cmd: 142
+01-06 18:58:03.974 5255-5569/com.zing.zalo I/SocketConnection: cmd: 513
+01-06 18:58:22.439 5255-5569/com.zing.zalo I/SocketConnection: cmd: 1230
+01-06 18:58:30.557 5255-5569/com.zing.zalo I/SocketConnection: cmd: 273
+01-06 18:58:33.140 5255-5569/com.zing.zalo I/SocketConnection: cmd: 273
+01-06 18:58:35.115 5255-5569/com.zing.zalo I/SocketConnection: cmd: 910
+01-06 18:58:39.990 5255-5569/com.zing.zalo I/SocketConnection: cmd: 911
+01-06 18:58:40.112 5255-5569/com.zing.zalo I/SocketConnection: cmd: 910
+01-06 18:58:43.143 5255-5569/com.zing.zalo I/SocketConnection: cmd: 911
+01-06 18:58:43.240 5255-5569/com.zing.zalo I/SocketConnection: cmd: 910
+01-06 18:58:52.168 5255-5569/com.zing.zalo I/SocketConnection: cmd: 273
+01-06 18:58:53.770 5255-5569/com.zing.zalo I/SocketConnection: cmd: 273
+01-06 18:59:06.819 5255-5569/com.zing.zalo I/SocketConnection: cmd: 271
+01-06 18:59:09.878 5255-5569/com.zing.zalo I/SocketConnection: cmd: 271
+01-06 18:59:14.630 5255-5569/com.zing.zalo I/SocketConnection: cmd: 2
+01-06 18:59:25.277 5255-5569/com.zing.zalo I/SocketConnection: cmd: 151
+01-06 18:59:25.487 5255-5569/com.zing.zalo I/SocketConnection: cmd: 151
+01-06 18:59:29.720 5255-5569/com.zing.zalo I/SocketConnection: cmd: 151
+01-06 18:59:29.839 5255-5569/com.zing.zalo I/SocketConnection: cmd: 821
+01-06 18:59:29.926 5255-5569/com.zing.zalo I/SocketConnection: cmd: 1231
+01-06 18:59:36.154 5255-5569/com.zing.zalo I/SocketConnection: cmd: 1249
+01-06 18:59:39.448 5255-5569/com.zing.zalo I/SocketConnection: cmd: 900
+01-06 18:59:55.971 5255-5569/com.zing.zalo I/SocketConnection: cmd: 111
+01-06 19:00:29.508 5255-5569/com.zing.zalo I/SocketConnection: cmd: 2
+01-06 19:00:41.124 5255-5569/com.zing.zalo I/SocketConnection: cmd: 82
+01-06 19:00:48.297 5255-5569/com.zing.zalo I/SocketConnection: cmd: 1199
+01-06 19:01:01.742 5255-5569/com.zing.zalo I/SocketConnection: cmd: 251
+01-06 19:01:09.067 5255-5569/com.zing.zalo I/SocketConnection: cmd: 253
+01-06 19:01:09.472 5255-5569/com.zing.zalo I/SocketConnection: cmd: 253
+01-06 19:01:11.918 5255-5569/com.zing.zalo I/SocketConnection: cmd: 254
+01-06 19:01:11.926 5255-5569/com.zing.zalo I/SocketConnection: cmd: 301
+01-06 19:01:14.109 5255-5569/com.zing.zalo I/SocketConnection: cmd: 301
+01-06 19:01:15.998 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 19:01:16.074 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 19:01:16.247 5255-5569/com.zing.zalo I/SocketConnection: cmd: 301
+01-06 19:01:18.156 5255-5569/com.zing.zalo I/SocketConnection: cmd: 301
+01-06 19:01:18.800 5255-5569/com.zing.zalo I/SocketConnection: cmd: 301
+01-06 19:01:20.387 5255-5569/com.zing.zalo I/SocketConnection: cmd: 301
+01-06 19:01:20.491 5255-5569/com.zing.zalo I/SocketConnection: cmd: 301
+01-06 19:01:21.625 5255-5569/com.zing.zalo I/SocketConnection: cmd: 255
+01-06 19:01:32.416 5255-5569/com.zing.zalo I/SocketConnection: cmd: 253
+01-06 19:01:32.653 5255-5569/com.zing.zalo I/SocketConnection: cmd: 253
+01-06 19:01:35.873 5255-5569/com.zing.zalo I/SocketConnection: cmd: 256
+01-06 19:01:45.105 5255-5569/com.zing.zalo I/SocketConnection: cmd: 800
+01-06 19:01:50.239 5255-5569/com.zing.zalo I/SocketConnection: cmd: 804
+01-06 19:01:54.303 5255-5569/com.zing.zalo I/SocketConnection: cmd: 805
+01-06 19:01:54.901 5255-5569/com.zing.zalo I/SocketConnection: cmd: 800
+01-06 19:02:03.615 5255-5569/com.zing.zalo I/SocketConnection: cmd: 800
+01-06 19:02:07.566 5255-5569/com.zing.zalo I/SocketConnection: cmd: 201
+01-06 19:02:07.787 5255-5569/com.zing.zalo I/SocketConnection: cmd: 202
+01-06 19:02:08.674 5255-5569/com.zing.zalo I/SocketConnection: cmd: 802
+01-06 19:02:39.840 5255-5569/com.zing.zalo I/SocketConnection: cmd: 2
+01-06 19:02:56.927 5255-5569/com.zing.zalo I/SocketConnection: cmd: 182
+01-06 19:02:59.467 5255-5569/com.zing.zalo I/SocketConnection: cmd: 1248
+01-06 19:02:59.845 5255-5569/com.zing.zalo I/SocketConnection: cmd: 159
+01-06 19:03:09.251 5255-5569/com.zing.zalo I/SocketConnection: cmd: 1248
+01-06 19:03:09.445 5255-5569/com.zing.zalo I/SocketConnection: cmd: 159
+01-06 19:03:19.764 5255-5569/com.zing.zalo I/SocketConnection: cmd: 156
+01-06 19:03:30.099 5255-5569/com.zing.zalo I/SocketConnection: cmd: 389
+01-06 19:03:33.824 5255-5569/com.zing.zalo I/SocketConnection: cmd: 142
+
+

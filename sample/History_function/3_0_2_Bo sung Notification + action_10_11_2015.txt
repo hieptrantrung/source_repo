@@ -1,0 +1,345 @@
+﻿
+
+
+- Mở tab chat
+
+	
+	
+- Mở tab social
+- Mở tab danh bạ
+- Mở tab Thêm
+- Mở tạo nhóm
+- Mở friend suggestion
+- Mở các máy tính đăng nhập
+- Mở inapp browser kèm link
+- Mở sticker store
+- Mở sticker detail
+- Mở page store
+- Mở page category
+
+
+
+
+[{"id":259292297,"item":{"actId":501,"icon":"http://stc.zalo.zdn.vn/icon/app/13.png","body":"H\u00F4m nay l\u00E0 sinh nh\u1EADt c\u1EE7a <a href=\"zm://Profile/73086824\">B\u1EA3o Anh</a>, h\u00E3y g\u1EEDi l\u1EDDi ch\u00FAc m\u1EEBng","avt":"http://avatar.talk.zdn.vn/f/8/1/8/44/75/15d2f93a9daa749c0e02951116020a0a.jpg","appId":5,"opType":5,"obj":"73086824","tvb":"0 gi\u00E2y tr\u01B0\u1EDBc","tim":"2013-07-31 11:41:24"},"type":5}] 
+
+{
+"id":259292297,
+"item":{
+	"actId":501,
+	"icon":"http://stc.zalo.zdn.vn/icon/app/13.png",
+	"body":"H\u00F4m nay l\u00E0 sinh nh\u1EADt c\u1EE7a <a href=\"zm://Profile/73086824\">B\u1EA3o Anh</a>, h\u00E3y g\u1EEDi l\u1EDDi ch\u00FAc m\u1EEBng",
+	"avt":"http://avatar.talk.zdn.vn/f/8/1/8/44/75/15d2f93a9daa749c0e02951116020a0a.jpg",
+	"appId":5,
+	"opType":5,
+	"obj":"73086824",
+	"tvb":"0 gi\u00E2y tr\u01B0\u1EDBc",
+	"tim":"2013-07-31 11:41:24"
+	},
+"type":5
+}
+
+{
+"id":259292297,
+"item":{
+		"id":52401998206,
+		"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg",
+		"title":"Demo title",
+		"desc":"Demo description",
+		"data":"102262314",
+		"act":"action.open.profile"
+	},
+"type":54
+}
+
+{
+"id":52401998206,
+"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg",
+"title":"Demo title",
+"desc":"Demo description",
+"data":"102262314",
+"act":"action.open.profile"
+}
+
+
+{
+"id":52402093094,
+"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg",
+"title":"Demo title",
+"desc":"Demo description",
+"data":"http://zaloapp.com",
+"act":"action.open.inapp"
+}
+
+
+{
+"id":52402288287,
+"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg",
+"title":"Demo title",
+"desc":"Demo description",
+"data":"{"android" : "Package Name Of App","ios" : "Bundle Id Of App","wp" : "wp.test"}",
+"act":"action.open.app"
+}
+
+http://s120.avatar.talk.zdn.vn/a/b/4/c/44/120/0e61040745f69fbdf967d67b71265b8a.jpg
+
+
+processShowNotifycationWithAction
+
+http://stackoverflow.com/questions/16445337/notificationcompat-ticker-text-not-showing-when-updating-notification
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"Demo title","desc":"Demo description","data":"102262314","act":"action.open.profile"},"type":54}]
+
+***********************
+Sender Id
+
+70015339
+User List
+
+70015339
+Command
+
+600
+Sub Command
+
+0
+Package Type Return Package
+
+Data
+
+
+Test case
+
+1. 
+
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"Demo title","desc":"Demo description","data":"http://www.tinhte.vn","act":"action.open.inapp"},"type":54}]
+
+Test nhận noti khi đang ở trong app
+Test nhận noti khi app chạy background
+Test nhận noti sau khi kill app
+
+2. 
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"Demo title","desc":"Demo description","data":"http://www.tinhte.vn","act":"action.open.outapp"},"type":54}]
+
+
+3. 
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"Demo title","desc":"Demo description","data":{"android":"com.example.android.displayingbitmaps"},"act":"action.open.app"},"type":54}]
+
+[{"id":56069055330,"item":{"avt":"http://avatar.talk.zdn.vn/f/c/8/c/25/75/7c68737dbd69f6c478318b71506a7aab.jpg","title":"Trai nghiem cam xuc","desc":"Xem ban be lam gi","data":{"android" : "com.zing.tv3","ios" : {"appid" : "https://itunes.apple.com/vn/app/zing-tv-hd/id971995033", "scheme_url":"zalo-1396017800851131651://"}, 
+     "wp" : "39ac931d-de12-4d36-aa3d-af6209a71285"},"act":"action.open.app"},"type":54}]
+
+4. 
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.profile","desc":"Demo description","data":"73816860","act":"action.open.profile"},"type":54}]
+
+
+5.
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.qr","desc":"Demo description","data":"73816860","act":"action.open.qr"},"type":54}]
+
+Test nhận noti khi đang ở trong app
+
+6.
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.galary","desc":"Demo description","data":"68386082","act":"action.open.galary"},"type":54}]
+
+7.
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.sticker","desc":"Demo description","data":"50","act":"action.open.sticker"},"type":54}]
+10: Merry Christmas - not work
+50: Khu vuon tren may - work
+
+8.
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.gamedetail","desc":"Demo description","data":4276041421271731779,"act":"action.open.gamedetail"},"type":54}]
+
+"desc":"",
+"packageName":"vn.kvtm.khuvuontrenmay",
+"playStoreUrl":"http:\/\/app.zaloapp.com\/vn.kvtm.khuvuontrenmay?pid=zalo&c=gamecenter-304&r=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dvn.kvtm.khuvuontrenmay%26referrer%3Dutm_source%253DZalo%2526utm_medium%253DZalo_ZGC&uid=4309855706624208861",
+"isNew":0,
+"zappId":4276041421271731779,
+"iOsAppUrl":"http:\/\/app.zaloapp.com\/id829531297?pid=zalo&c=gamecenter-304&r=http%3A%2F%2Fua.g6.zing.vn%2Fweb%2Ftracking.php%3Fgame_id%3DSGMB%26media_source%3DZALO_ZGC%26redirect%3DaHR0cDovL2FwcC5hcHBzZmx5ZXIuY29tL2lkODI5NTMxMjk3P3BpZD1aYWxvX1pHQyZjPVphbG8%3D&uid=4309855706624208861",
+"wpStoreUrl":"http:\/\/www.windowsphone.com\/s?appid=c603f053-9f04-490d-b74c-d484e5ee307d&referrer=src%3Dgame-center%26subdata%3D",
+"isBlocked":false,
+"newsFeature":"",
+"logoLink":"http:\/\/logo.zp.zdn.vn\/app\/8ea3686e542bbd75e43a_13_1.jpg",
+"app_referrer":"src=game-center&subdata=",
+"showLeaderBoard":false,
+"playing":6,
+"appName":"Khu Vườn Trên Mây",
+"bodyAction":1,
+"screenShot":[
+],
+"userToken":"He4FPjHUT8Ef6C2bEbrgJcRcM2o89LluwK2N_J0uPHuKYWeq",
+"company":"Firebat Game Studio",
+"bundleId":"vn.kvtm.khuvuontrenmay.zalo",
+"itunesId":0,
+"appType":3
+
+9.
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.postfeed","desc":"Demo description","data":4276041421271731779,"act":"action.open.postfeed"},"type":54}]
+
+10.
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.nearby","desc":"Demo description","data":4276041421271731779,"act":"action.open.nearby"},"type":54}]
+
+11. 
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.addfriend","desc":"Demo description","data":4276041421271731779,"act":"action.open.addfriend"},"type":54}]
+
+12.
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.gamenews","desc":"Demo description","data":4276041421271731779,"act":"action.open.gamenews"},"type":54}]
+
+action.open.gamenews
+
+13.
+
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.gamecenter","desc":"Demo description","data":4276041421271731779,"act":"action.open.gamecenter"},"type":54}]
+
+14. 
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.logindevices","desc":"Demo description","data":4276041421271731779,"act":"action.open.logindevices"},"type":54}]
+
+15.
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.sms","desc":"Demo description","data":{"phoneCode":"0988394787","content":"Helloworld"},"act":"action.open.sms"},"type":54}]
+
+16.
+
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.phone","desc":"Demo description","data":{"phonenum":"0988394787"},"act":"action.open.phone"},"type":54}]
+
+17.
+
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.createchat","desc":"Demo description","data":{"phonenum":"0988394787"},"act":"action.open.createchat"},"type":54}]
+
+18.
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.friendsuggest","desc":"Demo description","data":{"phonenum":"0988394787"},"act":"action.open.friendsuggest"},"type":54}]
+
+19.
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.logincomputer","desc":"Demo description","data":{"phonenum":"0988394787"},"act":"action.open.logincomputer"},"type":54}]
+
+20.
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.stickerstore","desc":"Demo description","data":{"phonenum":"0988394787"},"act":"action.open.stickerstore"},"type":54}]
+
+21.
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.page","desc":"Demo description","data":{"phonenum":"0988394787"},"act":"action.open.page"},"type":54}]
+
+22.
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.room","desc":"Demo description","data":{"phonenum":"0988394787"},"act":"action.open.room"},"type":54}]
+
+23.
+
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.feeddetail","desc":"Demo description","data":{"feed_id":"2077644103", "owner_id":"10095583"},"act":"action.open.feeddetail"},"type":54}]
+oid: 10095583
+
+fid: 2077644103
+
+
+24. 
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.photodetail","desc":"Demo description","data":{"photo_id":"2839802339", "owner_id":"100955833"},"act":"action.open.photodetail"},"type":54}]
+
+photo_id: 2839802339
+owner_id: 100955833
+
+25.
+
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.grouplist","desc":"Demo description","data":{"photo_id":"2839802339", "owner_id":"100955833"},"act":"action.open.grouplist"},"type":54}]
+
+26.
+
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.friendrada","desc":"Demo description","data":{"photo_id":"2839802339", "owner_id":"100955833"},"act":"action.open.friendrada"},"type":54}]
+
+27. 
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.tab.chat","desc":"Demo description","data":"73816860","act":"action.open.tab.chat"},"type":54}]
+
+28. 
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.tab.social","desc":"Demo description","data":"73816860","act":"action.open.tab.social"},"type":54}]
+
+29. 
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.tab.contact","desc":"Demo description","data":"73816860","act":"action.open.tab.contact"},"type":54}]
+
+30. 
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.tab.more","desc":"Demo description","data":"73816860","act":"action.open.tab.more"},"type":54}]
+
+
+Bug vào cửa sổ chat, nhận noti mở tab danh bạ, ra được danh bạ, vào lại cửa sổ chat bị lỗi
+
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter: error
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter: java.lang.NullPointerException
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.support.v4.app.FragmentManagerImpl.getFragment(FragmentManager.java:667)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.support.v4.app.FragmentStatePagerAdapter.restoreState(FragmentStatePagerAdapter.java:211)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at com.zing.zalo.adapters.ZaloTabsAdapter.restoreState(ZaloTabsAdapter.java:184)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.support.v4.view.ViewPager.onRestoreInstanceState(ViewPager.java:1319)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.view.View.dispatchRestoreInstanceState(View.java:12145)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2662)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2668)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.view.View.restoreHierarchyState(View.java:12123)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.support.v4.app.Fragment.restoreViewState(Fragment.java:471)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1105)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1259)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:738)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1624)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.support.v4.app.FragmentManagerImpl$1.run(FragmentManager.java:517)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.os.Handler.handleCallback(Handler.java:800)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.os.Handler.dispatchMessage(Handler.java:100)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.os.Looper.loop(Looper.java:194)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at android.app.ActivityThread.main(ActivityThread.java:5371)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at java.lang.reflect.Method.invokeNative(Native Method)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at java.lang.reflect.Method.invoke(Method.java:525)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:833)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+11-18 15:04:15.994 15347-15347/com.zing.zalo E/ZaloTabsAdapter:     at dalvik.system.NativeStart.main(Native Method)
+
+
+
+
+
+ic_floating_adsmsg
+
+drawable-en-mdpi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

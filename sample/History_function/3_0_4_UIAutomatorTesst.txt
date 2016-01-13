@@ -1,0 +1,25 @@
+﻿
+https://www.bignerdranch.com/blog/triumph-android-studio-1-2-sneaks-in-full-testing-support/
+
+https://github.com/benwilcock/android-alltest-gradle-sample
+
+http://developer.android.com/tools/testing-support-library/index.html#UIAutomator
+
+https://github.com/googlesamples/android-testing
+
+https://github.com/robotiumtech/robotium
+
+
+http://www.tutorialspoint.com/android/android_testing.htm
+
+https://github.com/tutsplus/Android-UIAutomaterIntroduction/blob/master/app/build.gradle			//http://code.tutsplus.com/tutorials/automating-user-interface-testing-on-android--cms-23969			//https://github.com/tutsplus/Android-UIAutomaterIntroduction
+
+https://www.youtube.com/watch?v=z47B1nhC3K0
+
+
+http://developer.android.com/tools/testing-support-library/index.html 			// https://github.com/googlesamples/android-testing
+
+
+https://github.com/googlesamples/android-testing-templates/tree/master/AndroidTestingBlueprint
+
+

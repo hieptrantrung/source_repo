@@ -1,0 +1,34 @@
+﻿Cụ thể các thông số dc tính như sau
+
+- 1 Lần on-app dc tính từ lúc chuyển app lên foreground cho đến lúc ẩn xuống hoặc lúc locksceen
+- Thời gian dc tính tương ứng bằng second
+-  Time trung bình, min, max dc tính như bình thường
+- Log thêm chi tiết ố thời gian vào phần for information giống như log time execute detail các tham số khác.
+
+
+
+70000 Time on app		ActionConstant.java
+
+
+- Search: track time to use app 
+	trong code để tìm nhưng nơi implement function này
+
+
+- Trường hợp tắt màn hình trên activity của app work chưa đúng
+	- Đã fix
+	
+- Test trường hợp bật don't keep activity
+
+	
+
+http://stackoverflow.com/questions/26400469/alternative-to-getrunningtasks-in-android-l
+http://stackoverflow.com/questions/18038399/how-to-check-if-activity-is-in-foreground-or-in-visible-background
+http://stackoverflow.com/questions/6847337/how-to-know-if-my-android-app-is-visible
+http://stackoverflow.com/questions/3136187/how-to-detect-if-any-of-my-activity-is-front-most-and-visible-to-user
+http://stackoverflow.com/questions/3791607/how-can-i-check-if-a-view-is-visible-or-not-in-android
+
+http://stackoverflow.com/questions/26400469/alternative-to-getrunningtasks-in-android-l
+https://code.google.com/p/android-developer-preview/issues/detail?id=29#c50
+http://www.intertech.com/Blog/android-5-api-changes-getapptasks/
+
+
