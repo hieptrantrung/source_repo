@@ -1,0 +1,448 @@
+﻿LinkJumpAction
+
+http://zalojs-sdk.zapps.vn/?zl3rd=2058144243996386126
+
+http://stickers.zaloapp.com/index
+
+https://docs.google.com/spreadsheets/d/1pEtYUSsW1SDIhkouHWTUInyYM3Y60ljfUllY1_nj-As/edit#gid=141622150
+https://docs.google.com/spreadsheets/d/1pEtYUSsW1SDIhkouHWTUInyYM3Y60ljfUllY1_nj-As/edit#gid=1762355629
+https://docs.google.com/spreadsheets/d/1pEtYUSsW1SDIhkouHWTUInyYM3Y60ljfUllY1_nj-As/edit#gid=2066422186
+
+
+
+
+1. action.open.createchat						ZALO_COMMON_ACTION_OPEN_CREATE_CHAT	
+
+options 										{}
+
+callback										zaloJSV2.onJSCall
+
+2. action.open.chat								ZALO_COMMON_ACTION_OPEN_CHAT
+
+
+{"uId":"4319062553057285705","type":"1","appId":"3554569838779270945","sourceId":"200","sourceIndex":"200"}
+
+{"data":{"sourceIndex":200,"uId":108157824,"appId":3554569838779270945,"type":1,"sourceId":200},"error_code":0,"error_message":"Successful."}
+
+after decode {"sourceIndex":200,"uId":108157824,"appId":3554569838779270945,"type":1,"sourceId":200}
+
+decode true //-> decodeLinkJumpData trả lỗi 112
+
+callback										zaloJSV2.onJSCall
+
+3. action.open.app								ZALO_COMMON_ACTION_OPEN_APP
+
+	khác với format mở notify
+	
+	com.android.chorme
+	
+//{"android":{  "package":"gsn.game.zingplaynew1",
+                            //              "url":"http://app.zaloapp.com/gsn.game.zingplaynew1?pid=zalo&c=gamecenter&r=market%3A%2F%2Fdetails%3Fid%3Dgsn.game.zingplaynew1%26referrer%3DSource%253Dzalogc%2526Position%253Dzlgc%2526Campaign%253Dzalogc"}}	
+							
+options		{"android":{"package":"gsn.game.zingplaynew1","url":"http://app.zaloapp.com/gsn.game.zingplaynew1?pid=zalo&c=gamecenter&r=market%3A%2F%2Fdetails%3Fid%3Dgsn.game.zingplaynew1%26referrer%3DSource%253Dzalogc%2526Position%253Dzlgc%2526Campaign%253Dzalogc"},"ios":{"itunes_id":0,"scheme_url":"zalo-1396017800851131651://","url":"http://app.zaloapp.com/id908617867?pid=zalo&c=gamecenter"},"wp_data":{"protocol_url":"zalo-1396017800851131651://","url":"http://www.windowsphone.com/s?appid=4e4dc260-6cdb-4f35-bbd7-9deb2ef4ea2f"}}
+decode 		false
+callback	zaloJSV2.onJSCall							
+							
+4. action.open.appstore (NEW)				ZALO_COMMON_ACTION_OPEN_APPSTORE
+
+//{"android":{"url":"http://app.zaloapp.com/gsn.game.zingplaynew1?pid=zalo&c=gamecenter&r=market%3A%2F%2Fdetails%3Fid%3Dgsn.game.zingplaynew1%26referrer%3DSource%253Dzalogc%2526Position%253Dzlgc%2526Campaign%253Dzalogc"},"ios":{"url":"http://app.zaloapp.com/id908617867?pid=zalo&c=gamecenter","scheme_url":"zalo-1396017800851131651://","itunes_id":0},"wp_data":{"url":"http://www.windowsphone.com/s?appid=4e4dc260-6cdb-4f35-bbd7-9deb2ef4ea2f"}}
+
+options {"android":{"url":"http://app.zaloapp.com/gsn.game.zingplaynew1?pid=zalo&c=gamecenter&r=market%3A%2F%2Fdetails%3Fid%3Dgsn.game.zingplaynew1%26referrer%3DSource%253Dzalogc%2526Position%253Dzlgc%2526Campaign%253Dzalogc"},"ios":{"url":"http://app.zaloapp.com/id908617867?pid=zalo&c=gamecenter","scheme_url":"zalo-1396017800851131651://","itunes_id":0},"wp_data":{"url":"http://www.windowsphone.com/s?appid=4e4dc260-6cdb-4f35-bbd7-9deb2ef4ea2f"}}
+
+callback		zaloJSV2.onJSCall
+decode 			false
+
+5. action.open.profile					ZALO_COMMON_ACTION_OPEN_PROFILE
+{"uId":"108157824","type":"3","appId":"10101","sourceId":"200","sourceIndex":"200"}
+decode true -> -> decodeLinkJumpData trả lỗi 112 
+{"uId":"7303681784120265367","type":1,"appId":"3554569838779270945","sourceId":"200","sourceIndex":"200"}
+after: {"sourceIndex":200,"uId":108157824,"appId":3554569838779270945,"type":1,"sourceId":200}
+callback			zaloJSV2.onJSCall		
+
+6. action.open.tab.chat			ZALO_COMMON_ACTION_OPEN_TAB_CHAT
+
+
+{}	
+
+decode		false
+callback	zaloJSV2.onJSCall
+
+Lỗi khi mở lại tab chat, vào lại mở web lại k được
+
+
+
+7. action.get.location				ZALO_COMMON_ACTION_GET_LOCATION
+
+{}				
+
+decode false
+
+callback	zaloJSV2.onJSCall
+
+8. action.show.toast				ZALO_COMMON_ACTION_SHOW_TOAST
+
+{"toast":"test show toast"}
+
+decode false
+
+callback		zaloJSV2.onJSCall
+
+"Trường hợp action không có permission:
+{""error_code"":-1,""error_message"":""permission required!"",
+""data"":{},""action"":""action.show.toast""}
+Trường hợp gọi thành công:
+{""error_code"":0,""error_message"":""successfull!"",
+""data"":{},""action"":""action.show.toast""}"
+
+
+
+9. action.check.app.installed
+
+{"totalApp":3,"apps":[{"app_1":{"packageName":"com.vng.tvl","schema":"zalo-4341275532218618714://","wpStoreUrl":""}},{"app_2":{"packageName":"com.vng.gpdttkvn","schema":"zalo-3945316935671174926://","wpStoreUrl":""}},{"app_3":{"packageName":"gsn.game.zingplaynew1","schema":"zalo-3554569838779270945://","wpStoreUrl":""}}]}
+
+{"totalApp":3,"apps":[{"app_1":{"packageName":"com.vng.tvl","schema":"zalo-4341275532218618714://","wpStoreUrl":""}},{"app_2":{"packageName":"com.vng.gpdttkvn","schema":"zalo-3945316935671174926://","wpStoreUrl":""}},{"app_3":{"packageName":"gsn.game.zingplaynew1","schema":"zalo-3554569838779270945://","wpStoreUrl":""}}]}
+
+callback 	zaloJSV2.onJSCall
+
+10. action.get.downloaded.sticker		ZALO_COMMON_ACTION_GET_DOWNLOAD_STICKER
+
+{}
+
+decode false
+callback 	zaloJSV2.onJSCall
+
+callback value: ('{"error_code":0,"error_message":"successfull","data":{"10036":"1","10040":"1","39":"3","21":"1","47":"1","54":"1","59":"3"},"action":"action.get.downloaded.sticker"}')
+
+11. action.download.cate			ZALO_COMMON_ACTION_DOWNLOAD_CATE
+
+{"cateDetailsInfo":{"id":50,"name":"Khu Vườn Trên Mây 1","totalImage":34,"thumbUrl":"http://api.zaloapp.com/c/0/c/7/c/50/preview/","iconUrl":"http://api.zaloapp.com/c/0/c/7/c/50/icon/kvtm1_ic.png","iconPreview":"http://api.zaloapp.com/c/0/c/7/c/50/icon_pre/kvtm1_thumb.png","status":0,"version":1,"thumbImg":"http://api.zaloapp.com/c/0/c/7/c/50/preview/kvtm1_cover.png","source":"","permission":1,"downloaded":0,"cost":0,"purchase":false,"qrCode":"http://qr-stickers.zaloapp.com/1/qrstickerc0c07e2a426fab31f27e.jpg","linkPromote":"http://stickers.zaloapp.com/detail?cid=c65678bc44f9ada7f4e8","slogan":null,"isHidden":0}}
+
+decode false
+callback	zaloJSV2.onJSCall
+
+{"cateDetailsInfo":"{\"id\":50,\"name\":\"Khu Vườn Trên Mây 1\",\"totalImage\":34,\"thumbUrl\":\"http://api.zaloapp.com/c/0/c/7/c/50/preview/\",\"iconUrl\":\"http://api.zaloapp.com/c/0/c/7/c/50/icon/kvtm1_ic.png\",\"iconPreview\":\"http://api.zaloapp.com/c/0/c/7/c/50/icon_pre/kvtm1_thumb.png\",\"status\":0,\"version\":1,\"thumbImg\":\"http://api.zaloapp.com/c/0/c/7/c/50/preview/kvtm1_cover.png\",\"source\":\"\",\"permission\":1,\"downloaded\":0,\"cost\":0,\"purchase\":false,\"qrCode\":\"http://qr-stickers.zaloapp.com/1/qrstickerc0c07e2a426fab31f27e.jpg\",\"linkPromote\":\"http://stickers.zaloapp.com/detail?cid=c65678bc44f9ada7f4e8\",\"slogan\":null,\"isHidden\":0}"}
+
+
+{"cateDetailsInfo":{"id":50,"name":"Khu Vườn Trên Mây 1","totalImage":34,"thumbUrl":"http://api.zaloapp.com/c/0/c/7/c/50/preview/","iconUrl":"http://api.zaloapp.com/c/0/c/7/c/50/icon/kvtm1_ic.png","iconPreview":"http://api.zaloapp.com/c/0/c/7/c/50/icon_pre/kvtm1_thumb.png","status":0,"version":1,"thumbImg":"http://api.zaloapp.com/c/0/c/7/c/50/preview/kvtm1_cover.png","source":"","permission":1,"downloaded":0,"cost":0,"purchase":false,"qrCode":"http://qr-stickers.zaloapp.com/1/qrstickerc0c07e2a426fab31f27e.jpg","linkPromote":"http://stickers.zaloapp.com/detail?cid=c65678bc44f9ada7f4e8","slogan":null,"isHidden":0}}
+
+12. action.open.share.sticker		ZALO_COMMON_ACTION_OPEN_SHARE_STICKER			FAIL with HTML 5, must re-test ***
+
+{"cateDetailsInfo":{"id":50,"name":"Khu Vườn Trên Mây 1","totalImage":34,"thumbUrl":"http://api.zaloapp.com/c/0/c/7/c/50/preview/","iconUrl":"http://api.zaloapp.com/c/0/c/7/c/50/icon/kvtm1_ic.png","iconPreview":"http://api.zaloapp.com/c/0/c/7/c/50/icon_pre/kvtm1_thumb.png","status":0,"version":1,"thumbImg":"http://api.zaloapp.com/c/0/c/7/c/50/preview/kvtm1_cover.png","source":"","permission":1,"downloaded":0,"cost":0,"purchase":false,"qrCode":"http://qr-stickers.zaloapp.com/1/qrstickerc0c07e2a426fab31f27e.jpg","linkPromote":"http://stickers.zaloapp.com/detail?cid=c65678bc44f9ada7f4e8","slogan":null,"isHidden":0}}
+
+callback 	zaloJSV2.onJSCall
+
+decode false
+
+
+12 action.copy.link.catesticker		ZALO_COMMON_ACTION_COPY_LINK_CATESTICKER
+
+if (GlobalData.currentShareItem != null) {
+                    if (currentChat != null && GlobalData.currentShareItem.getUIdTo().equals(currentChat.getUID())) {
+                        if (GlobalData.currentShareItem.getType() == ShareItem.TYPE_STICKER) {
+                            String stickerContent = GlobalData.currentShareItem.getLinkToShare();
+                            if (!TextUtils.isEmpty(stickerContent))
+                                mChatController.sendShareSticker(currentChat.getUID(), stickerContent);
+                        }
+                    }
+
+                    GlobalData.currentShareItem = null;
+                }
+
+{"link":"http://stickers.zaloapp.com/detail?cid=c65678bc44f9ada7f4e8"}
+
+callback 	zaloJSV2.onJSCall
+
+decode false
+
+13. action.request.buy.sticker		ZALO_COMMON_ACTION_REQUEST_BUY_STICKER				***, not implement
+
+{"paymentToken":"test","cateDetailsInfo":"{\"id\":50,\"name\":\"Khu Vườn Trên Mây 1\",\"totalImage\":34,\"thumbUrl\":\"http://api.zaloapp.com/c/0/c/7/c/50/preview/\",\"iconUrl\":\"http://api.zaloapp.com/c/0/c/7/c/50/icon/kvtm1_ic.png\",\"iconPreview\":\"http://api.zaloapp.com/c/0/c/7/c/50/icon_pre/kvtm1_thumb.png\",\"status\":0,\"version\":1,\"thumbImg\":\"http://api.zaloapp.com/c/0/c/7/c/50/preview/kvtm1_cover.png\",\"source\":\"\",\"permission\":1,\"downloaded\":0,\"cost\":0,\"purchase\":false,\"qrCode\":\"http://qr-stickers.zaloapp.com/1/qrstickerc0c07e2a426fab31f27e.jpg\",\"linkPromote\":\"http://stickers.zaloapp.com/detail?cid=c65678bc44f9ada7f4e8\",\"slogan\":null,\"isHidden\":0}"}
+
+
+{"paymentToken":"test","cateDetailsInfo":{"id":50,"name":"Khu Vườn Trên Mây 1","totalImage":34,"thumbUrl":"http://api.zaloapp.com/c/0/c/7/c/50/preview/","iconUrl":"http://api.zaloapp.com/c/0/c/7/c/50/icon/kvtm1_ic.png","iconPreview":"http://api.zaloapp.com/c/0/c/7/c/50/icon_pre/kvtm1_thumb.png","status":0,"version":1,"thumbImg":"http://api.zaloapp.com/c/0/c/7/c/50/preview/kvtm1_cover.png","source":"","permission":1,"downloaded":0,"cost":0,"purchase":false,"qrCode":"http://qr-stickers.zaloapp.com/1/qrstickerc0c07e2a426fab31f27e.jpg","linkPromote":"http://stickers.zaloapp.com/detail?cid=c65678bc44f9ada7f4e8","slogan":null,"isHidden":0}}
+
+
+13. action.hide.keyboard		ZALO_COMMON_ACTION_HIDE_KEYBOARD
+
+public void hideKeyboard(Activity activity) {
+    InputMethodManager inputManager = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
+        if (activity.getCurrentFocus() != null) {
+            inputManager.hideSoftInputFromWindow(activity.getCurrentFocus()
+                    .getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+        }
+}
+
+public static void hideSoftKeyboard(Activity activity) {
+    InputMethodManager inputMethodManager = (InputMethodManager)  activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
+    inputMethodManager.hideSoftInputFromWindow(activity.getCurrentFocus().getWindowToken(), 0);
+}
+
+callback	zaloJSV2.onJSCall
+decode false
+
+
+14. action.change.title.header //IOS only
+
+15. action.open.feeddetail					ZALO_COMMON_ACTION_OPEN_FEED_DETAIL
+
+{"feed_id":"100","owner_id":"108157824"}
+
+{"feed_id":"f2761a9c26d9cf8796c8","owner_id":"4319062553057285705"}
+
+after:	{"owner_id":108157824,"feed_id":100}
+
+decode true
+
+callback	zaloJSV2.onJSCall
+
+
+16. action.open.friendrada		ZALO_COMMON_ACTION_OPEN_FRIEND_RADA
+{}
+
+callback	zaloJSV2.onJSCall
+
+decode false
+
+17. action.open.inapp		ZALO_COMMON_ACTION_OPEN_INAPP
+
+{"url":"http://app.zaloapp.com/gsn.game.zingplaynew1?pid=zalo&c=gamecenter&r=market%3A%2F%2Fdetails%3Fid%3Dgsn.game.zingplaynew1%26referrer%3DSource%253Dzalogc%2526Position%253Dzlgc%2526Campaign%253Dzalogc"}
+
+decode false
+
+callback	zaloJSV2.onJSCall
+
+18. action.open.outapp		ZALO_COMMON_ACTION_OPEN_OUTAPP
+
+{"url":"http://app.zaloapp.com/gsn.game.zingplaynew1?pid=zalo&c=gamecenter&r=market%3A%2F%2Fdetails%3Fid%3Dgsn.game.zingplaynew1%26referrer%3DSource%253Dzalogc%2526Position%253Dzlgc%2526Campaign%253Dzalogc"}
+
+decode false
+
+callback	zaloJSV2.onJSCall
+
+
+19. action.open.page		ZALO_COMMON_ACTION_OPEN_PAGE				*** mở HTML 5 ko được, load ra trắng
+
+{}
+
+decode false
+
+callback	zaloJSV2.onJSCall
+
+
+
+20. action.open.photodetail		ZALO_COMMON_ACTION_OPEN_PHOTO_DETAIL
+
+{"photo_id":"a722f49c916e7830217f","owner_id":"4319062553057285705"}
+
+after: 		{"owner_id":108157824,"photo_id":3076121478}
+
+decode true
+
+callback	zaloJSV2.onJSCall
+
+21. action.open.galary		ZALO_COMMON_ACTION_OPEN_GALLERY
+
+{"uId":"4319062553057285705"}
+after: 	{"uId":108157824}
+
+decode true
+
+callback	zaloJSV2.onJSCall
+
+22. action.open.gamecenter		ZALO_COMMON_ACTION_OPEN_GAMECENTER
+
+{}
+
+decode false
+
+callback	zaloJSV2.onJSCall
+
+23. action.open.gamenews		ZALO_COMMON_ACTION_OPEN_GAMENEWS
+
+{}
+
+decode false
+
+callback	zaloJSV2.onJSCall
+
+
+24. action.open.tab.contact		ZALO_COMMON_ACTION_OPEN_TAB_CONTACT
+
+{}
+
+decode false
+
+callback	zaloJSV2.onJSCall
+
+25. action.open.tab.social		ZALO_COMMON_ACTION_OPEN_TAB_SOCIAL
+
+{}
+
+decode false 
+
+callback	zaloJSV2.onJSCall
+
+26. action.open.friendsuggest	ZALO_COMMON_ACTION_OPEN_FRIEND_SUGGEST
+
+{}
+
+decode false
+
+callback zaloJSV2.onJSCall
+
+
+
+27. action.open.grouplist		ZALO_COMMON_ACTION_OPEN_GROUP_LIST
+
+{}
+
+decode false
+
+callback 		zaloJSV2.onJSCall
+
+28. action.open.nearby			ZALO_COMMON_ACTION_OPEN_NEARBY
+
+{}
+
+decode false
+
+callback	zaloJSV2.onJSCall
+
+29. action.open.room			ZALO_COMMON_ACTION_OPEN_ROOM
+
+{}
+
+decode false
+
+callback	zaloJSV2.onJSCall
+
+public boolean onOptionsItemSelected trong WebViewActivity
+
+
+30. action.open.stickerstore	ZALO_COMMON_ACTION_OPEN_STICKER_STORE						*** mở HTML5 không được
+
+{}
+
+decode false
+
+callback	zaloJSV2.onJSCall
+
+31. action.open.addfriend		ZALO_COMMON_ACTION_OPEN_ADDFRIEND
+
+{"uid_from":"4319062553057285705","uid_to":"274195052185133845","source":"200"}
+
+after: {"source":0,"uid_to":102884441,"uid_from":108157824}
+
+decode true
+
+32. action.open.phone			ZALO_COMMON_ACTION_OPEN_PHONE
+
+{"phoneCode":"01227693854"}
+
+decode false
+
+callback 	zaloJSV2.onJSCall
+
+33. action.query.location.hide			ZALO_COMMON_ACTION_QUERY_LOCATION_HIDE
+
+{"title":"I am here!","touserid":"4319062553057285705"}
+
+after: {"touserid":108157824,"title":"I am here!"}
+
+decode true
+
+callback zaloJSV2.onJSCall
+
+34. action.open.tab.more	ZALO_COMMON_ACTION_OPEN_TAB_MORE
+
+{}
+
+decode false
+
+callback		zaloJSV2.onJSCall
+
+35. action.query.show			ZALO_COMMON_ACTION_QUERY_SHOW
+
+{"query":"#test.show","touserid":"4319062553057285705"}
+
+after: {"touserid":108157824,"query":"#test.show"}
+
+decode true
+
+callback	zaloJSV2.onJSCall
+
+??? Cần uid để send
+
+
+36. action.query.hide			ZALO_COMMON_ACTION_QUERY_HIDE
+
+{"query":"#test.hide","touserid":"4319062553057285705"}
+
+decode true
+
+callback	zaloJSV2.onJSCall
+
+37. action.open.qr					ZALO_COMMON_ACTION_OPEN_QR
+
+{}
+
+decode false
+
+callback		zaloJSV2.onJSCall
+
+38. action.open.postfeed			ZALO_COMMON_ACTION_OPEN_POSTFEED
+
+{}
+
+decode false
+
+callback		zaloJSV2.onJSCall
+
+39. action.open.logindevices
+
+{}
+
+decode false
+
+callback	zaloJSV2.onJSCall
+
+40. action.open.sms
+
+{"content":"test open SMS","phoneCode":"01227693854"}
+
+decode false
+
+callback		zaloJSV2.onJSCall
+
+
+41. action.open.sendsticker			ZALO_COMMON_ACTION_OPEN_SEND_STICKER
+
+{"cateId":50,"id":0,"type":1,"touserid":"4319062553057285705"}
+
+after: {"type":1,"id":0,"touserid":108157824,"cateId":50}
+
+decode true
+
+
+callback	zaloJSV2.onJSCall
+
+
+"id":1176,
+"text":"[^50,1176^]",
+"type":7,
+"fkey":0,
+"uri":"1176",
+"cateId":50
+
+
+[{"id":1087,"text":"[^50,1087^]","type":7,"fkey":0,"uri":"1087","cateId":50},{"id":1088,"text":"[^50,1088^]","type":7,"fkey":1,"uri":"1088","cateId":50},{"id":1089,"text":"[^50,1089^]","type":7,"fkey":1,"uri":"1089","cateId":50},{"id":1090,"text":"[^50,1090^]","type":7,"fkey":1,"uri":"1090","cateId":50},{"id":1091,"text":"[^50,1091^]","type":7,"fkey":0,"uri":"1091","cateId":50},{"id":1092,"text":"[^50,1092^]","type":7,"fkey":0,"uri":"1092","cateId":50},{"id":1093,"text":"[^50,1093^]","type":7,"fkey":0,"uri":"1093","cateId":50},{"id":1094,"text":"[^50,1094^]","type":7,"fkey":1,"uri":"1094","cateId":50},{"id":1095,"text":"[^50,1095^]","type":7,"fkey":2,"uri":"1095","cateId":50},{"id":1096,"text":"[^50,1096^]","type":7,"fkey":1,"uri":"1096","cateId":50},{"id":1097,"text":"[^50,1097^]","type":7,"fkey":0,"uri":"1097","cateId":50},{"id":1098,"text":"[^50,1098^]","type":7,"fkey":0,"uri":"1098","cateId":50},{"id":1099,"text":"[^50,1099^]","type":7,"fkey":1,"uri":"1099","cateId":50},{"id":1100,"text":"[^50,1100^]","type":7,"fkey":0,"uri":"1100","cateId":50},{"id":1101,"text":"[^50,1101^]","type":7,"fkey":1,"uri":"1101","cateId":50},{"id":1102,"text":"[^50,1102^]","type":7,"fkey":0,"uri":"1102","cateId":50},{"id":1103,"text":"[^50,1103^]","type":7,"fkey":0,"uri":"1103","cateId":50},{"id":1104,"text":"[^50,1104^]","type":7,"fkey":0,"uri":"1104","cateId":50},{"id":1105,"text":"[^50,1105^]","type":7,"fkey":0,"uri":"1105","cateId":50},{"id":1106,"text":"[^50,1106^]","type":7,"fkey":2,"uri":"1106","cateId":50},{"id":1107,"text":"[^50,1107^]","type":7,"fkey":1,"uri":"1107","cateId":50},{"id":1108,"text":"[^50,1108^]","type":7,"fkey":1,"uri":"1108","cateId":50},{"id":1109,"text":"[^50,1109^]","type":7,"fkey":2,"uri":"1109","cateId":50},{"id":1110,"text":"[^50,1110^]","type":7,"fkey":1,"uri":"1110","cateId":50},{"id":1111,"text":"[^50,1111^]","type":7,"fkey":0,"uri":"1111","cateId":50},{"id":1112,"text":"[^50,1112^]","type":7,"fkey":0,"uri":"1112","cateId":50},{"id":1113,"text":"[^50,1113^]","type":7,"fkey":2,"uri":"1113","cateId":50},{"id":1114,"text":"[^50,1114^]","type":7,"fkey":0,"uri":"1114","cateId":50},{"id":1115,"text":"[^50,1115^]","type":7,"fkey":0,"uri":"1115","cateId":50},{"id":1116,"text":"[^50,1116^]","type":7,"fkey":0,"uri":"1116","cateId":50},{"id":1117,"text":"[^50,1117^]","type":7,"fkey":2,"uri":"1117","cateId":50},{"id":1118,"text":"[^50,1118^]","type":7,"fkey":1,"uri":"1118","cateId":50},{"id":1175,"text":"[^50,1175^]","type":7,"fkey":0,"uri":"1175","cateId":50},{"id":1176,"text":"[^50,1176^]","type":7,"fkey":0,"uri":"1176","cateId":50}]
+
+
+
+
+
+
+
+
+
+
