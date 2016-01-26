@@ -1,5 +1,7 @@
 ﻿LinkJumpAction
 
+https://docs.google.com/spreadsheets/d/1106IdbNJmTOe_RrnJqXRo0ONE5aCyDIymgG_t6ewOUc/edit#gid=0
+
 http://zalojs-sdk.zapps.vn/?zl3rd=2058144243996386126
 
 http://stickers.zaloapp.com/index
@@ -132,6 +134,13 @@ callback	zaloJSV2.onJSCall
 callback 	zaloJSV2.onJSCall
 
 decode false
+
+*****
+
+TEST -> vào sticker store -> mở sticker details -> Chọn nút menu ... -> chọn menu Chia sẻ cho bạn bè
+
+options = {"cateDetailsInfo":{"id":10061,"name":"Lì Xì Tiếng Cười Độc Đáo","totalImage":11,"thumbUrl":"http://api.zaloapp.com/7/f/e/3/d/10061/preview/","iconUrl":"http://api.zaloapp.com/7/f/e/3/d/10061/icon/lixitiengcuoidocdao_ic.png","iconPreview":"http://api.zaloapp.com/7/f/e/3/d/10061/icon_pre/lixitiengcuoidocdao_thumb.png","group":4,"status":1,"version":1,"thumbImg":"http://api.zaloapp.com/7/f/e/3/d/10061/preview/cover.png","source":"","permission":1,"downloaded":0,"cost":0,"purchase":false,"qrCode":"http://qr-stickers.zaloapp.com/1/qrstickere351229c1ed9f787aec8.png","linkPromote":"http://stickers.zaloapp.com/detail?cid=7ea5bf68832d6a73333c","slogan":null,"isHidden":0}}
+callback = {String@6360} "zaloJSV2.onJSCall"
 
 
 12 action.copy.link.catesticker		ZALO_COMMON_ACTION_COPY_LINK_CATESTICKER
@@ -445,4 +454,438 @@ callback	zaloJSV2.onJSCall
 
 
 
+
+
+
+
+
+
+FeedRenderUtils
+
+376: 
+
+public static void handleSuggestAppClickEvent(final Context context, final FeedItem feedItem, final View gameTitleView, final String sourceAction, final FeedItemBody.SuggestItem suggestItem)
+
+
+Intent.ACTION_VIEW
+
+
+Cái retry ko bao giờ load lại được
+
+
+{"error_code":0,"error_message":"Successful.","data":{"action":0,"inApp":0,"html":"","url":"http:\/\/app.zaloapp.com\/com.gamota.tiennghich?fa=1&r=http%3A%2F%2Fapi%2Eadtimaserver%2Evn%2Ftrack%2Fclick%3Fparams%3DMhjNO76k%5Fu8w%2DQzRKCdfDQVRTsq5Mtk0oDs909QmJ7erIyVPpZ20gU7GPTI8F2V6bWk%2DmsYrZeN4CGXn9AXrGoklav6%5FPBI04%5F1ARGkmbyBzaG1%2DESxivifvXvc8w44H6FyecWfm%5FR1HQlxEVP5DgGGox2MGU63VlD03sY8%2D9DGojgPsUpw%26uid%3D%26redirectUrl%3Dhttp%253A%252F%252Ftc%2Epgss%2Ejp%252Faff%5Fc%253Foffer%5Fid%253D612%2526aff%5Fid%253D1019&c=app&pid=zalo&_zsrc=zads&_zid=4411&_zcid=3393&_zsrcidx=1022&_ztype=10","jsToken":"kB5IZ9qnkHkuYEufD980+3lNkwfppjXk3v8RIYYp68gfWvBVlcEa9UiHPuC3abimaXWIZLQclHQnliSBxL1\/jsZzjTo+dBYxVnUdP1nSJU4=","cookiesIdLogins":[{"name":"zsid","value":"QDpA.73816860.8.9JmgZ2WXTNSqUXDpA25rTrn5Smme8NLtAHAArtuWTNme8NLF71XDJniOGK0G5dvt","path":"\/","domain":"zaloapp.com","expires":1209600,"httpOnly":false}],"cookiesOAuthLogins":[],"actionPermission":{}}}
+
+
+http://app.zaloapp.com/com.gamota.tiennghich?fa=1&r=http%3A%2F%2Fapi%2Eadtimaserver%2Evn%2Ftrack%2Fclick%3Fparams%3DMhjNO76k%5Fu8w%2DQzRKCdfDQVRTsq5Mtk0oDs909QmJ7erIyVPpZ20gU7GPTI8F2V6bWk%2DmsYrZeN4CGXn9AXrGoklav6%5FPBI04%5F1ARGkmbyBzaG1%2DESxivifvXvc8w44H6FyecWfm%5FR1HQlxEVP5DgGGox2MGU63VlD03sY8%2D9DGojgPsUpw%26uid%3D%26redirectUrl%3Dhttp%253A%252F%252Ftc%2Epgss%2Ejp%252Faff%5Fc%253Foffer%5Fid%253D612%2526aff%5Fid%253D1019&c=app&pid=zalo&_zsrc=zads&_zid=4411&_zcid=3393&_zsrcidx=1022&_ztype=10
+
+.protected void webviewFirstLoadUrl(boolean clearHistory) {.
+
+
++ Chia sẽ sticker cho bạn bè			=> DONE
+	
+
+
++ Quét QR code sticker để vào trang Sticker detail html5	=> DONE
+
+{"error_code":0,"error_message":"Successful.","data":{"item":{"cateId":"10074"},"type":5}}
+
+private void loadIntentData(Intent intent)
+
+http://store.zaloapp.com/stickers/v2/
+
+{"action":0,"inApp":1,"html":"","url":"http:\/\/store.zaloapp.com\/stickers\/v2\/","jsToken":"kB5IZ9qnkHkuYEufD980+xgkvxawy+3i0DUWGK\/pQ1KXbKR66fr3D56Y+92EvSFUeTB9ka09zShfjUk\/zr8LrMRZfCrsFUlA7Bz39VKUJoU=","cookiesIdLogins":[{"name":"zsid","value":"NIyH.73816860.9.ZJsiAgYvzU-qufFhgBdrxmD7_OgekVNlgPquJlwuzUIekVNNd83Drvk0mTYGZlxl","path":"\/","domain":"zaloapp.com","expires":1209600,"httpOnly":false}],"cookiesOAuthLogins":[{"name":"zacc_session","value":"4WOIFwhrfG89HN5hng3HVKvI17c5bQj2Cb8VJ8EwfsGFVGXZcSNK2sWsSJZT-gGu6pmTAPh6Wmia5JuWhzVf7WrXEt37jhDMHqrnOlI4wpwuqWCm232AffyPJfWvcAhXa0jLz5NLvURoVIN39g3InTDh2uehoh_ngHb-_LvP9ZzDyYIiuviX","path":"\/","domain":"store.zaloapp.com","expires":2592000000,"httpOnly":false},{"name":"zoauth","value":"K9HM2Z9VzIrBrpLUNWg1KWp0G4mTAF5AJS0FRoOJerrown50DcRL27I1OHGMUwu81fCHEo16vGfrhqnE5sNuNb_g6Znj4CHsLUSBFna8xcT9vdzQ4H6OFnFv4onURj5RIAjLMJ89Wr4Qq0LFVmd2JZ_N7q8TTfyvh6uvMu25XSCbKVdk38X-yJiGtjSUxX7sA7xBz07jSfviBvxZThfBYtinwU5UMIPXaW4-D4NB3W","path":"\/","domain":"store.zaloapp.com","expires":172800000,"httpOnly":false},{"name":"zlink3rd","value":"jqOJ9mnejP41\/JBlsvZvTohub81QIY8f+NvsSsPiXnI7d6XJSnWBnPUA7eBoVsilnP7yVReB5wcU65p8NPFhtesGJdUUoACfnqG8Bqphx0U=","path":"\/","domain":"store.zaloapp.com","expires":172800000,"httpOnly":false}],"actionPermission":{"action.change.title.header":{"perm":1,"decode":0},"action.check.app.installed":{"perm":1,"decode":0},"action.copy.link.catesticker":{"perm":1,"decode":0},"action.download.cate":{"perm":1,"decode":0},"action.get.downloaded.sticker":{"perm":1,"decode":0},"action.get.location":{"perm":1,"decode":0},"action.hide.keyboard":{"perm":1,"decode":0},"action.open.addfriend":{"perm":1,"decode":1},"action.open.app":{"perm":1,"decode":0},"action.open.appstore":{"perm":1,"decode":0},"action.open.chat":{"perm":1,"decode":1},"action.open.createchat":{"perm":1,"decode":0},"action.open.feeddetail":{"perm":1,"decode":1},"action.open.friendrada":{"perm":1,"decode":0},"action.open.friendsuggest":{"perm":1,"decode":0},"action.open.galary":{"perm":1,"decode":1},"action.open.gamecenter":{"perm":1,"decode":0},"action.open.gamenews":{"perm":1,"decode":0},"action.open.grouplist":{"perm":1,"decode":0},"action.open.inapp":{"perm":1,"decode":0},"action.open.logindevices":{"perm":1,"decode":0},"action.open.nearby":{"perm":1,"decode":0},"action.open.outapp":{"perm":1,"decode":0},"action.open.page":{"perm":1,"decode":0},"action.open.phone":{"perm":1,"decode":0},"action.open.photodetail":{"perm":1,"decode":1},"action.open.postfeed":{"perm":1,"decode":0},"action.open.profile":{"perm":1,"decode":1},"action.open.qr":{"perm":1,"decode":0},"action.open.room":{"perm":1,"decode":0},"action.open.sendsticker":{"perm":1,"decode":1},"action.open.share.sticker":{"perm":1,"decode":0},"action.open.sms":{"perm":1,"decode":0},"action.open.stickerstore":{"perm":1,"decode":0},"action.open.tab.chat":{"perm":1,"decode":0},"action.open.tab.contact":{"perm":1,"decode":0},"action.open.tab.more":{"perm":1,"decode":0},"action.open.tab.social":{"perm":1,"decode":0},"action.query.hide":{"perm":1,"decode":1},"action.query.location.hide":{"perm":1,"decode":1},"action.query.show":{"perm":1,"decode":1},"action.request.buy.sticker":{"perm":1,"decode":0},"action.show.toast":{"perm":1,"decode":0}}}
+
+
+
+
+private void loadIntentData(Intent intent)	-> WebBaseActivity.java
+
+
+gọi cmd 1224
+
+truyền 
+
+private SourceLink sourceLink = SourceLink.OTHER;	//12
+private FeatureId featureId = FeatureId.STICKER_DETAIL; //	4
+private String rootUrl = "";
+	
+	
+	Kết quả 
+	
+	{"error_code":0,"error_message":"Successful.","data":{"action":0,"inApp":1,"html":"","url":"http:\/\/stg.market.zaloapp.com\/stickers\/v2\/","jsToken":"kB5IZ9qnkHkuYEufD980+xgkvxawy+3i0DUWGK\/pQ1IZV7rkxXwgwQYfv3sBdwXP8dBtd0jivR+7iJ7pUfPzGRujFvTnPFoasY5USiQCdm4=","cookiesIdLogins":[{"name":"zsid","value":"utPg.73816860.10.EjnyehHTwGke1eyFj5tf2yNyiqwqNUaBjTyvgk9SwG2qNUapW6JHCuTatJoCQk8B","path":"\/","domain":"zaloapp.com","expires":1209600,"httpOnly":false}],"cookiesOAuthLogins":[{"name":"zacc_session","value":"BOw1NnM0CqmspU8BUTL7Ct7Qbnawu3qC3TgCB3pCCIemzfeE8RXDIHcRwcCehprDOfMHK5MIQajZkTD8RuPqQdpAeYmmu2yaCEReFWEjTv7I1fgnuXaMMzZgKal-bhCSr_X99vBR_1krZZaGuQxBE9IO5rdinAOCxkfYBbvP9h-mzmeJbWrl","path":"\/","domain":"stg.market.zaloapp.com","expires":2592000000,"httpOnly":false},{"name":"zoauth","value":"0-W15mXNldmOgs93P0BA0r-y5r4d8BeR7hnOSXmQw0mXbaLI0MwV74Ru2Kf2VDKTDk9uOdbNdnz5oYfZUqA0Erc_N2SoCEqbP-GoVKCidsqgja926o3kS77wLnDL19KiAAeRTIionorBkbrVHJQr5toS55itBijT8M7tyZpUMP8FasnOkZxtAhMpJIFhFebFig52UVvA-rty_HGKdng-8lpo0GBM2hGI9WZc7N8EJO1V","path":"\/","domain":"stg.market.zaloapp.com","expires":172800000,"httpOnly":false},{"name":"zlink3rd","value":"jqOJ9mnejP41\/JBlsvZvTohub81QIY8f+NvsSsPiXnK5vQo6Br9UHlNC\/C0KFqiedVnZ3bykaosoHkUdXu9Xd848qkWcux7ociwZey7adB4=","path":"\/","domain":"stg.market.zaloapp.com","expires":172800000,"httpOnly":false}],"actionPermission":{"action.change.title.header":{"perm":1,"decode":0},"action.check.app.installed":{"perm":1,"decode":0},"action.copy.link.catesticker":{"perm":1,"decode":0},"action.download.cate":{"perm":1,"decode":0},"action.get.downloaded.sticker":{"perm":1,"decode":0},"action.get.location":{"perm":1,"decode":0},"action.hide.keyboard":{"perm":1,"decode":0},"action.open.addfriend":{"perm":1,"decode":1},"action.open.app":{"perm":1,"decode":0},"action.open.appstore":{"perm":1,"decode":0},"action.open.chat":{"perm":1,"decode":1},"action.open.createchat":{"perm":1,"decode":0},"action.open.feeddetail":{"perm":1,"decode":1},"action.open.friendrada":{"perm":1,"decode":0},"action.open.friendsuggest":{"perm":1,"decode":0},"action.open.galary":{"perm":1,"decode":1},"action.open.gamecenter":{"perm":1,"decode":0},"action.open.gamenews":{"perm":1,"decode":0},"action.open.grouplist":{"perm":1,"decode":0},"action.open.inapp":{"perm":1,"decode":0},"action.open.logindevices":{"perm":1,"decode":0},"action.open.nearby":{"perm":1,"decode":0},"action.open.outapp":{"perm":1,"decode":0},"action.open.page":{"perm":1,"decode":0},"action.open.phone":{"perm":1,"decode":0},"action.open.photodetail":{"perm":1,"decode":1},"action.open.postfeed":{"perm":1,"decode":0},"action.open.profile":{"perm":1,"decode":1},"action.open.qr":{"perm":1,"decode":0},"action.open.room":{"perm":1,"decode":0},"action.open.sendsticker":{"perm":1,"decode":1},"action.open.share.sticker":{"perm":1,"decode":0},"action.open.sms":{"perm":1,"decode":0},"action.open.stickerstore":{"perm":1,"decode":0},"action.open.tab.chat":{"perm":1,"decode":0},"action.open.tab.contact":{"perm":1,"decode":0},"action.open.tab.more":{"perm":1,"decode":0},"action.open.tab.social":{"perm":1,"decode":0},"action.query.hide":{"perm":1,"decode":1},"action.query.location.hide":{"perm":1,"decode":1},"action.query.show":{"perm":1,"decode":1},"action.request.buy.sticker":{"perm":1,"decode":0},"action.show.toast":{"perm":1,"decode":0}}}}
+	
+	
+	
+	http://stg.market.zaloapp.com/stickers/v2/
+	
+	10074
+	{"error_code":0,"error_message":"Successful.","data":{"action":0,"inApp":1,"html":"","url":"http:\/\/stg.market.zaloapp.com\/stickers\/v2\/","jsToken":"kB5IZ9qnkHkuYEufD980+xgkvxawy+3i0DUWGK\/pQ1IsSm4YAosVvNZyBxJKlumNmz5Q7B1QUChfMKLQMNjocZBf5OI7KM3kQbI7Tm9EaaQ=","cookiesIdLogins":[{"name":"zsid","value":"LRZr.73816860.11.E-LndN2DBTjiralVS8qjsm4iTvvmZItRSSJvUYQCBT1mZItZHBGLuqEq6Un8kYRR","path":"\/","domain":"zaloapp.com","expires":1209600,"httpOnly":false}],"cookiesOAuthLogins":[{"name":"zacc_session","value":"ZMw97tFIBbEMBUfB7uTQBD4wdrbSiY0JhJg4R5gUB3MG5PjBGkvSLPn_n0XS-0vtttc_25ZQ7MEHHB0uMSy6G80sm6qUkdWh-0pABKxyb_xVP3EX8nLTokMiseK5Gt_ixFo2ZtXi99UKy_ZF6cCPkRQVm85hOsEShld9x2Pv0k9LTSGGS0","path":"\/","domain":"stg.market.zaloapp.com","expires":2592000000,"httpOnly":false},{"name":"zoauth","value":"Lsx3UPmNysLCBQ0jy4A76WiwrJ-pOFS2IZgQ78XRfHLr4OO-aoFIJLXsz6wQFgL1BcI5Sknkx4SGDTPCxNltP051fm-g29bwFnh9LTiKwp9oIBbgWnYQBoa4h3lDFE5pS5JWNRCAit8JHAPttGx1I2HYxtEl5hy3ULG8swGjASnN4u0PeNYK76upeMBmUEfvQI6kEEKCc6idVVXLX5pT52ToxKFDJDSa9iWWaWMQ3Sr6","path":"\/","domain":"stg.market.zaloapp.com","expires":172800000,"httpOnly":false},{"name":"zlink3rd","value":"jqOJ9mnejP41\/JBlsvZvTohub81QIY8f+NvsSsPiXnIi+mzdUGSRyZBy9so1WIzzq7CVJUZsF\/k93kZmzAzinKdwkGqWiHsH1d85IQNbs0A=","path":"\/","domain":"stg.market.zaloapp.com","expires":172800000,"httpOnly":false}],"actionPermission":{"action.change.title.header":{"perm":1,"decode":0},"action.check.app.installed":{"perm":1,"decode":0},"action.copy.link.catesticker":{"perm":1,"decode":0},"action.download.cate":{"perm":1,"decode":0},"action.get.downloaded.sticker":{"perm":1,"decode":0},"action.get.location":{"perm":1,"decode":0},"action.hide.keyboard":{"perm":1,"decode":0},"action.open.addfriend":{"perm":1,"decode":1},"action.open.app":{"perm":1,"decode":0},"action.open.appstore":{"perm":1,"decode":0},"action.open.chat":{"perm":1,"decode":1},"action.open.createchat":{"perm":1,"decode":0},"action.open.feeddetail":{"perm":1,"decode":1},"action.open.friendrada":{"perm":1,"decode":0},"action.open.friendsuggest":{"perm":1,"decode":0},"action.open.galary":{"perm":1,"decode":1},"action.open.gamecenter":{"perm":1,"decode":0},"action.open.gamenews":{"perm":1,"decode":0},"action.open.grouplist":{"perm":1,"decode":0},"action.open.inapp":{"perm":1,"decode":0},"action.open.logindevices":{"perm":1,"decode":0},"action.open.nearby":{"perm":1,"decode":0},"action.open.outapp":{"perm":1,"decode":0},"action.open.page":{"perm":1,"decode":0},"action.open.phone":{"perm":1,"decode":0},"action.open.photodetail":{"perm":1,"decode":1},"action.open.postfeed":{"perm":1,"decode":0},"action.open.profile":{"perm":1,"decode":1},"action.open.qr":{"perm":1,"decode":0},"action.open.room":{"perm":1,"decode":0},"action.open.sendsticker":{"perm":1,"decode":1},"action.open.share.sticker":{"perm":1,"decode":0},"action.open.sms":{"perm":1,"decode":0},"action.open.stickerstore":{"perm":1,"decode":0},"action.open.tab.chat":{"perm":1,"decode":0},"action.open.tab.contact":{"perm":1,"decode":0},"action.open.tab.more":{"perm":1,"decode":0},"action.open.tab.social":{"perm":1,"decode":0},"action.query.hide":{"perm":1,"decode":1},"action.query.location.hide":{"perm":1,"decode":1},"action.query.show":{"perm":1,"decode":1},"action.request.buy.sticker":{"perm":1,"decode":0},"action.show.toast":{"perm":1,"decode":0}}}}
+	
+	
+	
+	{"error_code":0,"error_message":"Successful.","data":{"action":0,"inApp":1,"html":"","url":"","jsToken":"kB5IZ9qnkHkuYEufD980+3lNkwfppjXk3v8RIYYp68hZtrxWLk8BGyeLpxWWPE+LplTYo2t9iBIlBUBtojkDjYMy2zWbIM+03+2E4btM79k=","cookiesIdLogins":[{"name":"zsid","value":"oTsP.73816860.12.Fmk7bB7sxA2jhOgaiVRieC1NjfQnzkoWi8yq0UVtxAknzkoOXS_Kc8BFs9U9mUUW","path":"\/","domain":"zaloapp.com","expires":1209600,"httpOnly":false}],"cookiesOAuthLogins":[],"actionPermission":{}}}
+	
+
+
+Khi vừa login và vào game thông báo "Có lỗi xảy ra" trên Android,  "Nhấn tải lại trang" trên iOS
+
+	
+
+	
+	
++ Retry game CENTER
+
+
+{"error_code":0,"error_message":"Successful.","data":{"action":0,"inApp":1,"html":"","url":"http:\/\/store.zaloapp.com\/games\/v2\/","jsToken":"kB5IZ9qnkHkuYEufD980++Tp9+UP12zlmY3+7Vv5KXHhm7UNvEDIH7bXtrDHq84xo0MnmWsctOdVvMECex\/944GsyftoQBiO\/Q9FCyBSb+M=","cookiesIdLogins":[{"name":"zsid","value":"Knfk.73816860.13.v4KXi8S6sb2RNRnKXmRQKFQdW1A71jfGXfO4yT47sbk71jfeip_YQBG_xcU_CT5G","path":"\/","domain":"zaloapp.com","expires":1209600,"httpOnly":false}],"cookiesOAuthLogins":[{"name":"zacc_session","value":"PNQ0pt58s0bjJ8dpRKZgRH47t_nVSfDRRGV4oM9WbpH2QTl5Rc-8E3TNwhzt8T4lDrsPX3vOtnOjFude2pp26oCmbTGw5VvhRb6yYHinABT9L7y5JIlAPvqGigA4188fwXAiiynm-a_Z4jNwhd_7OVf0vVtDFhbgyL-6-2QNA1CAPH_Y10","path":"\/","domain":"store.zaloapp.com","expires":2592000000,"httpOnly":false},{"name":"zoauth","value":"fa2tU-dviMYkUhv7zVc33D8nw4Z7rF0Tap6dQyVGgaE-MhHXnTszFwjclsEnbzOZg7J9Guguco7WOfCAdUQ6BEraYY2lngufvcJ7Pw_LtsYhDhTOpEUcFE8xfYUHkhS8nJciMjhNnXJN9kbvjDEqBji-g3JKYivAbHmVzQ6E99wEE-4eak_FHV0Rm5FuqRbfvKZB9_xSeHFLHjjHgjV7SQH6pKxZnyr19gVU8a_zeejb","path":"\/","domain":"store.zaloapp.com","expires":172800000,"httpOnly":false},{"name":"zlink3rd","value":"jqOJ9mnejP41\/JBlsvZvTjTCAdL4qQBjdSti6+AhYFixEyHOf4ulaLp53M8IFOfZ1Q4duLue1hadgk8kG6IgUiEdPBKGx+7zmyqNjKG\/cf4=","path":"\/","domain":"store.zaloapp.com","expires":172800000,"httpOnly":false}],"actionPermission":{"action.change.title.header":{"perm":1,"decode":0},"action.check.app.installed":{"perm":1,"decode":0},"action.copy.link.catesticker":{"perm":1,"decode":0},"action.download.cate":{"perm":1,"decode":0},"action.get.downloaded.sticker":{"perm":1,"decode":0},"action.get.location":{"perm":1,"decode":0},"action.hide.keyboard":{"perm":1,"decode":0},"action.open.addfriend":{"perm":1,"decode":1},"action.open.app":{"perm":1,"decode":0},"action.open.appstore":{"perm":1,"decode":0},"action.open.chat":{"perm":1,"decode":1},"action.open.createchat":{"perm":1,"decode":0},"action.open.feeddetail":{"perm":1,"decode":1},"action.open.friendrada":{"perm":1,"decode":0},"action.open.friendsuggest":{"perm":1,"decode":0},"action.open.galary":{"perm":1,"decode":1},"action.open.gamecenter":{"perm":1,"decode":0},"action.open.gamenews":{"perm":1,"decode":0},"action.open.grouplist":{"perm":1,"decode":0},"action.open.inapp":{"perm":1,"decode":0},"action.open.logindevices":{"perm":1,"decode":0},"action.open.nearby":{"perm":1,"decode":0},"action.open.outapp":{"perm":1,"decode":0},"action.open.page":{"perm":1,"decode":0},"action.open.phone":{"perm":1,"decode":0},"action.open.photodetail":{"perm":1,"decode":1},"action.open.postfeed":{"perm":1,"decode":0},"action.open.profile":{"perm":1,"decode":1},"action.open.qr":{"perm":1,"decode":0},"action.open.room":{"perm":1,"decode":0},"action.open.sendsticker":{"perm":1,"decode":1},"action.open.share.sticker":{"perm":1,"decode":0},"action.open.sms":{"perm":1,"decode":0},"action.open.stickerstore":{"perm":1,"decode":0},"action.open.tab.chat":{"perm":1,"decode":0},"action.open.tab.contact":{"perm":1,"decode":0},"action.open.tab.more":{"perm":1,"decode":0},"action.open.tab.social":{"perm":1,"decode":0},"action.query.hide":{"perm":1,"decode":1},"action.query.location.hide":{"perm":1,"decode":1},"action.query.show":{"perm":1,"decode":1},"action.request.buy.sticker":{"perm":1,"decode":0},"action.show.toast":{"perm":1,"decode":0}}}}
+
+
++ Mở từ sticky msg ok
+
+
+
++ private void refreshRedDotSticker()	
+
+
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"Demo title","desc":"Demo description","data":"http://www.tinhte.vn","act":"action.open.inapp"},"type":54}]
+
+43 	NOTI_STICKER
+
+53	NOTI_REDDOT_STICKER
+
+
+
+
+
+
+
+openStickerStore
+
+
+1. add source link for WebBaseActivity.FeatureId.STICKER_STORE
+
+2. 
+
+Trace từ WebViewActivity.java
+
+public static Intent createIntentInApp(Context context, Uri uri) {
+		Intent i = new Intent(context, WebViewActivity.class);
+		i.setAction(Intent.ACTION_VIEW);
+		i.setData(uri/*genJumpUri(context, uri)*/);
+		return i;
+	}
+	
+	
+	
+	
+111111. Intent intent = WebViewActivity.createIntentInapp(getContext(),
+                                    message.chatRichContent.href);	
+									
+									
+									
+int sourceLink = 0;
+try {
+	if (ChatFragment.getInstance() != null && ChatFragment.getInstance().currentChat != null) {
+		String uidCurrentChat = ChatFragment.getInstance().currentChat.getUID();
+
+		if(uidCurrentChat.startsWith(ContactProfile.ID_GROUP_DEFAULT))
+		{
+			sourceLink = TrackingSource.CHAT_GROUP;
+		}
+		else
+		{
+			boolean isVip = ChatFragment.getInstance().mChatController != null ? ChatFragment.getInstance().mChatController.isVipUser : false;
+
+			if(isVip)
+			{
+				sourceLink = TrackingSource.CHAT_PAGE;
+			}
+			else
+			{
+				sourceLink = TrackingSource.CHAT;
+			}
+		}
+
+	}
+} catch (Exception e) {
+	e.printStackTrace();
+}
+intent.putExtra(WebBaseActivity.EXTRA_SOURCE_LINK, sourceLink);
+
+
+2222222. public static Intent createIntent(Context context, Uri uri)
+
+// Ko có định nghĩa src type
+public void pushNotifGDV(String msg, String packageName) {
+	try {
+		//String msgTicker = GlobalData.APP_NAME + ": " + msg;
+		String msgTicker = msg;
+
+		Intent notificationIntent = WebViewActivity.createIntent(MainApplication.getAppContext(), Uri.parse("market://details?id=" + packageName));
+		notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		PendingIntent contentIntent = PendingIntent.getActivity(MainApplication.getAppContext(), 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+		notifMsg(GlobalData.APP_NAME, msg, msgTicker, GDV_ID, contentIntent, null, false, null);
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+}
+
+case FORCEUPDATE_DIALOG: {
+	MaterialZaloDialog.Builder builder = new MaterialZaloDialog.Builder(mMainFragment.getParentActivity());
+	builder.setTitle(res.getString(R.string.str_updateversion_app));
+	builder.setMessage(res.getString(R.string.str_forceUpdateMsg));
+
+	builder.setNeutralButton(res.getString(R.string.update), new DialogInterface.OnClickListener() {
+		public void onClick(DialogInterface dialog, int which) {
+			try {
+				try {
+					Intent intent = WebViewActivity.createIntent(mMainFragment.getParentActivity(), Uri.parse("market://details?id=" + mMainFragment.getParentActivity().getPackageName()));
+					startActivity(intent);
+				} catch (android.content.ActivityNotFoundException anfe) {
+					String uri_webView = "https://play.google.com/store/apps/details?id=" + mMainFragment.getParentActivity().getPackageName() + "&feature=search_result";
+					Intent intent = WebViewActivity.createIntent(mMainFragment.getParentActivity(), Uri.parse(uri_webView));
+					startActivity(intent);
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			if (mMainFragment != null)
+				mMainFragment.setAnyDialogShowing(false);
+		}
+	});
+
+	dialog = builder.create();
+	dialog.setCancelable(false);
+	dialog.setCanceledOnTouchOutside(false);
+	
+	
+333333. public static Intent createIntent(Context context, String url)	// 36 cái
+
+
+A. QRCodeCaptureActivity
+
+					1. private void showDialogCheckLinkError(final String link)
+					2. private void showDialogLinkInvalid(final String link)
+	
+
+
+C. FeedItemLink
+					public void setLinkData(final FeedContent feedContent, int feedIndex, final Fragment mFragment, final Activity mActivity, boolean isScrolling)
+					
+					
+D. FeedRenderUtils	/ FeedGroupHorizontalPagerAdapter
+
+					
+
+					
+					AdsItem.CONTENT_TYPE_FEED_GAME
+					
+					AdsItem.CONTENT_TYPE_MSG_GAME
+						
+						
+						
+						
+case FeedItem.FEED_TYPE_SUGGEST_APP:
+                    case FeedItem.FEED_TYPE_SUGGEST_FEED:
+                    case FeedItem.FEED_TYPE_SUGGEST_PAGE:
+                    case FeedItem.FEED_TYPE_SUGGEST_LINK:
+                    case FeedItem.FEED_TYPE_SUGGEST_BANNER:						
+					
+					
+					
+
+E. 
+	TestCase 1: Mở link trong text row, exp: www.tinhte.vn
+	- ChatRow.java - String webUrl = Utils.parseFirstLink(urlSpan.getURL());
+	
+	TestCase 2: onFooterTextPressed() - case ChatContentFooter.GameClickType.OPEN_GAME_URL
+	- ChatRow.java
+	
+	TestCase3: protected void onBubblePressed() - case GameClickType.OPEN_GAME_URL
+	- ChatRowGame.java
+	
+	TestCase 4: 
+	- FeedItemGame.java
+	
+	TestCase5: Nhấn vào một cái post link của bạn bè hoặc page, có hiện nút Chia sẻ 
+	- FeedItemLink.java / OnClickListener onClickListener = new OnClickListener() 
+	
+	TestCase6 Lúc render data cho FeedItemSuggestApp.java / lấy source link truyền cho handleSuggestAppClickEvent
+	- FeedItemSuggestApp.java
+	
+	TestCase7 tương tự 6
+	- FeedItemSuggestBanner.java
+	
+	TestCase8 tương tự 6
+	- FeedItemSuggestMultiItemsPage.java
+	.
+	TestCase9
+	- FeedActionUtils.java / openLinkAppSuggestion lấy được sourceLink thông qua type của feedItem để truyền cho handleClickSuggestApp
+	
+	
+	TestCase10
+	
+	- FeedRenderUtils.java / callback cho type CONTENT_TYPE_FEED_GAME getFeedAppHeaderTitleWithSpan
+	- 						/ private static void handleClickGame(Context context, FeedItem feedItem, String sourceAction)
+	
+	
+	TestCase11
+	
+	QRCodeCaptureActivity.java	handle mở web từ đây
+	
+	TestCase12 Handle nếu callBackSpan là type mType == HTTP_TYPE sau khi parse xong
+	- CallbackSpan.java
+	
+	
+	TestCase13
+	- GameCallbackSpan.java, lấy tham số truyền từ TestCase 10
+	
+	TestCase14 dùng sourceLink unknow cho mở case ChatContentFooter.GameClickType.OPEN_GAME_URL từ Notification item
+	- NotificationFragment.java.
+	
+	
+	TestCase15 setFooterText 
+	- ChatMsgFooterView.java truyền tham số cho callbackSpan = new GameCallbackSpan
+	
+	TestCase16    thêm extra cho openGameURL  - public static void openGameURL(Context context, String gameUrl, int sourceLink)
+	- GameUtils.java
+	
+	
+	
+	
+	
+			
+	
+TEstCase17
+
+		Trong của sổ chat, nhấn vào các bubble của các type
+		case ChatContent.TYPE_LINK:
+		case ChatContent.TYPE_AUDIO:
+		case ChatContent.TYPE_VIP_VIDEO:
+		
+		- ChatFragmentAdapter
+TestCase18
+		ChatLeftRichMessageMC	click lên headerLink	
+		
+TestCase19		
+
+
+
+
+
+
+
+
+
+
+#1 Reddot hỗ trợ cho game html5 (đã define trong document)		DONE
+
+{"item":{"path":"#game.id=4530429817591203945&reddot=1","extpr":"{\"isNews\":0,\"avatarUrl\":\"http:\\\/\\\/logo.zp.zdn.vn\\\/app\\\/64508e9db2d85b8602c9_13_1.jpg\",\"path\":\"#game.id=4530429817591203945&reddot=1\",\"zappId\":4530429817591203945}","counter":1},"id":63811501887,"type":46}
+
+
+{"error_code":0,"error_message":"Successful.","data":{"action":0,"inApp":1,"html":"","url":"http:\/\/store.zaloapp.com\/games\/v2\/","jsToken":"kB5IZ9qnkHkuYEufD980++Tp9+UP12zlmY3+7Vv5KXFjn3EpGLhIE\/tBk04ECRGMSBjg4qEkPpIWtbVEQGcS+NCdrB2BDHE6M+IFiYN8grU=","cookiesIdLogins":[{"name":"zsid","value":"Knfk.73816860.13.v4KXi8S6sb2RNRnKXmRQKFQdW1A71jfGXfO4yT47sbk71jfeip_YQBG_xcU_CT5G","path":"\/","domain":"zaloapp.com","expires":1209600,"httpOnly":false}],"cookiesOAuthLogins":[{"name":"zacc_session","value":"ee82y-ZU5Gsgk0lFzDudQTRpNS36v5vVglD6zVlsMZ24c5Z-ylv7DFMaQe3ci1CZzwOJlQ316ZlE-0J-lPC0DChr6lMfWYvpWeTWgUgYXviLqxKRJz_3Nu4XzAB6Tli0uNRym-y1b0sPVeV_wH2zEffCmOc7DhDGaaJ9_LacoKfSClo9Bm0","path":"\/","domain":"store.zaloapp.com","expires":2592000000,"httpOnly":false},{"name":"zoauth","value":"RxFb1VXklc1dYUmvv6wC11l2kZRMG_yLMiBr5TPld7jrXTujtMMs1MkwwYcf9z8GRw2N1hKSa1C1fyX9jdom5XkPm5wnNSeb9CpoGBHAupqupOObXssTB1wLyqUrSg81FfBxCl40r04sX8SAZJM52Wcvr6Q-PUy8PCEEiKkmi8oo5B7AykgXqKXRej2UbfIRJ6gzs8BYXfPj7gUZrPFsys1qfgt-bu3PNbacVxf_EUmrX6q","path":"\/","domain":"store.zaloapp.com","expires":172800000,"httpOnly":false},{"name":"zlink3rd","value":"jqOJ9mnejP41\/JBlsvZvTjTCAdL4qQBjdSti6+AhYFhZKpszCscM+Ufr04Kg7lcaKtVjFy+v+qS67qXH+uWfn8yZ6d7a81qX6MKMxCdzguo=","path":"\/","domain":"store.zaloapp.com","expires":172800000,"httpOnly":false}],"actionPermission":{"action.change.title.header":{"perm":1,"decode":0},"action.check.app.installed":{"perm":1,"decode":0},"action.copy.link.catesticker":{"perm":1,"decode":0},"action.download.cate":{"perm":1,"decode":0},"action.get.downloaded.sticker":{"perm":1,"decode":0},"action.get.location":{"perm":1,"decode":0},"action.hide.keyboard":{"perm":1,"decode":0},"action.open.addfriend":{"perm":1,"decode":1},"action.open.app":{"perm":1,"decode":0},"action.open.appstore":{"perm":1,"decode":0},"action.open.chat":{"perm":1,"decode":1},"action.open.createchat":{"perm":1,"decode":0},"action.open.feeddetail":{"perm":1,"decode":1},"action.open.friendrada":{"perm":1,"decode":0},"action.open.friendsuggest":{"perm":1,"decode":0},"action.open.galary":{"perm":1,"decode":1},"action.open.gamecenter":{"perm":1,"decode":0},"action.open.gamenews":{"perm":1,"decode":0},"action.open.grouplist":{"perm":1,"decode":0},"action.open.inapp":{"perm":1,"decode":0},"action.open.logindevices":{"perm":1,"decode":0},"action.open.nearby":{"perm":1,"decode":0},"action.open.outapp":{"perm":1,"decode":0},"action.open.page":{"perm":1,"decode":0},"action.open.phone":{"perm":1,"decode":0},"action.open.photodetail":{"perm":1,"decode":1},"action.open.postfeed":{"perm":1,"decode":0},"action.open.profile":{"perm":1,"decode":1},"action.open.qr":{"perm":1,"decode":0},"action.open.room":{"perm":1,"decode":0},"action.open.sendsticker":{"perm":1,"decode":1},"action.open.share.sticker":{"perm":1,"decode":0},"action.open.sms":{"perm":1,"decode":0},"action.open.stickerstore":{"perm":1,"decode":0},"action.open.tab.chat":{"perm":1,"decode":0},"action.open.tab.contact":{"perm":1,"decode":0},"action.open.tab.more":{"perm":1,"decode":0},"action.open.tab.social":{"perm":1,"decode":0},"action.query.hide":{"perm":1,"decode":1},"action.query.location.hide":{"perm":1,"decode":1},"action.query.show":{"perm":1,"decode":1},"action.request.buy.sticker":{"perm":1,"decode":0},"action.show.toast":{"perm":1,"decode":0}}}}
+
+
+
+#game.id=4530429817591203945&reddot=1
+
+
+{"error_code":0,"error_message":"Successful.","data":{"action":0,"inApp":1,"html":"","url":"http:\/\/store.zaloapp.com\/games\/v2\/","jsToken":"kB5IZ9qnkHkuYEufD980++Tp9+UP12zlmY3+7Vv5KXEpJs\/jROMWT7kk\/RtxKrXZEh6+WgpEdpFK\/\/SHqTircw1aeyEr34fzvt1aHx+JOlA=","cookiesIdLogins":[{"name":"zsid","value":"Knfk.73816860.13.v4KXi8S6sb2RNRnKXmRQKFQdW1A71jfGXfO4yT47sbk71jfeip_YQBG_xcU_CT5G","path":"\/","domain":"zaloapp.com","expires":1209600,"httpOnly":false}],"cookiesOAuthLogins":[{"name":"zacc_session","value":"jJrdWavSa16z1sw-KboYTS5CEB5WPjj3lKmZX5rrtooJ9Z2FKdlDaOaLCKyaEQcOeIDBNmeYjOpK84uh6NUlYjWlMH0kLPtwbKvmJGyy02Ao1lZ5MPMcyCRnSM0mkkw-iVDlSNZEbjYuynOu6i6hzg6X9ZzvWDNzghv5EYPuTxnVMWkg70","path":"\/","domain":"store.zaloapp.com","expires":2592000000,"httpOnly":false},{"name":"zoauth","value":"MRFvT4k2yXHHYV18LuB0S2t2faTbhxDXRCBfP6M3q0z3WSbPP8tnT5U--reSnvneNAACUoFos6eKeDy-CAV2VJsSmW8YjkjuDfoFHIAbcZbxplzwGPVZRJB3xWKSmV9P4ydaTa-mWKGVoQDQ8RJpVXFHuXT1xOaRNRuUqpIaACj63NDnMb5GRsKjKWemRoP3S7vPVZPYFZb0S4a8OcbOMp5mNnShUL9h9lfMBpnVsSWP","path":"\/","domain":"store.zaloapp.com","expires":172800000,"httpOnly":false},{"name":"zlink3rd","value":"jqOJ9mnejP41\/JBlsvZvTjTCAdL4qQBjdSti6+AhYFjk8PyqNFBkDehRhfaQCn9HrrcNJ1LZmEnHjDWEk20QOWM+zKm9Y27RxbwLzTCxELg=","path":"\/","domain":"store.zaloapp.com","expires":172800000,"httpOnly":false}],"actionPermission":{"action.change.title.header":{"perm":1,"decode":0},"action.check.app.installed":{"perm":1,"decode":0},"action.copy.link.catesticker":{"perm":1,"decode":0},"action.download.cate":{"perm":1,"decode":0},"action.get.downloaded.sticker":{"perm":1,"decode":0},"action.get.location":{"perm":1,"decode":0},"action.hide.keyboard":{"perm":1,"decode":0},"action.open.addfriend":{"perm":1,"decode":1},"action.open.app":{"perm":1,"decode":0},"action.open.appstore":{"perm":1,"decode":0},"action.open.chat":{"perm":1,"decode":1},"action.open.createchat":{"perm":1,"decode":0},"action.open.feeddetail":{"perm":1,"decode":1},"action.open.friendrada":{"perm":1,"decode":0},"action.open.friendsuggest":{"perm":1,"decode":0},"action.open.galary":{"perm":1,"decode":1},"action.open.gamecenter":{"perm":1,"decode":0},"action.open.gamenews":{"perm":1,"decode":0},"action.open.grouplist":{"perm":1,"decode":0},"action.open.inapp":{"perm":1,"decode":0},"action.open.logindevices":{"perm":1,"decode":0},"action.open.nearby":{"perm":1,"decode":0},"action.open.outapp":{"perm":1,"decode":0},"action.open.page":{"perm":1,"decode":0},"action.open.phone":{"perm":1,"decode":0},"action.open.photodetail":{"perm":1,"decode":1},"action.open.postfeed":{"perm":1,"decode":0},"action.open.profile":{"perm":1,"decode":1},"action.open.qr":{"perm":1,"decode":0},"action.open.room":{"perm":1,"decode":0},"action.open.sendsticker":{"perm":1,"decode":1},"action.open.share.sticker":{"perm":1,"decode":0},"action.open.sms":{"perm":1,"decode":0},"action.open.stickerstore":{"perm":1,"decode":0},"action.open.tab.chat":{"perm":1,"decode":0},"action.open.tab.contact":{"perm":1,"decode":0},"action.open.tab.more":{"perm":1,"decode":0},"action.open.tab.social":{"perm":1,"decode":0},"action.query.hide":{"perm":1,"decode":1},"action.query.location.hide":{"perm":1,"decode":1},"action.query.show":{"perm":1,"decode":1},"action.request.buy.sticker":{"perm":1,"decode":0},"action.show.toast":{"perm":1,"decode":0}}}}
+
+
+
+[{"id":63819800181,"item":{"extpr":"{\"isNews\":0,\"avatarUrl\":\"http:\\/\\/logo.zp.zdn.vn\\/app\\/9184a6499a0c73522a1d_5_1.jpg\",\"path\":\"#game.id=796224110843124120&reddot=1\",\"zappId\":796224110843124120}","counter":1,"path":"#game.id=796224110843124120&reddot=1"},"type":46}]
+
+[{"id":63820397549,"item":{"extpr":"{\"isNews\":1,\"avatarUrl\":\"\",\"path\":\"#news.id=1082&reddot=1\",\"zappId\":1577725557845407485}","counter":26,"path":"#news.id=1082&reddot=1"},"type":46}]
+
+
+#game.id=796224110843124120&reddot=1			//Ngọa Long
+
+
+SharedPreferencesData.setAppStoreNewNotify(MainApplication.getAppContext(), counter);//1
+SharedPreferencesData.setNewGameCenterInfos(MainApplication.getAppContext(), newGameCenterInfos);//{"isNews":0,"avatarUrl":"http:\/\/logo.zp.zdn.vn\/app\/9184a6499a0c73522a1d_5_1.jpg","path":"#game.id=796224110843124120&reddot=1","zappId":796224110843124120}
+
+
+if (!TextUtils.isEmpty(newGameCenterInfos)) {//{"isNews":0,"avatarUrl":"http:\/\/logo.zp.zdn.vn\/app\/64508e9db2d85b8602c9_13_1.jpg","path":"#game.id=4530429817591203945&reddot=1","zappId":4530429817591203945}	// Ai là Triệu phú
+							
+							
+#2 	Menu native quản lý danh sách app và cấp quyền => DONE
+
+
+#3 Thêm phần retry khi load trang html lần đầu vào game				INTEST***
+
+
+#6 Reddot hỗ trợ cho sticker html5 (đã define trong document)
+
+[{"id":63834392061,"item":{"item_id":"0","avatarUrl":"","path":"#promote.type=1&reddot=1"},"type":53}]
+
+http://store.zaloapp.com/stickers/v2/#promote.type=1&reddot=1
+
+
+Sticker details
+
+[{"id":63836764091,"item":{"item_id":"31","avatarUrl":"http://api.zaloapp.com/c/1/6/a/5/31/icon/horoscope_ic.png","path":"#detail.id=31&reddot=1"},"type":53}]
+
+redDotStickerLayout = {FrameLayout@5870} "android.widget.FrameLayout{cdb7e57 G.E...... ......I. 0,0-0,0 #7f0e0865 app:id/layout_red_dot_sticker_container}"
+mRedDotStickerInfoAvatarUrl = {String@5867} "http://api.zaloapp.com/c/1/6/a/5/31/icon/horoscope_ic.png"
+vStickerNewNotify = {RobotoTextView@5871} "com.zing.zalo.ui.widget.RobotoTextView{83d7d44 G.ED..... ......ID 1321,59-1384,122 #7f0e0864 app:id/layout_sticker_new_notify}"
+redDotStickerPreview = {RecyclingImageView@5872} "com.androidquery.util.RecyclingImageView{4f13e2d V.ED..... ......I. 0,0-0,0 #7f0e0866 app:id/red_dot_sticker_preview}"
+
+
+
+#
+
+[{"id":63836414930,"item":{"icon":"http://stc.zalo.zdn.vn/icon/app/1.png","actId":106,"body":"<a href=\"zm://Profile/69433882\">Truth Kimmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm<\/a> vừa thích <a href=\"zm://Comment/73816860/2455543002/1\">hoạt động<\/a> của bạn","avt":"http://avatar.talk.zdn.vn/3/b/e/0/28/75/50a744383270abe60988fd3ce3008b97.jpg","uidFrom":69433882,"appId":1,"ts":1453707488656,"dpl":1,"opType":1,"obj":"2455543002","tvb":"0 giây trước","fei":"2455543002","tim":"2016-01-25 14:38:08"},"type":1}]
+
+
+[{"id":63836414930,"item":{"icon":"http://stc.zalo.zdn.vn/icon/app/1.png","actId":106,"body":"<a href=\"zm://Profile/69433882\">Truth Kimmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</a> v\u1EEBa th\u00EDch <a href=\"zm://Comment/73816860/2455543002/1\">ho\u1EA1t \u0111\u1ED9ng</a> c\u1EE7a b\u1EA1n","avt":"http://avatar.talk.zdn.vn/3/b/e/0/28/75/50a744383270abe60988fd3ce3008b97.jpg","uidFrom":69433882,"appId":1,"ts":1453707488656,"dpl":1,"opType":1,"obj":"2455543002","tvb":"1 ph\u00FAt tr\u01B0\u1EDBc","fei":"2455543002","tim":"2016-01-25 14:38:08"},"type":1}]
+
+
+[{"id":63836893589,"item":{"icon":"http://stc.zalo.zdn.vn/icon/app/1.png","actId":106,"body":"<a href=\"zm://Profile/127287989\">Nole Mắt Kính<\/a> vừa thích <a href=\"zm://Comment/73816860/2455543002/1\">hoạt động<\/a> của bạn","avt":"http://avatar.talk.zdn.vn/c/8/5/5/8/75/fa01c1c4bef6ea6736e9e67bc6fd25b0.jpg","uidFrom":127287989,"appId":1,"ts":1453707874404,"dpl":1,"opType":1,"obj":"2455543002","tvb":"0 giây trước","fei":"2455543002","tim":"2016-01-25 14:44:34"},"type":1}]
+
+
+{"error_code":0,"error_message":"Successful.","data":{"action":0,"inApp":1,"html":"","url":"http:\/\/store.zaloapp.com\/stickers\/v2\/","jsToken":"kB5IZ9qnkHkuYEufD980+xgkvxawy+3i0DUWGK\/pQ1JqS8kIPbsY3w4hegcnD\/fSB59H1l7OkQ5X03Ols48GTgH9nSzWKPmq5bYEsj4IB14=","cookiesIdLogins":[{"name":"zsid","value":"Knfk.73816860.13.v4KXi8S6sb2RNRnKXmRQKFQdW1A71jfGXfO4yT47sbk71jfeip_YQBG_xcU_CT5G","path":"\/","domain":"zaloapp.com","expires":1209600,"httpOnly":false}],"cookiesOAuthLogins":[{"name":"zacc_session","value":"RvzdS7xy6Kbqt0Ga4gbjDZFBSJPHd1S9Jyjg0rUm6ozpxdmcICnXJ7c22KbXtnTA3OjpVYYi7rWFwsnrBhK2VnQM7HH3zMmcQxz4LN7Qyu3ywwIWxvdNLsi3YMra4eLWTGR75tW-oN1y0RyYVY_WHqGDyHq2IEe3NtoJ0Lacbjqx87Zg9se","path":"\/","domain":"store.zaloapp.com","expires":2592000000,"httpOnly":false},{"name":"zoauth","value":"SyTHBZgvHXveX39wLkmoOI-JHsWLpa9vRfC8IoxSALvIa2vVDQrWIZ3wNqXpj2z3H-mhPqgCP44qq7fYHPjzPYQc2Y4Fw1Du6FraUtxqOJ1LhnH49lWGBGxZ0HLet6jnLxDDSnRgENyqemjMUEvBHGE5Gb8AzZKENXsZ_W5ZfSLmwUeQJONPCm39os4SXQTM1zl4EmdnrKH9Xv9MQA6GEqc8Xq0XiPeB9aedjIayetWz","path":"\/","domain":"store.zaloapp.com","expires":172800000,"httpOnly":false},{"name":"zlink3rd","value":"jqOJ9mnejP41\/JBlsvZvTohub81QIY8f+NvsSsPiXnKE4YcFVpJXl7VpaYnhoJZnYjj9FJXyREVPoCQDaR6mCYB1bi5PcV1MBW9WqD333sk=","path":"\/","domain":"store.zaloapp.com","expires":172800000,"httpOnly":false}],"actionPermission":{"action.change.title.header":{"perm":1,"decode":0},"action.check.app.installed":{"perm":1,"decode":0},"action.copy.link.catesticker":{"perm":1,"decode":0},"action.download.cate":{"perm":1,"decode":0},"action.get.downloaded.sticker":{"perm":1,"decode":0},"action.get.location":{"perm":1,"decode":0},"action.hide.keyboard":{"perm":1,"decode":0},"action.open.addfriend":{"perm":1,"decode":1},"action.open.app":{"perm":1,"decode":0},"action.open.appstore":{"perm":1,"decode":0},"action.open.chat":{"perm":1,"decode":1},"action.open.createchat":{"perm":1,"decode":0},"action.open.feeddetail":{"perm":1,"decode":1},"action.open.friendrada":{"perm":1,"decode":0},"action.open.friendsuggest":{"perm":1,"decode":0},"action.open.galary":{"perm":1,"decode":1},"action.open.gamecenter":{"perm":1,"decode":0},"action.open.gamenews":{"perm":1,"decode":0},"action.open.grouplist":{"perm":1,"decode":0},"action.open.inapp":{"perm":1,"decode":0},"action.open.logindevices":{"perm":1,"decode":0},"action.open.nearby":{"perm":1,"decode":0},"action.open.outapp":{"perm":1,"decode":0},"action.open.page":{"perm":1,"decode":0},"action.open.phone":{"perm":1,"decode":0},"action.open.photodetail":{"perm":1,"decode":1},"action.open.postfeed":{"perm":1,"decode":0},"action.open.profile":{"perm":1,"decode":1},"action.open.qr":{"perm":1,"decode":0},"action.open.room":{"perm":1,"decode":0},"action.open.sendsticker":{"perm":1,"decode":1},"action.open.share.sticker":{"perm":1,"decode":0},"action.open.sms":{"perm":1,"decode":0},"action.open.stickerstore":{"perm":1,"decode":0},"action.open.tab.chat":{"perm":1,"decode":0},"action.open.tab.contact":{"perm":1,"decode":0},"action.open.tab.more":{"perm":1,"decode":0},"action.open.tab.social":{"perm":1,"decode":0},"action.query.hide":{"perm":1,"decode":1},"action.query.location.hide":{"perm":1,"decode":1},"action.query.show":{"perm":1,"decode":1},"action.request.buy.sticker":{"perm":1,"decode":0},"action.show.toast":{"perm":1,"decode":0}}}}
+
+
+
+http://store.zaloapp.com/stickers/v2/#sticker.31	
+
+
+#8 Quét QR code sticker để vào trang Sticker detail html5 				DONE
+
+
+#9 Vào trang sticker detail thông qua tin nhắn nhận được				DONE
+
+#10 Vào trang sticker detail qua link promotion của trang microsite		http://stickers.zaloapp.com/index, vào bằng browser, chọn xem Detail, nhất nút xem bộ sticker
+
+#15 Chia sẽ sticker cho bạn bè											DONE
+
+
+
+
+
+
+
+
+Notification INVITE_GAME
+
+packageName = {String@6479} "com.vng.tinifarm"
+appId = 1491316528222245871
+gameSource = {GameSource@6494} "\ntype:10\nid:0\nuid:0"
+app_referrer = {String@6477} "src=notify&subdata="
+
+public static void checkToLaunchInstalledGame(final Context context, final String packageName, final long appId, final GameSource gameSource, String app_referrer, final int contentType, final String contentId, final String ownerId) {
+
+Check cái này có cần gọi HTML 5 ko
+public static void openGameDetailsPage(Context context, long appId, GameSource source) {
+        try {
+            Intent intent = new Intent(context, GameDetailActivity.class);
+            GameItem gameItem = new GameItem(appId);
+            gameItem.setSource(source);
+            intent.putExtra(GameDetailActivity.EXTRA_GAME_OBJECT, gameItem);
+            context.startActivity(intent);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
 

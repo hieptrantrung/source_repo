@@ -1,4 +1,6 @@
-﻿
+﻿BUG
+
+Test case: Test lại những trường hợp mở mở nhiều socket action common từ notify mở thông qua NeutralActivity xem có mở được không
 
 
 - Mở tab chat
@@ -254,6 +256,9 @@ fid: 2077644103
 
 photo_id: 2839802339
 owner_id: 100955833
+
+pic: 	3413179228
+user:	73816860
 
 25.
 
