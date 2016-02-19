@@ -1,0 +1,132 @@
+﻿C:\Users\CPU10283-local\AppData\Roaming\nvm
+download https://github.com/coreybutler/nvm-windows/releases
+
+
+C:\Users\CPU10283-local\AppData\Roaming\npm>react-native init AwesomeProject
+This will walk you through creating a new React Native project in C:\Users\CPU10
+283-local\AppData\Roaming\npm\AwesomeProject
+Installing react-native package from npm...
+Setting up new React Native app in C:\Users\CPU10283-local\AppData\Roaming\npm\A
+wesomeProject
+To run your app on iOS:
+   Open C:\Users\CPU10283-local\AppData\Roaming\npm\AwesomeProject\ios\AwesomePr
+oject.xcodeproj in Xcode
+   Hit Run button
+To run your app on Android:
+   Have an Android emulator running, or a device connected
+   cd C:\Users\CPU10283-local\AppData\Roaming\npm\AwesomeProject
+   react-native run-android
+
+C:\Users\CPU10283-local\AppData\Roaming\npm>
+
+
+*** remove 
+
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
+ 
+ in 
+ 
+ setup_env file
+ 
+ 
+**** 
+ Point Gradle to your Android SDK: either have $ANDROID_SDK and $ANDROID_NDK defined, or create a local.properties file in the root of your react-native checkout with the following contents:
+
+sdk.dir=absolute_path_to_android_sdk
+ndk.dir=absolute_path_to_android_ndk
+Example:
+
+sdk.dir=/Users/your_unix_name/android-sdk-macosx
+ndk.dir=/Users/your_unix_name/android-ndk/android-ndk-r10e
+
+
+****
+
+react-native run-android
+
+
+
+****
+must cd to project folder
+To bundle JS file into your apk while having your server running (react-native start) download bundle into assets directory of your app:
+
+curl "http://localhost:8081/index.android.bundle?platform=android" -o "android/app/src/main/assets/index.android.bundle"
+With the next release (0.12) we'll fix react-native bundle command to work with android projects as expected.
+
+$ cd your_project_dir
+$ npm start  # start the packager if not started already
+$ curl "http://localhost:8081/index.android.bundle?platform=android?dev=false" -o "android/app/src/main/assets/index.android.bundle"
+
+
+adb reverse tcp:8081 tcp:8081 //only for android 5.0 and higher
+react-native run-android
+cd android && ./gradlew :app:installDebug && adb install app/build/outputs/apk/app-debug.apk
+
+****
+
+add React Developer Tools to Chrome
+
+****
+
+git clone https://github.com/facebook/react-native.git
+
+
+*******
+
+gradlew :Examples:Movies:android:app:installDebug
+			     :UIExplorer
+				 :TicTacToe
+				 :2048 		
+
+
+
+				 
+****
+
+error
+E/unknown:React﹕ Unable to download JS bundle
+    java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 8081)
+
+ -> https://github.com/facebook/react-native/issues/3167
+
+https://github.com/arnif/redux-react-native-counter-example/issues/2
+
+**************
+
+Configure your app to connect to the local dev server via Wi-Fi
+Make sure your laptop and your phone are on the same Wi-Fi network.
+Open your React Native app on your device. You can do this the same way you'd open any other app.
+You'll see a red screen with an error. This is OK. The following steps will fix that.
+Open the Developer menu by shaking the device or running adb shell input keyevent 82 from the command line.
+Go to Dev Settings.
+Go to Debug server host for device.
+Type in your machine's IP address and the port of the local dev server (e.g. 10.0.1.1:8081). On Mac, you can find the IP address in System Preferences / Network. On Windows, open the command prompt and type ipconfig to find your machine's IP address (more info).
+Go back to the Developer menu and select Reload JS.
+
+// http://10.199.25.39:8081/index.android.bundle?platform=android&dev=true
+
+ 
+ 
+***
+Get url to download JS file
+private String getDebugServerHost() in DevServerHelper.java
+
+ 
+ 
+ 
+ https://github.com/mjohnston/react-native-webpack-server
+ http://blog.couchbase.com/2015/november/getting-started-with-react-native-android-and-couchbase-lite
+ 
+ 
+ 
+ https://dl-web.dropbox.com/get/General/index.android.js?_subject_uid=7892541&w=AACDBUkN96Grz4_TvoXnTwdMNEqclXkzJB40PaPCWQum9w&dl=1
+ 
+ 
+ http://gaearon.github.io/react-hot-loader/

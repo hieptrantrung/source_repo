@@ -1141,3 +1141,96 @@ String sourceParam = "";
                                 }
 								
 								
+								
+Intent intent = GameUtils.createOpenStickerDetailsIntent(getActivity(), zapp_id, source, "", TrackingSource.STICKY_MSG, TrackingSource.genSourceParamStickyMsg(sm.getId()));//new Intent(getParentActivity(), GameDetailActivity.class);
+
+								
+								
+								
+								
+								
+								
+								
+								
+								
+#1 ZALO_COMMON_ACTION_OPEN_CREATE_CHAT								
+jsToken = {String@5753} "kB5IZ9qnkHkuYEufD980+8g9iBpvlZyFIpl4ZLVHkillt0Ms2twHJAMyUzzj1M3+yvCe1NeULMRnRTefg4jwh7Tr6UCBz+H6JWsz9RFl20M="
+action = {String@5754} "action.open.createchat"
+accessToken = {String@5755} "UHb8_ci_3GTG9tx91tHXRM5IDe4qFcva7L8jj748OWLJ6Z3EN0fA1318K8beL0PcDZ5OWnvWCNzy0NlCMX4i5cOyLj4pRaLrJK0aYYDTTLHLEvFo4c7jT71U2vbETqXc2aGVjKSlMpWF9ckyDYy81NamNzCwKsqAGLvyq71YCdBtErOH6ausU0"
+options = {String@5756} "{}"
+callback = {String@5757} "zaloJSV2.onJSCall"
+
+
+#2 ZALO_COMMON_ACTION_OPEN_CHAT
+
+jsToken = {String@5675} "kB5IZ9qnkHkuYEufD980+8g9iBpvlZyFIpl4ZLVHkikKQRNU4tV/Z7QHlP3tRuQEKIgmT9fLpJKSZCLun4KFJcgnDyxZ3ASGF8X4poweB7E="
+action = {String@5676} "action.open.chat"
+accessToken = {String@5677} "La72wxlHfr1_V_JSrvhBEauAl9JaqCGpCWgdeQ7co59yGRtQXElgL1SVq9kmjQap6cpVbCYBbYfHNFpEgS6BGLvdsylnXEWjS1ofaE6ts0oC6XxeDFP0B3ehQbNxj0deG35-UVBi6hP5KmfmW-n9YpD5FX-Fa2o42oiT7CMXS_m8ZNPJog2SBm"
+options = {String@5678} "{"uId":"4319062553057285705","type":"1","appId":"3554569838779270945","sourceId":"200","sourceIndex":"200"}"
+callback = {String@5679} "zaloJSV2.onJSCall"
+
+
+{"uId":1115230745,"type":1,"appId":3554569838779270945,"sourceId":200,"sourceIndex":200}
+{"uId":1115230745,"type":1,"appId":3554569838779270945,"sourceId":200,"sourceIndex":200}
+
+#3 ZALO_COMMON_ACTION_OPEN_APP
+
+jsToken = {String@6426} "kB5IZ9qnkHkuYEufD980+8g9iBpvlZyFIpl4ZLVHkilOTARDr1j/4i4IwIIoffRXY9RnwtR0SyhXf799Vg1H53N5H7vcK+gulytzRWcb2bk="
+action = {String@6427} "action.open.app"
+accessToken = {String@6428} "lzxYx6TuVN-MuDJR2pCH5QULd9CuUHuSsvM7fdrC4dsLsvNQKaCrUNsiyAReEtCgVT_maEWOOJvm_ENuhcrgMsBynihj3WibQQFnqCtjNTTE4SHDuukbUjae6kejeD8_rM5QzIFgj1xT4LM3GUM9CBnaROj7WlP9bdynXIOzkunx5Wb600"
+options = {String@6429} "{"android":{"package":"gsn.game.zingplaynew1","url":"http://app.zaloapp.com/gsn.game.zingplaynew1?pid=zalo&c=gamecenter&r=market%3A%2F%2Fdetails%3Fid%3Dgsn.game.zingplaynew1%26referrer%3DSource%253Dzalogc%2526Position%253Dzlgc%2526Campaign%253Dzalogc"},"ios":{"itunes_id":0,"scheme_url":"zalo-1396017800851131651://","url":"http://app.zaloapp.com/id908617867?pid=zalo&c=gamecenter"},"wp_data":{"protocol_url":"zalo-1396017800851131651://","url":"http://www.windowsphone.com/s?appid=4e4dc260-6cdb-4f35-bbd7-9deb2ef4ea2f"}}"
+callback = {String@6430} "zaloJSV2.onJSCall"
+
+#4 ZALO_COMMON_ACTION_OPEN_APPSTORE
+
+jsToken = {String@5898} "kB5IZ9qnkHkuYEufD980+8g9iBpvlZyFIpl4ZLVHkinOoC1Ar/evmOZC7r+Y/8KOO9eEsowQZ3ZGs7V1bC3YNAkbdI0iS5xwZFXWst5qEBA="
+action = {String@5899} "action.open.appstore"
+accessToken = {String@5900} "0iGJofbXV6Wh-YNzzIeG0XgFRRN6O1yBPezsW8DM4seemspvh5WyP4cP3BAQ1tG7JEu6i-8yHHG1tYNyharIRYhL2Vxr0p010gvxfUKm022fpzFTPnQ70BfzjimDrzzem6UYu0IFp3R51TRfTO-V2xCJuePvy_e4Ytt1XJF2fNn-k7nAw1175m"
+options = {String@5901} "{"android":{"url":"http://app.zaloapp.com/gsn.game.zingplaynew1?pid=zalo&c=gamecenter&r=market%3A%2F%2Fdetails%3Fid%3Dgsn.game.zingplaynew1%26referrer%3DSource%253Dzalogc%2526Position%253Dzlgc%2526Campaign%253Dzalogc"},"ios":{"url":"http://app.zaloapp.com/id908617867?pid=zalo&c=gamecenter","scheme_url":"zalo-1396017800851131651://","itunes_id":0},"wp_data":{"url":"http://www.windowsphone.com/s?appid=4e4dc260-6cdb-4f35-bbd7-9deb2ef4ea2f"}}"
+callback = {String@5902} "zaloJSV2.onJSCall"
+
+
+#5 ZALO_COMMON_ACTION_OPEN_PROFILE
+
+jsToken = {String@5746} "kB5IZ9qnkHkuYEufD980+8g9iBpvlZyFIpl4ZLVHkik89Jd4f6vykgnkYdtzROU1QTWEaJZHtfY3Jo3k/ltttJA6tgnYji0Z5zSHBXH5174="
+action = {String@5747} "action.open.profile"
+accessToken = {String@5748} "SdqCkdXCGMfRGpgD50Sj06esSiKdJI895ZPfy69xBcXOUdABJ7q0RpWe4iju8qCAF5eNpWqSTXj_QZI1GMrXPbDW7uSN8GGASHXjt0SID2ipVCMaR36p2mXHcA8kRzDqSakCZYStm2ftAVY7LZUJ5m4_pEXQI_OOEL7lwn1wgM3lB5uu2Jrw5G"
+options = {String@5749} "{"uId":"7303681784120265367","type":1,"appId":"3554569838779270945","sourceId":"200","sourceIndex":"200"}"
+callback = {String@5750} "zaloJSV2.onJSCall"
+
+====
+
+{"uId":108157824,"type":1,"appId":3554569838779270945,"sourceId":200,"sourceIndex":200}
+
+
+
+#6 ZALO_COMMON_ACTION_OPEN_GAMENEWS
+
+jsToken = {String@12860} "kB5IZ9qnkHkuYEufD980+8g9iBpvlZyFIpl4ZLVHkim6dPSMEmoMsv6O83ogVN0jiZ5MyFYWwPwM3qAErmK83TFYRyjNHdrGsn+oxY780QY="
+action = {String@12861} "action.open.gamenews"
+accessToken = {String@12862} "tp1ouiSi27hs3aJLgsTa4CTx39sOBMiPktiNgDqPPtZrDGpKznv1ofLFM1d4Q3MUcpnJByv18egM7r1Lkp8xZfyXGp3WUMhrXorrIEjZbABU3-8pJJqCB5KaLhT0Pcf-37jcoKqxPouC2HpRCI136WqALTvGDrrWC7fusFq1QN2sNJC5"
+options = {String@12863} "{}"
+callback = {String@12864} "zaloJSV2.onJSCall"
+
+#7 ZALO_COMMON_ACTION_OPEN_STICKER_STORE
+
+jsToken = {String@12887} "kB5IZ9qnkHkuYEufD980+8g9iBpvlZyFIpl4ZLVHkim6dPSMEmoMsv6O83ogVN0jiZ5MyFYWwPwM3qAErmK83TFYRyjNHdrGsn+oxY780QY="
+action = {String@12888} "action.open.stickerstore"
+accessToken = {String@12889} "tp1ouiSi27hs3aJLgsTa4CTx39sOBMiPktiNgDqPPtZrDGpKznv1ofLFM1d4Q3MUcpnJByv18egM7r1Lkp8xZfyXGp3WUMhrXorrIEjZbABU3-8pJJqCB5KaLhT0Pcf-37jcoKqxPouC2HpRCI136WqALTvGDrrWC7fusFq1QN2sNJC5"
+options = {String@12890} "{}"
+callback = {String@12891} "zaloJSV2.onJSCall"
+
+
+#8 ZALO_COMMON_ACTION_OPEN_SEND_STICKER
+
+jsToken = {String@12968} "kB5IZ9qnkHkuYEufD980+8g9iBpvlZyFIpl4ZLVHkim6dPSMEmoMsv6O83ogVN0jiZ5MyFYWwPwM3qAErmK83TFYRyjNHdrGsn+oxY780QY="
+action = {String@12969} "action.open.sendsticker"
+accessToken = {String@12970} "tp1ouiSi27hs3aJLgsTa4CTx39sOBMiPktiNgDqPPtZrDGpKznv1ofLFM1d4Q3MUcpnJByv18egM7r1Lkp8xZfyXGp3WUMhrXorrIEjZbABU3-8pJJqCB5KaLhT0Pcf-37jcoKqxPouC2HpRCI136WqALTvGDrrWC7fusFq1QN2sNJC5"
+options = {String@12971} "{"cateId":65,"id":1482,"type":1,"touserid":"4319062553057285705"}"
+callback = {String@12972} "zaloJSV2.onJSCall"
+
+
+
+ 
+
+								

@@ -1,6 +1,4 @@
-﻿BUG
-
-Test case: Test lại những trường hợp mở mở nhiều socket action common từ notify mở thông qua NeutralActivity xem có mở được không
+﻿
 
 
 - Mở tab chat
@@ -257,9 +255,6 @@ fid: 2077644103
 photo_id: 2839802339
 owner_id: 100955833
 
-pic: 	3413179228
-user:	73816860
-
 25.
 
 
@@ -284,7 +279,7 @@ user:	73816860
 
 30. 
 
-[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.tab.more","desc":"Demo description","data":"73816860","act":"action.open.tab.more"},"type":54}]
+[{"id":259292297,"item":{"id":52401998206,"avt":"http://avatar.talk.zdn.vn/0/0/a/9/20/75/aac3368b3e673d2773d1a99d7b72de3e.jpg","title":"action.open.tab.more","desc":"Mo tab them","data":"73816860","act":"action.open.tab.more"},"type":54}]
 
 
 Bug vào cửa sổ chat, nhận noti mở tab danh bạ, ra được danh bạ, vào lại cửa sổ chat bị lỗi
