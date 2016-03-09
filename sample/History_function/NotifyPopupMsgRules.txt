@@ -1,0 +1,30 @@
+﻿Các trường hợp bỏ qua không show pop up trả lời nhanh
+
+
+- Đang trong visible cửa sổ chat với user đó, và nhận tin nhắn từ user đó tới	// // refresh Data for chat view
+
+- Đang play effect cocos trong cửa sổ chat với user đó
+
+- Msg nhận về là msg sync từ PC, hoặc server trả trường notify = 0, hoặc -1, 3
+
+- Nếu người dùng chọn setting mute user đó
+
+- User bật off setting cho phép notify msg
+
+- User đang ở trong maintab và đang visible tab msg
+
+- Thỏa các đk show popup msg nhưng user trước đó nhấn close popup cách đây chưa tới 5s
+
+												 setting Không cho xem trước tin nhắn
+												 
+												 off tính năng hiện thị trả lời nhanh tin nhắn
+												 
+												 Nhận tin nhắn từ người lạ
+												 
+												 Nhận tin nhắn từ group
+												 
+												 App không đang chạy ở background, có bất kỳ activity nào đang visible
+												 
+												 User có sử dụng tính năng passcode
+												 
+												 Không phải tin nhắn từ page đã follow
