@@ -1,0 +1,113 @@
+﻿
+
+1. Trong RobotoWidgetConfig tạo ra biến để biết ngôn ngữ đang được chọn
+
+- Dùng Padauk.ttf - Padauk-book-V2.8.ttf
+	+ Hiện được unicode - hơi sai 1 tẹo
+	+ K hiện được zawgyi
+	
+- Dùng mychat_en.ttf
+	Hiện cả Zawgyi và unicode, nhưng unicode khác hệ thống 6.0
+
+- Dùng mychat_my.ttf
+	Hiện cả Zawgyi và unicode, nhưng unicode khác hệ thống 6.0
+	
+- Dùng Zawgyi-One.ttf
+	+ Hiện Zawgyi
+	+ Lỗi unicode
+	
+- 	
+
+
+1. http://theinhtikeaung.com/2015/03/29/zawgyi-font-for-lollipop/
+- install iFont
+
+
+http://www.anirdesh.com/gujarati/add-gujarati-font-in-android.php
+
+2. https://play.google.com/store/apps/details?id=com.synd.zfont
+
+3. http://mmkeyboard.technomation.asia/
+bộ gõ này k hiện được trên android 6.0 ~ có thể k phải unicode
+
+https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts
+
+http://www.myordbok.com/myanmar-fonts
+
+https://codepoints.net/U+104E
+
+++++++++++++
+
+Additional Setting > Developer options
+
+nhấp liên tục About phone > MIUI version 
+
+++++++++++++
+
++95 9793119265
+
+
+http://bluejamesbond.github.io/CharacterMap/
+
+
+http://www.wtng.info/wtng-856-la.html
+
+https://countrycode.org/laos
+
+How to call Vietnam from Myanmar:
+dial 00 + 84 + mobile number
++95 9793119265
+
+How to call Myanmar from Vietnam:
+dial 00 + 95 +  
+
+{"is_valid_key":0,"voice":0,"is_activated":1,"sms_gateway":8037,"phone_from":"0836280000","is_set":1}
+
+100799671
+
+101421082
+
+dtac
+
+http://www.howtocallabroad.com/germany/
+
+https://www.lufthansa.com/online/portal/lh/de/help_contact/contactsworldwide?l=en
+
+https://github.com/googlei18n/libphonenumber/issues/376
+
++49 69 86 799 799
+
++49 4921 801 856-11 
+
+http://libphonenumber.appspot.com/phonenumberparser?number=%2B49492180185611+&country=DE
+http://libphonenumber.appspot.com/phonenumberparser?number=%2B84988394787+&country=VN
+http://www.howtocallabroad.com/results.php?callfrom=vietnam&callto=germany
+
+
+The time in Germany is now 07:03:22am
+Calling Germany from the United States explained:
+011 - US exit code; dial first for international calls made from the USA or Canada
+49 - Country Code for Germany
+Phone Number (may not begin with 0):
+fixed - 5 to 11 digits, including area code
+cell phones - 10 or 11 digits
+sample call from US to a landline in Frankfurt: 011 49 69 ???? ????
+
+ 
+Calling Cards:
+Calling from:	
+Calling to:		Search for calling cards
+How to dial to Germany cellular:
+dialing format for calls to a cell phone: 011 49 1X ???? ????(?)
+1X can be 15, 16 or 17
+
+https://countrycode.org/germany
+
+https://github.com/googlei18n/libphonenumber/issues/1092
+
+
+
+
+
+
+	

@@ -803,11 +803,17 @@ TestCase19
 [{"id":63819800181,"item":{"extpr":"{\"isNews\":0,\"avatarUrl\":\"http:\\/\\/logo.zp.zdn.vn\\/app\\/9184a6499a0c73522a1d_5_1.jpg\",\"path\":\"#game.id=796224110843124120&reddot=1\",\"zappId\":796224110843124120}","counter":1,"path":"#game.id=796224110843124120&reddot=1"},"type":46}]
 
 [{"id":63820397549,"item":{"extpr":"{\"isNews\":1,\"avatarUrl\":\"\",\"path\":\"#news.id=1082&reddot=1\",\"zappId\":1577725557845407485}","counter":26,"path":"#news.id=1082&reddot=1"},"type":46}]
+[{"id":63820397549,"item":{"extpr":"{\"isNews\":1,\"avatarUrl\":\"http://logo.zp.zdn.vn/app/9184a6499a0c73522a1d_5_1.jpg\",\"path\":\"#news.id=1082&reddot=1\",\"zappId\":1577725557845407485}","counter":26,"path":"#news.id=1082&reddot=1"},"type":46}]
 
 
 #game.id=796224110843124120&reddot=1			//Ngọa Long
 
 [{"id":63820397549,"item":{"extpr":{"isNews":1,"avatarUrl":"","path":"#news.id=1082&reddot=1","zappId":1577725557845407485,"newsId":112},"counter":26,"path":"#news.id=1082&reddot=1"},"type":46}]
+[{"id":63820397549,"item":{"extpr":{"isNews":1,"avatarUrl":"http://logo.zp.zdn.vn/app/9184a6499a0c73522a1d_5_1.jpg","path":"#news.id=1082&reddot=1","zappId":1577725557845407485,"newsId":112},"counter":26,"path":"#news.id=1082&reddot=1"},"type":46}]
+
+
+http:\/\/stg.market.zaloapp.com\/games\/v2\/#news.id=112&srcType=133&reddot=1
+http:\/\/store.zaloapp.com\/games\/v2\/#news.id=112&srcType=133&reddot=1"
 
 SharedPreferencesData.setAppStoreNewNotify(MainApplication.getAppContext(), counter);//1
 SharedPreferencesData.setNewGameCenterInfos(MainApplication.getAppContext(), newGameCenterInfos);//{"isNews":0,"avatarUrl":"http:\/\/logo.zp.zdn.vn\/app\/9184a6499a0c73522a1d_5_1.jpg","path":"#game.id=796224110843124120&reddot=1","zappId":796224110843124120}
@@ -1233,4 +1239,10 @@ callback = {String@12972} "zaloJSV2.onJSCall"
 
  
 
+								
+								
+								Có text + avt
+								[{"id":63820397549,"item":{"extpr":{"isNews":1,"avatarUrl":"http://logo.zp.zdn.vn/app/9184a6499a0c73522a1d_5_1.jpg","path":"#news.id=1082&reddot=1","zappId":1577725557845407485,"newsId":112,"text":"Hello word world world world world world world"},"counter":26,"path":"#news.id=1082&reddot=1"},"type":46}]
+								[{"id":63820397549,"item":{"extpr":{"isNews":1,"avatarUrl":"","path":"#news.id=1082&reddot=1","zappId":1577725557845407485,"newsId":112,"text":"Hello word world world world world world world"},"counter":26,"path":"#news.id=1082&reddot=1"},"type":46}]
+								[{"id":63820397549,"item":{"extpr":{"isNews":1,"avatarUrl":"http://logo.zp.zdn.vn/app/9184a6499a0c73522a1d_5_1.jpg","path":"#news.id=1082&reddot=1","zappId":1577725557845407485,"newsId":112},"counter":26,"path":"#news.id=1082&reddot=1"},"type":46}]
 								
