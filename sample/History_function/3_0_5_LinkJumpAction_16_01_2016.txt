@@ -1246,3 +1246,15 @@ callback = {String@12972} "zaloJSV2.onJSCall"
 								[{"id":63820397549,"item":{"extpr":{"isNews":1,"avatarUrl":"","path":"#news.id=1082&reddot=1","zappId":1577725557845407485,"newsId":112,"text":"Hello word world world world world world world"},"counter":26,"path":"#news.id=1082&reddot=1"},"type":46}]
 								[{"id":63820397549,"item":{"extpr":{"isNews":1,"avatarUrl":"http://logo.zp.zdn.vn/app/9184a6499a0c73522a1d_5_1.jpg","path":"#news.id=1082&reddot=1","zappId":1577725557845407485,"newsId":112},"counter":26,"path":"#news.id=1082&reddot=1"},"type":46}]
 								
+								
+//[{"id":89102851936,"item":{"item_id":"0","avatarUrl":"","path":"#home.reddot=1"},"type":53}]
+
+
+{"text":"","isNews":0,"avatarUrl":"http:\/\/logo.zp.zdn.vn\/app\/617176bc4af9a3a7fae8_3_1.jpg","path":"#game.id=1491316528222245871&reddot=1","zappId":1491316528222245871}
+
+com.zing.zalo.action.ACTION_NEW_NOTIFY_STICKER_SET	
+com.zing.zalo.action.ACTION_NEW_NOTIFY_STICKER_SET
+
+{"path":"#home.reddot=1","item_id":"","avatarUrl":""}
+
+							

@@ -1,0 +1,10 @@
+1. cd đến thư mục cần clone, shallow clone git repo với độ sâu 1:
+	git clone --depth 1 [git_repository] --branch [branch_name] ./
+
+2. Từ từ deepen shallow clone đến độ sâu 500, 1000,...
+	git fetch --depth 500
+	git fetch --depth 1000
+
+3. Đến khi cảm thấy đủ thì unshallow clone để chuyển thành full clone
+	git fetch --unshallow
+(Nếu vẫn chưa được thì fetch sâu thêm 1500, 2000...)

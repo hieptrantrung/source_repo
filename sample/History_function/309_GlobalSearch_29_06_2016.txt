@@ -1,0 +1,116 @@
+﻿<string name="error_activate_account">Tài khoản này chưa được kích hoạt.\nVui lòng kích hoạt tài khoản để sử dụng. (504)</string>
+<string name="error_openfile">Không mở được tập tin này. (505)</string>
+<string name="error_full_sdcard">Không đủ bộ nhớ để nhận. (506)</string>
+<string name="str_toast_warningUploadImg">Bạn chỉ có thể gửi tập tin nhỏ hơn 1MB (507)</string>
+<string name="str_toast_error_invalidImage">Tập tin không hợp lệ (18004)</string>
+<string name="str_toast_warningUploadVideo">Bạn chỉ có thể gửi tập tin nhỏ hơn %dMB (507)</string>
+<string name="error_file_notfound">Không tìm thấy file. (508)</string>
+<string name="error_sendfail">Gửi không thành công, vui lòng thử lại sau (509)</string>
+<string name="error_low_memory_torecord">Không đủ bộ nhớ để ghi âm. (510)</string>
+<string name="str_alertcantOpenfile">Không thể mở tập tin này. (511)</string>
+<string name="limit_input_text">Bạn đã nhập quá giới hạn cho phép. (512)</string>
+<string name="limit_input_edittext">Bạn đã nhập đến giới hạn cho phép, không thể nhập hơn. (512)</string>
+<string name="ERROR_ERROR_BANNED">Bạn đã gửi quá nhiều tin nhắn trong thời gian cho phép.\nVui lòng thử lại sau. (513)</string>
+<string name="network_error">Không có kết nối.\nVui lòng thử lại sau. (514)</string>
+<string name="str_search_error_login">Lỗi đăng nhập. (516)</string>
+<string name="str_error_active_by_rejectcall">Đường truyền không ổn định.\nVui lòng yêu cầu mã kích hoạt mới. (517)</string>
+<string name="error_execeed_quota">Không còn đủ hạn mức tin nhắn miễn phí. (2013)</string>
+
+
+<string name="str_status_link_invalid">Link không hợp lệ (1003)</string>
+
+I Flow search 
+
+•	Khi mở global search, searchbox ở trạng thái focus với placeholder "Tìm kiếm trong danh bạ và OA"
+
+		edtSearchView.setHint(getString(R.string.hint_search_contact_oa));
+		
+•	Button [x] để clear searchbox sẽ xuất hiện khi nội dung searchbox khác rỗng, và ẩn đi nếu searchbox empty
+		Done
+
+•	User thoát flow search khi tap nút Hủy (iOS) hoặc Back (Android).
+		Done
+
+
+II III.	Mô tả
+
+1. 1.	Section & item liên quan
+
+			Chưa nhập query
+			
+			
+			http://stackoverflow.com/questions/19129975/android-auto-merge-two-listview-in-one-screen
+			
+			http://developer.android.com/reference/android/widget/ExpandableListView.html
+			
+			
+			<string name="label_section_contact">Danh bạ</string>
+	<string name="label_section_history_search_contact">Tìm gần đây</string>
+	<string name="label_section_suggest_oa">Gợi ý Official Account</string>
+	
+	
+	
+	
+	
+
+1. Nếu chỗ xem thêm của tìm kiếm OA
+
+	Hiện ra list OA, sẽ có cái quan tâm rồi cái chưa quan tâm
+	
+	Lúc này click vào thì sẽ mở cửa sổ chat hay trang cá nhân
+	
+	
+2. Chỗ màn hình empty danh bạ, nếu padding như thế sẽ có khi text chỉ xuống hàng 1 chữ, nhìn kỳ
+
+3. Những cái page 	
+
+	
+	
+	
+	
+	
+	
+	
+- Test xong follow
+
+
+Trường hợp see more OA
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+GlobalData.ID_VIP_MSG
+
+1. ChatView
+
+public boolean deleteChatContent(int currentItemLongPress)	
+
+
+
+bỏ updateInfoChildItemToParentItem
+
+reInsertItemStrangerMessages
+
+reInsertItemVIPMsg
+
+
+
+18 / 07 / 2016
+TEst

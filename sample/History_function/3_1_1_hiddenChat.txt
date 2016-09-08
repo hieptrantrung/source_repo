@@ -1,0 +1,34 @@
+﻿https://zdoc.zing.vn/display/SPEC/Hidden+chat
+
+1111 - b59c67bf196a4758191e42f76670ceba
+
+- 	trường hợp qua máy khác remove friend
+
+	qua máy khác remove group
+
+	thì lúc quay lại còn lại các id đã set hidden chat, lúc nay sẽ xử lý sao
+
+- trước đó tồn tại trong ds tìm gần đây, cần xóa đi
+
+
+- lúc search match mấy ký tự mã pin, có hiện thị kết quả cho các thể loại khác hay ko
+
+
+- các section của setting hidden chat để trong 1 trang riêng như passcode hay để chung kế setting msg
+
+- màn hình chat lúc đang show pin code sao khi chuyển, home app hoặc mở app khác sao lại phải đóng luôn cửa sổ chat
+
+- màn hình pin code hidden chat show full trang luôn như passcode của app được không, hay phải để 1 phần transparent vì sẽ lộ phần msg bên dưới cửa sổ chat
+
+
+
+
+
+####################
+
+Tính năng dùng để ẩn thread chat khỏi danh sách tin nhắn, dùng cho chat 1:1, chat group.
+User cần cài đặt mã pin để sử dụng tính năng.
+Mở các thread chat đã ẩn bằng cách search bằng mã pin hoặc theo tên.
+
+
+

@@ -1,0 +1,52 @@
+﻿
+
+#1
+
+java.lang.NullPointerException
+at com.zing.zalo.feed.a.mu.onClick(SourceFile:1640)
+at android.view.View.performClick(View.java:4192)
+at android.view.View$PerformClick.run(View.java:17248)
+at android.os.Handler.handleCallback(Handler.java:615)
+at android.os.Handler.dispatchMessage(Handler.java:92)
+at android.os.Looper.loop(Looper.java:137)
+at android.app.ActivityThread.main(ActivityThread.java:4950)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:997)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:764)
+at dalvik.system.NativeStart.main(Native Method)
+at com.zing.zalo.utils.cf.run(SourceFile:5948)
+at java.lang.Thread.run(Thread.java:841)
+at com.zing.zalo.utils.cv.iL(SourceFile:57)
+at com.zing.zalo.utils.cv.iK(SourceFile:52)
+at com.zing.zalo.stickers.m.hX(SourceFile:99)
+at com.zing.zalo.n.a.<clinit>(SourceFile:643)
+
+case FEED_TYPE_FOOTER_LIKE_COMMENT_BAR:
+                            holder.feedItemFooterBar.setFooterData(feedContent, 0, mActivity);
+                            holder.feedItemFooterBar.setOnFooterClickListener(new OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    if(feedContent.getFeed().content.videoAttachment != null) {						//1640
+                                        if(getAutoPlayerManager() != null)
+                                            getAutoPlayerManager().cacheCurrentViewPosition();
+									}
+										
+                                    if (feedItem.type == FeedItem.FEED_TYPE_SLIDE_SHOW) {
+                                        if (SlideshowManager.getInstance().isPlaying()) {
+                                            SlideshowManager.getInstance().stop(false);
+                                        }
+                                    }
+                                    FeedActionUtils.openFeedDetail(v, feedContent, 0, mTimelineFragment, mActivity, true);
+                                }
+                            });
+                            holder.feedItemFooterBar.setOnFeedMenuClickListener(new OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    if (feedContent != null && feedItem != null) {
+                                        openFeedMenu(feedContent, feedItem.fid);
+                                    }
+                                }
+                            });
+                            break;
+							

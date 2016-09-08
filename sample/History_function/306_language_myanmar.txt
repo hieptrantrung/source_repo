@@ -84,6 +84,9 @@ http://libphonenumber.appspot.com/phonenumberparser?number=%2B84988394787+&count
 http://www.howtocallabroad.com/results.php?callfrom=vietnam&callto=germany
 
 
+
+http://libphonenumber.appspot.com/phonenumberparser?number=%2B4966874068+&country=DE
+
 The time in Germany is now 07:03:22am
 Calling Germany from the United States explained:
 011 - US exit code; dial first for international calls made from the USA or Canada

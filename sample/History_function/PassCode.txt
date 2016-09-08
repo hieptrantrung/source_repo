@@ -1,0 +1,255 @@
+- Mở từ Activity này sang Activity khác, không show, back lại không show. (Cùng process)
+- Activity đang show PassCode mở thêm Activity khác từ notify thì show PassCode tiếp, nhập pass xong back lại Activity trước không show nữa. (Cùng process)
+
+- Mở từ Activity này sang Activity khác, không show, back lại không show. (Khác process)
+- Activity đang show PassCode mở thêm Activity khác từ notify thì show PassCode tiếp, nhập pass xong back lại Activity trước không show nữa. (Khác process)
+
+- Đang mở ZaloView mở tiếp ZaloView khác từ notify không show, back lại không show (Trong cùng 1 activity)
+- Đang show PassCode mở tiếp ZaloView khác từ notify vẫn show PassCode, nhập pass xong back lại ZaloView trước không show nữa (Trong cùng 1 activity)
+
+- YoutubeActivity không sử dụng ZaloActivity nên add view PassCode đè lên root view này luôn, test lại các trường hợp như trên.
+
+- Mở Activity khác có Result trả về luôn luôn không show, trừ result có requestCode = QuickLandingPageView.REQUEST_APPLY_PHOTO_EFFECT,
+bị sai trong trường hợp startActivity khác trong app có Result trả về không phải là QuickLandingPageView.REQUEST_APPLY_PHOTO_EFFECT mà lại home app,
+rồi mở lại activity trước.
+
+- Nếu có dialog của hệ thống tự show thì PassCode bị dialog đè lên.
+
+- Update phiên bản zalo mới, tự show PassCode chưa rõ nguyên nhân, fix lại bằng cách đổi lại key trong database tránh trùng key và
+check pass rỗng thì không show PassCode nữa, chưa check lại được có hết lỗi tự show PassCode không.
+
+
+
+
+
+
+
+
+
+ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+List<ActivityManager.AppTask> tasks = activityManager.getAppTasks();
+
+for (ActivityManager.AppTask task : tasks) {
+    Log.d(TAG, "stackId: " + task.getTaskInfo().stackId);
+}
+
+public static boolean isBackgroundRunning(Context context) {
+        ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningAppProcessInfo> runningProcesses = am.getRunningAppProcesses();
+        for (ActivityManager.RunningAppProcessInfo processInfo : runningProcesses) {
+            if (processInfo.importance == ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND) {
+                for (String activeProcess : processInfo.pkgList) {
+                    if (activeProcess.equals(context.getPackageName())) {
+                        return true;
+                    }
+                }
+            }
+        }
+
+
+        return false;
+    }
+	
+	
+	
+
+public class DetectCalendarLaunchRunnable implements Runnable {
+
+@Override
+public void run() {
+  String[] activePackages;
+  if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT_WATCH) {
+    activePackages = getActivePackages();
+  } else {
+    activePackages = getActivePackagesCompat();
+  }
+  if (activePackages != null) {
+    for (String activePackage : activePackages) {
+      if (activePackage.equals("com.google.android.calendar")) {
+        //Calendar app is launched, do something
+      }
+    }
+  }
+  mHandler.postDelayed(this, 1000);
+}
+
+String[] getActivePackagesCompat() {
+  final List<ActivityManager.RunningTaskInfo> taskInfo = mActivityManager.getRunningTasks(1);
+  final ComponentName componentName = taskInfo.get(0).topActivity;
+  final String[] activePackages = new String[1];
+  activePackages[0] = componentName.getPackageName();
+  return activePackages;
+}
+
+String[] getActivePackages() {
+  final Set<String> activePackages = new HashSet<String>();
+  final List<ActivityManager.RunningAppProcessInfo> processInfos = mActivityManager.getRunningAppProcesses();
+  for (ActivityManager.RunningAppProcessInfo processInfo : processInfos) {
+    if (processInfo.importance == ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND) {
+      activePackages.addAll(Arrays.asList(processInfo.pkgList));
+    }
+  }
+  return activePackages.toArray(new String[activePackages.size()]);
+}
+}
+
+
+
+
+final int PROCESS_STATE_TOP = 2;
+ActivityManager.RunningAppProcessInfo currentInfo = null;
+Field field = null;
+try {
+    field = ActivityManager.RunningAppProcessInfo.class.getDeclaredField("processState");
+} catch (Exception ignored) {
+}
+ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+List<ActivityManager.RunningAppProcessInfo> appList = am.getRunningAppProcesses();
+for (ActivityManager.RunningAppProcessInfo app : appList) {
+    if (app.importance == ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND 
+            && app.importanceReasonCode == ActivityManager.RunningAppProcessInfo.REASON_UNKNOWN) {
+        Integer state = null;
+        try {
+            state = field.getInt(app);
+        } catch (Exception e) {
+        }
+        if (state != null && state == PROCESS_STATE_TOP) {
+            currentInfo = app;
+            break;
+        }
+    }
+}
+return currentInfo;
+
+
+
+
+final int PROCESS_STATE_TOP = 2;
+ActivityManager.RunningAppProcessInfo currentInfo = null;
+Field field = null;
+try {
+    field = ActivityManager.RunningAppProcessInfo.class.getDeclaredField("processState");
+} catch (Exception ignored) {
+}
+ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+List<ActivityManager.RunningAppProcessInfo> appList = am.getRunningAppProcesses();
+for (ActivityManager.RunningAppProcessInfo app : appList) {
+    if (app.importance == ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND 
+            && app.importanceReasonCode == ActivityManager.RunningAppProcessInfo.REASON_UNKNOWN) {
+        Integer state = null;
+        try {
+            state = field.getInt(app);
+        } catch (Exception e) {
+        }
+        if (state != null && state == PROCESS_STATE_TOP) {
+            currentInfo = app;
+            break;
+        }
+    }
+}
+return currentInfo;
+Note: processState field does not exist in pre-Lolipop. Please check that Build.VERSION.SDK_INT >= 21 before running the above code. The above code works only for Lollipop+.
+
+The other approach, by Gaston (which is quite different), and the meaning of 'current application' is slightly different from this approach.
+
+Please choose one for your purpose.
+
+[EDIT]
+
+As Sam pointed out, I modified START_TASK_TO_FRONT by PROCESS_STATE_TOP. (Both values are 2)
+
+[EDIT2]
+
+Sam has a new find! To determine the foreground application uniquely, one more condition
+
+process.importanceReasonCode == 0
+is necessary. The above code has been updated. Thanks!
+
+
+http://stackoverflow.com/questions/3667022/checking-if-an-android-application-is-running-in-the-background/5862048#5862048
+
+public static void ABCTest()
+    {
+        String top = "";
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) { //For versions less than lollipop
+            ActivityManager am = ((ActivityManager) MainApplication.getAppContext().getSystemService(Context.ACTIVITY_SERVICE));
+            List<ActivityManager.RunningTaskInfo> taskInfo = am.getRunningTasks(5);
+            top = taskInfo.get(0).topActivity.getPackageName();
+            Log.v(TAG, "top app = " + top);
+        }else{ //For versions Lollipop and above
+//            List<AndroidAppProcess> processes = AndroidProcesses.getRunningForegroundApps(MainApplication.getAppContext());
+            long startTime = System.currentTimeMillis();
+            List<AndroidAppProcess> processes = AndroidProcesses.getRunningAppProcesses();
+//          Collections.sort(processes, new AndroidProcesses.ProcessComparator());
+            for (int i = 0; i <=processes.size()-1 ; i++) {
+                if(processes.get(i) != null && processes.get(i).name.startsWith("com.zing.zalo"))
+                {
+                    Log.v(TAG, "top app = " + processes.get(i).name + " run in: " + (processes.get(i).foreground ? " 1 " : " 0 "));
+                }
+
+  /*              if (processes.get(i).name.equalsIgnoreCase("com.google.android.gms")) { //always the package name above/below this package is the top app
+                    if ((i + 1) <= processes.size() - 1) { //If processes.get(i+1) available, then that app is the top app
+                        top = processes.get(i + 1).name;
+                    } else if (i != 0) { //If the last package name is "com.google.android.gms" then the package name above this is the top app
+                        top = processes.get(i - 1).name;
+                    } else {
+                        if (i == processes.size() - 1) { //If only one package name available
+                            top = processes.get(i).name;
+                        }
+                    }
+                    Log.v(TAG, "top app = " + top);
+                }*/
+            }
+
+            Log.v(TAG, "top app TimeEXE: " + (System.currentTimeMillis() - startTime));
+        }
+
+        //return currentInfo;
+    }	
+	
+	
+	if (GlobalData.clsInPause.equals(GlobalData.clsInResume) && !GlobalData.needToShowPassCodeScreen) {
+                        boolean isAppMoveToBG = true;
+                        boolean isScreenOn = true;
+                        try {
+                            KeyguardManager keyguard = (KeyguardManager) MainApplication.getAppContext().getSystemService(Context.KEYGUARD_SERVICE);
+                            boolean isScreenLock = keyguard.inKeyguardRestrictedInputMode();
+
+                            Log.d(TAG, isScreenLock ? "screen is locked" : " NOT lock");
+
+                            PowerManager pm = (PowerManager) MainApplication.getAppContext().getSystemService(Context.POWER_SERVICE);
+
+                            if (pm != null) {
+                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                                    isScreenOn = pm.isInteractive();
+                                } else {
+                                    isScreenOn = pm.isScreenOn();
+                                }
+                            }
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+
+
+
+//                      boolean callScreenInTop = Utils.strTopActivityName().equals("zm.voip.ui.incall.ZmInCallActivity");
+                        if(!SoundManager.getInstance().isPlaying())
+                        {
+                            isAppMoveToBG = true;
+                            Log.w(TAG, "CHECK SOUND 1: " + (SoundManager.getInstance().isPlaying() ? " 1 " : " 0 " + " - isScreenOn: " + (isScreenOn ? " 1 " : " 0 ")));
+                        }
+                        else
+                        {
+                            Log.w(TAG, "In IN CALL SCREEN");
+                            Log.w(TAG, "CHECK SOUND 2: " + (SoundManager.getInstance().isPlaying() ? " 1 " : " 0 " + " - isScreenOn: " + (isScreenOn ? " 1 " : " 0 ")));
+                            isAppMoveToBG = Utils.isApplicationBroughtToBackground() || Utils.isApplicationBroughtToBackgroundAndroidL(currAct.getClass().getCanonicalName());
+                        }
+
+                        if(isAppMoveToBG)
+                        {
+                            GlobalData.needToShowPassCodeScreen = true;
+                            SharedPreferencesData.setNeedToShowPassCodeScreen(MainApplication.getAppContext(), GlobalData.needToShowPassCodeScreen);
+                            GlobalData.lastTimeOnStopAct = System.currentTimeMillis();
+                            SharedPreferencesData.setLastTimeOnStopAct(MainApplication.getAppContext(), GlobalData.lastTimeOnStopAct);
+                        }
+                    }

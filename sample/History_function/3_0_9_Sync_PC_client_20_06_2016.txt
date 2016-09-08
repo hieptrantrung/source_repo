@@ -1,0 +1,467 @@
+﻿Hi Xuyên,
+
+Gửi xuyên json sample của notification 
+
++ Notify remove Friend (đã có rồi không thay đổi) 
+[
+    {
+        "id":1,
+        "item":{
+            "uid":100623856,
+            "ts":1375190280506
+        },
+        "type":14
+    }
+]
+
++ Add Block Friend 
+
+[
+    {
+        "id":85008416364,
+        "item":{
+            "uid":100731978,
+            "ts":1466047884072
+        },
+        "type":58
+    }
+
+]
++ Remove Block Friend type 59
+[
+    {
+        "id":85008416364,
+        "item":{
+            "uid":100731978,
+            "ts":1466047884072
+        },
+        "type":59
+    }
+
+]
++ Add Close Friend  type 60
+[
+    {
+        "id":85008019689,
+        "item":{
+            "uids":[
+                100731978,
+                102262314,
+                102262345
+            ],
+            "ts":1466047680510
+        },
+        "type":60
+    }
+
+]
++ Remove Close Friend  type 61
+[
+
+    {
+        "id":85008019689,
+        "item":{
+            "uids":[
+                100731978,
+                102262314,
+                102262345
+            ],
+            "ts":1466047680510
+        },
+        "type":61
+    }
+
+]
+
+
+"type":58
+
+String uid = (item.isNull(CommonJSONFields.UID) ? "" : item.getString(CommonJSONFields.UID));
+String usr = (item.isNull(CommonJSONFields.USR) ? "" : item.getString(CommonJSONFields.USR));
+String avt = (item.isNull(CommonJSONFields.AVT) ? "" : item.getString(CommonJSONFields.AVT));
+String dpn = (item.isNull(CommonJSONFields.DPN) ? "" : item.getString(CommonJSONFields.DPN));
+
+
+						
+						
+
+
+ONLINE:
+
+Case 1: ADD FRIEND
+
+- Mở Zalo PC, chọn 1 thread chat, nhấn Add friend, send friend request cho client
+	
+		requestPacket.getCmd() == MESSAGE_TYPE_RET	- 3
+		requestPacket.getCmd() == SocketConnection.COMMAND_NOTIFY_SEND	- 600 - type 13 FRIEND_REQUEST_APPID
+		[{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"+84988394787","msg":"Hello HiepTT","frAppId":0,"ref":null,"uid":73816860,"dpn":"Hieptt","avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","ged":0,"time":1466482768282},"id":85758396469,"type":13}]
+		
+		[{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"+84988394787","msg":"Hello HiepTT","frAppId":0,"ref":null,"uid":73816860,"dpn":"Hieptt","avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","ged":0,"time":1466482768282},"id":85758396469,"type":13}]
+		
+		[{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"+84988394787","msg":"Hello HiepTT","frAppId":0,"ref":null,"uid":73816860,"dpn":"Hieptt","avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","ged":0,"time":1466482768282},"id":85758396469,"type":13}]
+		
+		bắn về nhiều package giống nhau cho client
+		
+		
+		.getRequestStatus(userId)
+		
+		{"data":{"isRequested":0,"isFriend":0,"isRequesting":1},"error_code":0,"error_message":"Successful."}
+		
+		
+		Đồng ý kết bạn
+		
+		[{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"+84988394787","origin":1006,"notify":0,"ts":1466483923936,"uid":73816860,"frAppId":0,"ref":null,"usr":null,"avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","dpn":"Hieptt","dpl":1},"id":85760883134,"type":10}]
+		
+		-> Successful xuất hiện friend ở PC và client
+		
+- 
+		Client gửi kết bạn rồi, tiếp tục gửi nữa
+
+		{"data":{"isRequested":1,"isFriend":0,"isRequesting":0},"error_code":0,"error_message":"Successful."}
+
+[{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"+84988394787","msg":"aaaaaaa bbbbbbbbbbb","frAppId":0,"ref":null,"uid":73816860,"dpn":"Hieptt","avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","ged":0,"time":1466484198558},"id":85761486486,"type":13}]		
+		
+
+
+
+- offline
+[
+	{"id":85777828157,"item":{"uid":73816860,"ts":1466492370129},"type":14},
+	
+	{"item":{"srcReq":0,"action":0,"actionType":null,"title":null,"desc":null,"phone":"+84988394787","origin":1006,"notify":0,"ts":1466492363091,"uid":73816860,"frAppId":0,"ref":null,"usr":null,"avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","dpn":"Hieptt","dpl":1},"id":85777816707,"type":10}
+]
+						
+						
+						
+						
+						
+						[{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"","msg":"Hi","frAppId":0,"ref":null,"uid":126854201,"dpn":"Ph\u1EA1m \u0110\u1EE9c","avt":"http://avatar.talk.zdn.vn/9/2/d/e/3/75/51603f7a0b521f072622e2331ad3d63d.jpg","ged":0,"time":1466496559684},"id":85784551217,"type":13}]
+						
+						[{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"","msg":"Hi","frAppId":0,"ref":null,"uid":126854201,"dpn":"Ph\u1EA1m \u0110\u1EE9c","avt":"http://avatar.talk.zdn.vn/9/2/d/e/3/75/51603f7a0b521f072622e2331ad3d63d.jpg","ged":0,"time":1466496559684},"id":85784551217,"type":13}]
+						
+						
+						[{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"","origin":1006,"notify":0,"ts":1466496622699,"uid":126854201,"frAppId":0,"ref":null,"usr":null,"avt":"http://avatar.talk.zdn.vn/9/2/d/e/3/75/51603f7a0b521f072622e2331ad3d63d.jpg","dpn":"Ph\u1EA1m \u0110\u1EE9c","dpl":1},"id":85784651687,"type":10}]
+						
+						[{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"","origin":1006,"notify":0,"ts":1466496622699,"uid":126854201,"frAppId":0,"ref":null,"usr":null,"avt":"http://avatar.talk.zdn.vn/9/2/d/e/3/75/51603f7a0b521f072622e2331ad3d63d.jpg","dpn":"Ph\u1EA1m \u0110\u1EE9c","dpl":1},"id":85784651687,"type":10}]
+						
+						[{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"","origin":1006,"notify":0,"ts":1466496622699,"uid":126854201,"frAppId":0,"ref":null,"usr":null,"avt":"http://avatar.talk.zdn.vn/9/2/d/e/3/75/51603f7a0b521f072622e2331ad3d63d.jpg","dpn":"Ph\u1EA1m \u0110\u1EE9c","dpl":1},"id":85784651687,"type":10}]
+						
+						[{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"","msg":"hi","frAppId":0,"ref":null,"uid":138340391,"dpn":"Tu Nguyen","avt":"http://avatar.talk.zdn.vn/9/6/1/e/6/75/1f5e86378b106ef1a9a25a5085cfa9fc.jpg","ged":0,"time":1466496682052},"id":85784746385,"type":13}]
+						
+						[{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"","msg":"hi","frAppId":0,"ref":null,"uid":138340391,"dpn":"Tu Nguyen","avt":"http://avatar.talk.zdn.vn/9/6/1/e/6/75/1f5e86378b106ef1a9a25a5085cfa9fc.jpg","ged":0,"time":1466496682052},"id":85784746385,"type":13}]
+						
+						[{"item":{"srcReq":0,"action":0,"actionType":null,"title":null,"desc":null,"phone":"","origin":1006,"notify":0,"ts":1466496622699,"uid":126854201,"frAppId":0,"ref":null,"usr":null,"avt":"http://avatar.talk.zdn.vn/9/2/d/e/3/75/51603f7a0b521f072622e2331ad3d63d.jpg","dpn":"Ph\u1EA1m \u0110\u1EE9c","dpl":1},"id":85784651687,"type":10},
+						
+						{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"","msg":"hi","frAppId":0,"ref":null,"uid":138340391,"dpn":"Tu Nguyen","avt":"http://avatar.talk.zdn.vn/9/6/1/e/6/75/1f5e86378b106ef1a9a25a5085cfa9fc.jpg","ged":0,"time":1466496682052},"id":85784746385,"type":13}]
+						
+						
+						[{"item":{"srcReq":0,"action":0,"actionType":null,"title":null,"desc":null,"phone":"","origin":1006,"notify":0,"ts":1466496622699,"uid":126854201,"frAppId":0,"ref":null,"usr":null,"avt":"http://avatar.talk.zdn.vn/9/2/d/e/3/75/51603f7a0b521f072622e2331ad3d63d.jpg","dpn":"Ph\u1EA1m \u0110\u1EE9c","dpl":1},"id":85784651687,"type":10},
+						
+						{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"","msg":"hi","frAppId":0,"ref":null,"uid":138340391,"dpn":"Tu Nguyen","avt":"http://avatar.talk.zdn.vn/9/6/1/e/6/75/1f5e86378b106ef1a9a25a5085cfa9fc.jpg","ged":0,"time":1466496682052},"id":85784746385,"type":13}]
+						
+						[{"item":{"srcReq":0,"action":0,"actionType":null,"title":null,"desc":null,"phone":"","origin":1006,"notify":0,"ts":1466496622699,"uid":126854201,"frAppId":0,"ref":null,"usr":null,"avt":"http://avatar.talk.zdn.vn/9/2/d/e/3/75/51603f7a0b521f072622e2331ad3d63d.jpg","dpn":"Ph\u1EA1m \u0110\u1EE9c","dpl":1},"id":85784651687,"type":10},
+						
+						{"item":{"srcReq":40,"action":0,"actionType":null,"title":null,"desc":null,"phone":"","msg":"hi","frAppId":0,"ref":null,"uid":138340391,"dpn":"Tu Nguyen","avt":"http://avatar.talk.zdn.vn/9/6/1/e/6/75/1f5e86378b106ef1a9a25a5085cfa9fc.jpg","ged":0,"time":1466496682052},"id":85784746385,"type":13}]
+						
+
+						
+						
+						06-21 16:06:37.098 20485-24194/com.zing.zalo W/ParseRPSocketConnection: [{"item":{"srcReq":-1,"action":0,"actionType":null,"title":null,"desc":null,"phone":"+84988394787","origin":1006,"notify":0,"ts":1466499998196,"uid":73816860,"frAppId":0,"ref":null,"usr":null,"avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","dpn":"Hieptt","dpl":1},"id":85790187273,"type":10}]
+						
+						
+06-21 16:07:03.183 20485-24194/com.zing.zalo W/ParseRPSocketConnection: [{"id":85790230141,"item":{"uid":73816860,"ts":1466500024191},"type":59}]
+06-21 16:08:48.453 20485-24194/com.zing.zalo W/ParseRPSocketConnection: [{"item":{"uid":73816860,"dpn":"Hieptt","ged":0,"avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","ts":1466500129446},"id":85790410485,"type":58}]
+06-21 16:09:42.290 20485-24194/com.zing.zalo W/ParseRPSocketConnection: [{"id":85790500219,"item":{"uid":73816860,"avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","ts":1466500183383,"ged":0,"dpn":"Hieptt"},"type":58}]
+
+
+
+CASE 2: BLOCK FRIEND
+
+Chặn trên pC, sync về client lại là 59 unblock, sai, phải là 58
+
+Chặn ở client, cũng bắn về 59
+
+[{"item":{"uid":73816860,"ts":1466500847992},"id":85791619936,"type":59}]
+
+Đã trả về 58 -> Đúng
+06-21 17:43:21.286 1177-2897/com.zing.zalo W/ParseRPSocketConnection: [{"id":85800631887,"item":{"uid":73816860,"avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","ts":1466505800836,"ged":0,"dpn":"Hieptt"},"type":58}]
+
+CASE 3: UNBLOCK FRIEND
+
+[{"id":85800702231,"item":{"uid":73816860,"ts":1466505836598},"type":59}]
+
+CASE 4: ADD CLOSE FRIEND
+
+[{"item":{"uid":73816860,"dpn":"Hieptt","ged":0,"avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","ts":1466501483681},"id":85792684255,"type":60}]
+
+
+CASE 5: REMOVE CLOSE FRIEND
+[{"item":{"uid":73816860,"ts":1466501509644},"id":85792729348,"type":61}]
+
+
+
+uidMapGroupDeleted
+
+
+- Chặn rồi xóa bạn
+- Case xóa bạn rồi bỏ chặn
+
+
+
+
+
+
+OFFLINE
+
+
+ONLINE:
+
+Case 1: ADD FRIEND
+
+- Mở Zalo PC, chọn 1 thread chat, nhấn Add friend, send friend request cho client
+
+
+
+CASE 2: BLOCK FRIEND
+
+
+
+CASE 3: UNBLOCK FRIEND
+
+[{"id":85800702231,"item":{"uid":73816860,"ts":1466505836598},"type":59}]
+
+
+
+
+CASE 4: ADD CLOSE FRIEND
+
+[{"item":{"uid":73816860,"dpn":"Hieptt","ged":0,"avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","ts":1466501483681},"id":85792684255,"type":60}]
+
+
+CASE 5: REMOVE CLOSE FRIEND
+[{"item":{"uid":73816860,"ts":1466501509644},"id":85792729348,"type":61}]
+
+- offline multi
+[{"item":{"srcReq":0,"action":0,"actionType":null,"title":null,"desc":null,"phone":"+84988394787","origin":1006,"notify":0,"ts":1466509173674,"uid":73816860,"frAppId":0,"ref":null,"usr":null,"avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","dpn":"Hieptt","dpl":1},"id":85808263689,"type":10},{"id":85808292297,"item":{"uid":73816860,"avt":"http://avatar.talk.zdn.vn/3/9/f/f/21/75/584bd805c92d899c38a92a009192ade9.jpg","ts":1466509184079,"ged":0,"dpn":"Hieptt"},"type":60},{"id":85808300349,"item":{"uid":73816860,"ts":1466509186972},"type":61}]
+
+
+
+
+
+
+ADD / REMOVE CLOSE FRIEND / ONLINE / OFFLINE K WORK
+
+
+OFF:OME 06-21 19:55:18.571 11477-14657/com.zing.zalo W/ParseRPSocketConnection: [{"id":85822080004,"item":{},"type":61}]
+
+
+
+
+
+GROUP
+
+Kick group từ client, người bị kick nhận json
+
+{"id":395226928056,"avt":"http:\/\/s120.ava.grp.talk.zdn.vn\/e\/4\/a\/e\/0\/120\/e2113d47e32d96ca1097ac28805895f5.jpg","updateMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","id":70015339,"status":null,"dName":"Hiep Tt"}],"groupId":6188978,"desc":"","ts":1466568680365,"notify":1,"fullAvt":"http:\/\/ava.grp.talk.zdn.vn\/e\/4\/a\/e\/0\/360\/e2113d47e32d96ca1097ac28805895f5.jpg","name":"Hiep Tu Anh, Azz, Hiep, ...","creatorId":73816860,"senderId":73816860,"currentMems":[],"type":1}
+
+
+Mời vào nhóm từ client, người được mời nhận
+
+{"id":395228081269,"avt":"http:\/\/s120.ava.grp.talk.zdn.vn\/e\/4\/a\/e\/0\/120\/e2113d47e32d96ca1097ac28805895f5.jpg","updateMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","id":70015339,"status":null,"dName":"Hiep Tt"}],"groupId":6188978,"desc":"","ts":1466568802414,"notify":1,"fullAvt":"http:\/\/ava.grp.talk.zdn.vn\/e\/4\/a\/e\/0\/360\/e2113d47e32d96ca1097ac28805895f5.jpg","name":"Hiep Tu Anh, Azz, Hiep, ...","creatorId":73816860,"senderId":73816860,"currentMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","id":70015339,"status":null,"dName":"Hiep Tt"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/3\/9\/f\/f\/21\/75\/584bd805c92d899c38a92a009192ade9.jpg","id":73816860,"status":null,"dName":"Hieptt"}],"type":1}
+
+
+
+Mời rời nhóm từ PC
+- online
+06-22 11:35:56.276 13894-14883/com.zing.zalo W/ParseRPSocketConnection: {"id":395241641671,"avt":"http:\/\/s120.ava.grp.talk.zdn.vn\/0\/2\/4\/0\/0\/120\/644ccb188f5159f9d7730688cbb4d42e.jpg","updateMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/3\/9\/f\/f\/21\/75\/584bd805c92d899c38a92a009192ade9.jpg","id":73816860,"status":null,"dName":"Hieptt"}],"groupId":19540419,"desc":"","ts":1466570157126,"notify":1,"fullAvt":"http:\/\/ava.grp.talk.zdn.vn\/0\/2\/4\/0\/0\/360\/644ccb188f5159f9d7730688cbb4d42e.jpg","name":"Hiep Tt, �������� hiep, Nam","creatorId":70015339,"senderId":70015339,"currentMems":[],"type":1}
+
+
+
+
+
+
+
+GROUP JOIN
+
+
+{"id":399328138224,"avt":"http:\/\/s120.ava.grp.talk.zdn.vn\/d\/3\/7\/5\/0\/120\/b7213521a184e39b1ed1c2dd73edad0d.jpg","updateMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","id":70015339,"status":null,"dName":"Ht"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/6\/e\/f\/9\/61\/75\/370d056f01b34c7f43b1a988f721651c.jpg","id":101477603,"status":null,"dName":"Mập Dz"}],"groupId":20768993,"desc":"","ts":1467020985730,"notify":1,"fullAvt":"http:\/\/ava.grp.talk.zdn.vn\/d\/3\/7\/5\/0\/360\/b7213521a184e39b1ed1c2dd73edad0d.jpg","name":"Hieptt, Minhlb, Mập Dz, Azb","creatorId":73816860,"senderId":73816860,"currentMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","id":70015339,"status":null,"dName":"Ht"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/6\/e\/f\/9\/61\/75\/370d056f01b34c7f43b1a988f721651c.jpg","id":101477603,"status":null,"dName":"Mập Dz"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/3\/9\/f\/f\/21\/75\/584bd805c92d899c38a92a009192ade9.jpg","id":73816860,"status":null,"dName":"Hieptt"}],"type":1}
+
+
+GROUP FORCE LEAVE
+
+06-27 16:53:42.177 9636-9924/com.zing.zalo W/ParseRPSocketConnection: {"id":399330062244,"avt":"http:\/\/s120.ava.grp.talk.zdn.vn\/a\/2\/9\/b\/0\/120\/a0e22b8f35aa38e328bdafa87e41ccd0.jpg","updateMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","id":70015339,"status":null,"dName":"Ht"}],"groupId":16157058,"desc":"","ts":1467021196667,"notify":2,"fullAvt":"http:\/\/ava.grp.talk.zdn.vn\/a\/2\/9\/b\/0\/360\/a0e22b8f35aa38e328bdafa87e41ccd0.jpg","name":"Azz, Spinning Ten Rat Dai Va R","creatorId":109892775,"senderId":109892775,"currentMems":[],"type":1}
+
+
+GROUP JOIN NHóm có rồi
+
+{"id":399332582829,"avt":"http:\/\/s120.ava.grp.talk.zdn.vn\/a\/2\/9\/b\/0\/120\/a0e22b8f35aa38e328bdafa87e41ccd0.jpg","updateMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","id":70015339,"status":null,"dName":"Ht"}],"groupId":16157058,"desc":"","ts":1467021474282,"notify":1,"fullAvt":"http:\/\/ava.grp.talk.zdn.vn\/a\/2\/9\/b\/0\/360\/a0e22b8f35aa38e328bdafa87e41ccd0.jpg","name":"Azz, Spinning Ten Rat Dai Va R","creatorId":109892775,"senderId":109892775,"currentMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","id":70015339,"status":null,"dName":"Ht"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/9\/9\/6\/1\/1\/75\/b35fdcc5bf4803454e6eeb7b5c377ad1.jpg","id":138033586,"status":null,"dName":"Spinning Ten Rat Dai Va Rat Tay"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/b\/5\/5\/5\/6\/75\/9265593101fb0a35034d8862ee233958.jpg","id":109892775,"status":null,"dName":"Azb"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/6\/0\/6\/e\/142\/75\/f383cb16e6beb5ba8e6661c2c2a22671.jpg","id":108051602,"status":null,"dName":"Violet Flower"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/3\/9\/f\/f\/21\/75\/584bd805c92d899c38a92a009192ade9.jpg","id":73816860,"status":null,"dName":"Hieptt"}],"type":1}
+
+
+{"id":399334656621,"avt":"http:\/\/s120.ava.grp.talk.zdn.vn\/a\/2\/9\/b\/0\/120\/a0e22b8f35aa38e328bdafa87e41ccd0.jpg","updateMems":[],"groupId":16157058,"desc":"","ts":1467021705298,"notify":1,"fullAvt":"http:\/\/ava.grp.talk.zdn.vn\/a\/2\/9\/b\/0\/360\/a0e22b8f35aa38e328bdafa87e41ccd0.jpg","name":"Azz, Spinning Ten Rat Dai","creatorId":109892775,"senderId":109892775,"currentMems":[],"type":1}
+
+
+
+
+
+
+ChatContent.STATE_DISABLED_GROUP
+
+public final static String GROUP_ID_DISABLED = "GROUP_ID_DISABLED";
+
+    public static String getGroupIdDisabled(Context context) {
+        String value = getPreferenceStringValue(context, APP_NAME_PREF, GROUP_ID_DISABLED, "", false);
+        return value;
+    }
+
+    public static void setGroupIdDisabled(Context context, String value) {
+        setPreferenceStringValue(context, APP_NAME_PREF, GROUP_ID_DISABLED, value, false);
+    }
+	
+	
+	
+- Thằng tạo nhóm
+
+	
+
+
+- Thằng được mời
+
+
+- IOS
+	
+	currentMem rỗng thì nếu chưa get groupList thì vô get sẽ get mới được
+							get groupList rồi thì sẽ k hiện
+							
+							nhận msg về vẫn ko get lại info mới, member rỗng k hiện danh sách thành viên và k thể mời thêm bạn
+							nhận msg về sẽ tự add vô danh sach nhóm với avatar default
+							
+							
+
+- android lỗi nếu k có full profile, get trúng thằng k có profile sẽ bị exception k hiện avatar
+
+
+
+
+Tạo nhóm mới:
+
+Creater:	nhận về json trong cmd COMMAND_CREATE_RECYCLE_GROUP		= 233;
+			
+			{"error_code":0,"error_message":"Successful.","data":{"wrong_members":"","id":"21028942","desc":"","name":"Hieptt, Codeforfood, Nguyen Co","owner_id":"73816860","type":"1","members":"73816860;109892775;140958781;150925123"}}
+			
+			{"data":{"owner_id":"70015339","id":"21036976","wrong_members":"","desc":"","type":"1","members":"70015339;101629599;109892775;120317682","name":"Ht, Azb, Atkz, Ak"},"error_code":0,"error_message":"Successful."}
+			
+			{"data":{"owner_id":"70015339","id":"21037556","wrong_members":"73816860","desc":"","type":"1","members":"70015339;101629599;120317682","name":"Ht, Hieptt, Atkz, Ak"},"error_code":0,"error_message":"Successful."}
+			
+Thêm mem:
+			{"data":{"wrong_members":"","members":"72248198"},"error_code":0,"error_message":"Successful."}
+			
+			{"updateMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/d\/8\/3\/e\/5\/75\/1bbfe9b3a6e86dfb9359a8777148fc02.jpg","id":72248198,"status":null,"dName":"Dung Dinh"}],"desc":"","ts":1467615819141,"isAdd":false,"creatorId":70015339,"senderId":70015339,"currentMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/d\/8\/3\/e\/5\/75\/1bbfe9b3a6e86dfb9359a8777148fc02.jpg","id":72248198,"status":null,"dName":"Dung Dinh"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/1\/7\/1\/e\/4\/75\/19ee7d6b6b4d26725f2255697e1b5c5d.jpg","id":120317682,"status":null,"dName":"Atkz"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/b\/5\/5\/5\/6\/75\/9265593101fb0a35034d8862ee233958.jpg","id":109892775,"status":null,"dName":"Azb"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/3\/c\/6\/a\/20\/75\/165814196ee582b8ee8925a1194c82b3.jpg","id":101629599,"status":null,"dName":"Ak"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","id":70015339,"status":null,"dName":"Ht"}],"admins":null,"type":1,"setting":{"addMemberOnly":0,"blockName":0,"signAdminMsg":0},"id":404701641791,"avt":"http:\/\/s120.ava.grp.talk.zdn.vn\/default","groupId":21036976,"subType":0,"notify":1,"fullAvt":"http:\/\/s120.ava.grp.talk.zdn.vn\/default","name":"Ht, Azb, Atkz, Ak","totalMembers":5}
+			
+			{"updateMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/d\/8\/3\/e\/5\/75\/1bbfe9b3a6e86dfb9359a8777148fc02.jpg","id":72248198,"status":null,"dName":"Dung Dinh"}],"desc":"","ts":1467616294652,"isAdd":false,"creatorId":70015339,"senderId":70015339,"currentMems":[],"admins":null,"type":1,"setting":{"addMemberOnly":0,"blockName":0,"signAdminMsg":0},"id":404705358736,"avt":"http:\/\/s120.ava.grp.talk.zdn.vn\/default","groupId":21036976,"subType":0,"notify":1,"fullAvt":"http:\/\/s120.ava.grp.talk.zdn.vn\/default","name":"Ht, Azb, Atkz, Ak","totalMembers":4}
+			
+Người nhận khi group đã tồn tại
+
+			{"id":404567856348,"avt":"http:\/\/s120.ava.grp.talk.zdn.vn\/e\/3\/3\/c\/0\/120\/f1765eb6a1e4f509a7c2fe0e1418792d.jpg","updateMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","id":70015339,"status":null,"dName":"Ht"}],"groupId":21028942,"desc":"","ts":1467602873704,"notify":1,"fullAvt":"http:\/\/ava.grp.talk.zdn.vn\/e\/3\/3\/c\/0\/360\/f1765eb6a1e4f509a7c2fe0e1418792d.jpg","name":"Hieptt, Codeforfood, Nguyen Co","creatorId":73816860,"senderId":73816860,"currentMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","id":70015339,"status":null,"dName":"Ht"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/d\/2\/c\/5\/12\/75\/5e219387d57209e4dff6c2f33549fbc6.jpg","id":150925123,"status":null,"dName":"Codeforfood"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/0\/e\/e\/9\/3\/75\/39a5b7c52dd81cff662957973bc4c8f2.jpg","id":140958781,"status":null,"dName":"Nguyen Cong Chinh"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/b\/5\/5\/5\/6\/75\/9265593101fb0a35034d8862ee233958.jpg","id":109892775,"status":null,"dName":"Azb"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/3\/9\/f\/f\/21\/75\/584bd805c92d899c38a92a009192ade9.jpg","id":73816860,"status":null,"dName":"Hieptt"}],"type":1}
+			
+			
+		Một người khác không phải trưởng nhóm mời
+
+		{"id":404586051153,"avt":"http:\/\/s120.ava.grp.talk.zdn.vn\/e\/3\/3\/c\/0\/120\/f1765eb6a1e4f509a7c2fe0e1418792d.jpg","updateMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","id":70015339,"status":null,"dName":"Ht"}],"groupId":21028942,"desc":"","ts":1467604773823,"notify":1,"fullAvt":"http:\/\/ava.grp.talk.zdn.vn\/e\/3\/3\/c\/0\/360\/f1765eb6a1e4f509a7c2fe0e1418792d.jpg","name":"Hieptt, Codeforfood, Nguyen Co","creatorId":73816860,"senderId":109892775,"currentMems":[{"avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","id":70015339,"status":null,"dName":"Ht"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/b\/5\/5\/5\/6\/75\/9265593101fb0a35034d8862ee233958.jpg","id":109892775,"status":null,"dName":"Azb"},{"avatar":"http:\/\/avatar.talk.zdn.vn\/3\/9\/f\/f\/21\/75\/584bd805c92d899c38a92a009192ade9.jpg","id":73816860,"status":null,"dName":"Hieptt"}],"type":1}
+			
+			- Nếu currentMem rỗng thì 
+					+ Bản mới: 
+					
+					+ Bản cũ:
+					
+					
+					
+					
+
+
+String name = data.getString(CommonJSONFields.NAME);
+String groupId = data.getString(CommonJSONFields.GROUP_ID);
+String creatorId = data.getString(CommonJSONFields.CREATOR_ID);
+					Người tạo
+String senderId = data.getString(CommonJSONFields.SENDER_ID);
+					Người mời
+String type = data.getString(CommonJSONFields.TYPE);
+					GROUP_TYPE_TEMP	= 1 - GROUP_TYPE_STICKEY = 2 - GROUP_TYPE_PUBLIC = 3
+
+					public static final String MSG_TYPE_GROUP_JOIN 				= "group.join";
+					public static final String MSG_TYPE_GROUP_INVITE 			= "group.invite";
+					public static final String MSG_TYPE_GROUP_DELETE 			= "group.delete";
+					public static final String MSG_TYPE_GROUP_LEAVE  			= "group.leave";
+					public static final String MSG_TYPE_GROUP_FORCE_LEAVE 		= "group.force.leave";
+					public static final String MSG_TYPE_GROUP_UPDATE 			= "group.update";
+					public static final String MSG_TYPE_GROUP_REJECT			= "group.reject";
+					public static final String MSG_TYPE_GROUP_INVITE_CANCEL		= "group.invited.cancel";
+					
+String ts = data.getString(CommonJSONFields.TS);
+String desc = data.getString(CommonJSONFields.DESC);
+String groupAvatar = data.optString(CommonJSONFields.AVT);
+
+
++ Bản cũ: currentMems full member
+
+	Với group mới chưa có thông tin dưới db, dùng field này để insert xuống DB
+	
+	Trùng lắp updateMem chứa thằng được mời và currentMem cũng chứa
+	Trùng lắp creatorId và trong currentMem cũng có
+	Trùng lắp senderId và trong currentMem cũng có
+	
+
++ Bản mới currentMems rỗng	
+	
+
+
+
+
+	
+admin_uids
+totalMem
+subType
+settingJson	
+	
+
+							
+Nhận mời vào nhóm
+
+{"e":0,"last":"1467616911324","msg":[{"text":{"type":"group.join","data":{"id":404710136092,"groupId":21037644,"name":"Ht, Hieptt, Atkz, Ak","desc":"","currentMems":[{"id":73816860,"dName":"Hieptt","avatar":"http:\/\/avatar.talk.zdn.vn\/3\/9\/f\/f\/21\/75\/584bd805c92d899c38a92a009192ade9.jpg","status":null},{"id":101629599,"dName":"Ak","avatar":"http:\/\/avatar.talk.zdn.vn\/3\/c\/6\/a\/20\/75\/165814196ee582b8ee8925a1194c82b3.jpg","status":null},{"id":120317682,"dName":"Atkz","avatar":"http:\/\/avatar.talk.zdn.vn\/1\/7\/1\/e\/4\/75\/19ee7d6b6b4d26725f2255697e1b5c5d.jpg","status":null},{"id":70015339,"dName":"Ht","avatar":"http:\/\/avatar.talk.zdn.vn\/a\/b\/4\/c\/44\/75\/0e61040745f69fbdf967d67b71265b8a.jpg","status":null}],"updateMems":[{"id":73816860,"dName":"Hieptt","avatar":"http:\/\/avatar.talk.zdn.vn\/3\/9\/f\/f\/21\/75\/584bd805c92d899c38a92a009192ade9.jpg","status":null},{"id":101629599,"dName":"Ak","avatar":"http:\/\/avatar.talk.zdn.vn\/3\/c\/6\/a\/20\/75\/165814196ee582b8ee8925a1194c82b3.jpg","status":null},{"id":120317682,"dName":"Atkz","avatar":"http:\/\/avatar.talk.zdn.vn\/1\/7\/1\/e\/4\/75\/19ee7d6b6b4d26725f2255697e1b5c5d.jpg","status":null}],"type":1,"creatorId":70015339,"ts":1467616911321,"senderId":70015339,"avt":"http:\/\/s120.ava.grp.talk.zdn.vn\/default","fullAvt":"http:\/\/s120.ava.grp.talk.zdn.vn\/default","notify":1,"isAdd":false,"setting":null,"admins":null,"subType":0,"totalMembers":4}},"ts":1467616911321}]}
+	
+	
+	
+public void rejectFriendRequest(String userId)
+
+	
+	
+            int TYPE_TEXT = 0;
+            int TYPE_FILE = 1;
+            int TYPE_DOODLE = 2;
+            int TYPE_PHOTO = 3;
+            int TYPE_VOICE = 4;
+            int TYPE_AUDIO = 5;
+            int TYPE_MINI_GAME_DRAW_SOMETHING = 6;
+            int TYPE_GROUP_INFO_UPDATE = 8;
+            int TYPE_VIP_VIDEO = 9;
+            int TYPE_STICKER = 11;
+            int TYPE_INFORM = 12;
+            int TYPE_RECOMMENED = 13;
+            int TYPE_ALBUM = 14;
+            int TYPE_LINK = 15;
+            int TYPE_RICH_MESSAGE_SC = 16;
+            int TYPE_RICH_MESSAGE_MC = 17;
+            int TYPE_TEXT_SMS = 18;
+            int TYPE_LOCATION = 19;
+            int TYPE_PHOTO_HD = 20;
+            int TYPE_VIDEO = 21;
+            int TYPE_MSG_INFO = 22;
+            int TYPE_ECARD  = 23;
+            int TYPE_SHARE_FILE  = 24;
+            int TYPE_GIF = 25;
+            int TYPE_WEB_CONTENT = 26;
+
+
+
+ab_bg_textfield_search_default
+
+			
