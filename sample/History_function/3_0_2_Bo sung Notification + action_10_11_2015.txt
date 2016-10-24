@@ -343,3 +343,5 @@ drawable-en-mdpi
 
 
 
+case ZALO_COMMON_ACTION_OPEN_GAME_DETAILS:
+

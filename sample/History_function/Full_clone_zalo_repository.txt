@@ -8,3 +8,6 @@
 3. Đến khi cảm thấy đủ thì unshallow clone để chuyển thành full clone
 	git fetch --unshallow
 (Nếu vẫn chưa được thì fetch sâu thêm 1500, 2000...)
+
+
+ChatRow.maxContentWidth - 2*ChatRow.paddingHorizontal

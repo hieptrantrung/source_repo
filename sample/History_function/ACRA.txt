@@ -50,3 +50,31 @@ case FEED_TYPE_FOOTER_LIKE_COMMENT_BAR:
                             });
                             break;
 							
+							
+							
+#2
+
+java.lang.IllegalArgumentException: Receiver not registered: com.zing.zalo.ui.zviews.MessagesView$MessageListIntentReceiver@2132b68
+at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java)
+at android.app.ContextImpl.unregisterReceiver(ContextImpl.java)
+at android.content.ContextWrapper.unregisterReceiver(ContextWrapper.java)
+at com.zing.zalo.ui.zviews.MessagesView.onStop(SourceFile:712)
+at com.zing.zalo.zview.ZaloView.aLR(SourceFile:567)
+at com.zing.zalo.zview.bj.d(SourceFile:2769)
+at com.zing.zalo.zview.bj.y(SourceFile:2478)
+at com.zing.zalo.zview.bj.dispatchStop(SourceFile:2347)
+at com.zing.zalo.zview.ZaloView.aLR(SourceFile:575)
+at com.zing.zalo.zview.bj.d(SourceFile:2769)
+at com.zing.zalo.zview.bj.a(SourceFile:1518)
+at com.zing.zalo.zview.bj.a(SourceFile:34)
+at com.zing.zalo.zview.cj.run(SourceFile:1201)
+at com.zing.zalo.zview.bn.run(SourceFile:1257)
+at android.os.Handler.handleCallback(Handler.java)
+at android.os.Handler.dispatchMessage(Handler.java)
+at android.os.Looper.loop(Looper.java)
+at android.app.ActivityThread.main(ActivityThread.java)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java)
+
+							
