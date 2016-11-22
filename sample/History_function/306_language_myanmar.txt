@@ -84,6 +84,12 @@ http://libphonenumber.appspot.com/phonenumberparser?number=%2B84988394787+&count
 http://www.howtocallabroad.com/results.php?callfrom=vietnam&callto=germany
 
 
+95 9775043992
+
+getSimOperatorName() Telenor / Mobifone / 
+getSimOperator()	 45201
+
+
 
 http://libphonenumber.appspot.com/phonenumberparser?number=%2B4966874068+&country=DE
 
@@ -110,6 +116,20 @@ https://github.com/googlei18n/libphonenumber/issues/1092
 
 
 android:layout_marginBottom="4.0dip"
+
+So K.Hoat ung dung nhan tin cua ban la 2272
+
+8037
+
+6069	/ Verify
+
++959772921554
+
+(Zalo) 7961 is activation number of 959775043992
+
+{"error_code":0,"error_message":"Successful.","data":{"settings":{"autoplay_voice":{"id":1,"value":0},"use_enter_send_message":{"id":3,"value":1},"popup_unlock":{"id":5,"value":1},"ringtone_new_message":{"id":6,"value":1},"auto_update_phonebook":{"id":9,"value":1},"active_friend":{"id":10,"value":0},"language":{"id":11,"value":0},"show_popup_message":{"id":4,"value":1},"vibrate_new_message":{"id":7,"value":1},"notify_new_message":{"id":8,"value":1}},"is_set_setting":1,"privacy":{"online_status":{"id":5,"value":1},"allow_comment":{"id":4,"value":2},"online_friends":{"id":15,"value":0},"view_photo":{"id":2,"value":1},"enable_room_wifi":{"id":13,"value":0},"view_feed":{"id":3,"value":2},"receive_message":{"id":1,"value":1},"display_seen_status":{"id":11,"value":1},"view_birthday":{"id":7,"value":1},"receive_birthday_notify":{"id":14,"value":1},"view_feed_v2":{"id":16,"value":1},"reply_sms_use_zalo":{"id":10,"value":1},"view_username":{"id":6,"value":0},"notify_detail_message":{"id":9,"value":0}},"mutes":{"chat":[],"group":[]}}}
+
+
 
 
 
