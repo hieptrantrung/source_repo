@@ -77,4 +77,16 @@ at java.lang.reflect.Method.invoke(Native Method)
 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java)
 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java)
 
-							
+
+
+#3
+Sync msg pc, ko clear notification hệ thống
+
+
+			AMBgl1jtf
+
+Huy
+
+Nha
+
+			
