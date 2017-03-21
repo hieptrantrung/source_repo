@@ -1,26 +1,93 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.nesquena.recyclerviewdemo"
         minSdkVersion 16
-        targetSdkVersion 22
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
-    buildTypes {
+
+//    signingConfigs {
+//        debug {
+//            storeFile file("androidebug.keystore")
+//        }
+//    }
+	
+	File signFile = file('secret/keystore.properties')
+    if (signFile.exists()) {
+        Properties properties = new Properties()
+        properties.load(new FileInputStream(signFile))
+        signingConfigs {
+            release {
+                storeFile file(properties['keystore'])
+                storePassword properties['storePassword']
+                keyAlias properties['keyAlias']
+                keyPassword properties['keyPassword']
+            }
+        }
+    } else {
+        signingConfigs {
+            release {
+                storeFile file("androidebug.keystore")
+            }
+        }
+    }
+	
+	buildTypes {
+
+//        debug {
+//            debuggable true
+//            signingConfig signingConfigs.debug
+//            defaultConfig.minSdkVersion 17
+//            //multiDexEnabled true
+//            versionNameSuffix "-debug" /*+ "-build-" + getDate()*/
+//            buildConfigField "String", "BUILD_ID", '"' + randomUUIDString() + '"'
+//            buildConfigField "String", "BUILD_TIME", '"' + getDate() + '"'
+//            if (project.hasProperty('DISABLE_MULTIDEX'))
+//            {
+//                buildConfigField "boolean", "DISABLE_MULTIDEX", "true"
+//            }
+//            else
+//            {
+//                buildConfigField "boolean", "DISABLE_MULTIDEX", "false"
+//            }
+//        }
+
+        debug {
+            debuggable true
+//          signingConfig signingConfigs.debug
+            defaultConfig.minSdkVersion 17
+        }
+
         release {
+            zipAlignEnabled true
+            minifyEnabled true
+            debuggable false
+            jniDebuggable false
+
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+            signingConfig signingConfigs.release
         }
     }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:+'
-    compile 'com.android.support:recyclerview-v7:+'
+    //compile 'com.android.support:appcompat-v7:+'
+    //compile 'com.android.support:recyclerview-v7:+'
+
+//    compile 'com.android.support:appcompat-v7:23.0.3'
+//    compile 'com.android.support:recyclerview-v7:23.0.3'
+
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+
 }

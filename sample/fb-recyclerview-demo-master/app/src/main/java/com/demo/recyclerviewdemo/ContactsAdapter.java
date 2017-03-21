@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.nesquena.recyclerviewdemo.R;
 
 import java.util.ArrayList;
@@ -38,7 +40,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ViewHo
 
         View contactView = inflater.inflate(R.layout.item_contact, parent, false);
 
-        ViewHolder viewHolder = new ViewHolder(contactView);
+        ViewHolder viewHolder = new ViewHolder(context, contactView);
         return viewHolder;
     }
 
@@ -46,10 +48,10 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ViewHo
     public void onBindViewHolder(ViewHolder viewHolder, int position) {
         Contact contact = mContacts.get(position);
 
-        TextView textView = viewHolder.nameTextView;
+        TextView textView = viewHolder.tvName;
         textView.setText(contact.getName());
 
-        Button button = viewHolder.messageButton;
+        Button button = viewHolder.tvHometown;
 
         if (contact.isOnline()) {
             button.setText("Message");
@@ -59,25 +61,36 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ViewHo
             // Scrolling past the midpoint of the list (when contacts are listed as offline)
             // and scrolling back up should result in some buttons being inadvertently disabled.
             button.setEnabled(true);
-        }
-        else {
+        } else {
             button.setText("Offline");
             button.setEnabled(false);
         }
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        public TextView nameTextView;
-        public Button messageButton;
+        public TextView tvName;
+        public Button tvHometown;
+        private Context context;
 
-        public ViewHolder(View itemView) {
-            // Stores the itemView in a public final member variable that can be used
-            // to access the context from any ViewHolder instance.
+        public ViewHolder(Context context, View itemView) {
             super(itemView);
+            this.tvName = (TextView) itemView.findViewById(R.id.contact_name);
+            this.tvHometown = (Button) itemView.findViewById(R.id.message_button);
+            // Store the context
+            this.context = context;
+            // Attach a click listener to the entire row view
+            //itemView.setOnClickListener(this);
+        }
 
-            nameTextView = (TextView) itemView.findViewById(R.id.contact_name);
-            messageButton = (Button) itemView.findViewById(R.id.message_button);
+        @Override
+        public void onClick(View view) {
+            int position = getAdapterPosition(); // gets item position
+            if (position != RecyclerView.NO_POSITION) { // Check if an item was deleted, but the user clicked it before the UI removed it
+                //Contact user = mContacts.get(position);
+                // We can access the data within the views
+                Toast.makeText(context, tvName.getText(), Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }
