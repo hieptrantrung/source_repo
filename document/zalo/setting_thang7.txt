@@ -1,0 +1,51 @@
+- Xác nhận bạn (Phase 2)
+
+- Thêm bạn từ danh bạ (Phase 2)
+
+- Nhận yêu cầu kết bạn, phải check đi từ nguồn nào vô cửa sổ chát để khi kết bạn check theo từ nguồn đó
+			
+	A: gửi cho B, Nút Kết Bạn luôn mở cho user nhấn, server kiểm soát trả về kết quả gửi kết bạn thành công không, Những API trả về profile B để A có thể kết bạn, thì server sẽ chặn nếu k thỏa setting của B. 
+	Lưu lại nguồn lần cuối đến được việc kết bạn
+	
+	B: B , 
+			
+
+- Trạng thái đã nhận tin nhắn (Phase 2), setting đã nhận tin nhắn
+
+
+
+
+- Cho người lạ xem 10 nhật ký mới nhất
+
+
+
+- Chia sẻ khoảnh khắc với mọi người (Phase 2)
+
+
+- Hiển thị trạng thái truy cập (Phase 2)
+
+- Phần cài đặt thông báo có thêm
+
+ + Trả lời khi đang khóa máy
+ 
+ + Báo tin nhắn mới riêng, không chung với group và nhật ký
+ 
+ + Group có thêm setting thông báo tin nhắn mới và xem trước tin nhắn
+ 
+	Có thể cài đặt thông báo cho từng nhóm
+	
+	Có thể cài đặt thông báo cho các nhóm có tags đó (Phase 2)
+	
+ + Nhận thông báo từ nhật ký
+ 
+ 
+ + Nhật ký và khoảnh khắc
+
+ 
+- Danh bạ và ngôn ngữ
+
+
+ + Phần ngôn ngữ có thêm icon cờ cho từng ngôn ngữ.
+
+ 
+- Thêm animation + highlight cho setting

@@ -147,7 +147,14 @@ public static int getResId(String resName, Class<?> c) {
 
 
 
-//chat.undo
+//chat.undo  //MSG_TYPE_UNDO
+
+
+cmd 600
+
+[{"id":153452208669,"item":{"uid":109892775,"ts":1499242201309},"type":14}]
+
+
 
 
 
