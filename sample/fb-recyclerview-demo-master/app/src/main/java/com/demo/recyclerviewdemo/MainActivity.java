@@ -91,6 +91,20 @@ public class MainActivity extends Activity implements LoaderManager.LoaderCallba
                 adapter.addMoreContacts(Contact.createContactsList(5));
             }
         });
+
+        Button btnTestNoti = (Button) findViewById(R.id.btnTestNoti);
+        btnTestNoti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+    }
+
+    private void testNoti()
+    {
+
     }
 
     public void onClickDisplayNames(View view) {

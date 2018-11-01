@@ -1,34 +1,46 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnRetrieve"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onClickDisplayNames"
-        android:text="Display names" />
-    <TextView
-        android:id="@+id/res"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:clickable="false"
-        android:ems="10" >
-    </TextView>
-
-    <Button
-        android:id="@+id/add_more_contacts"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add more contacts" />
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnRetrieve"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickDisplayNames"
+            android:text="Display names" />
+
+        <Button
+            android:id="@+id/btnTestNoti"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickDisplayNames"
+            android:text="Test notify" />
+
+        <TextView
+            android:id="@+id/res"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:ems="10"></TextView>
+
+        <Button
+            android:id="@+id/add_more_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add more contacts" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>
